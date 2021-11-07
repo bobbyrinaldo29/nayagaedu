@@ -1,11 +1,5 @@
 <div class="nav-header">
-
-    @if (Auth::user()->role == 2)
-        <a href="{{ route('dashboard') }}" class="brand-logo">
-        @else
-            <a href="{{ route('admin.dashboard') }}" class="brand-logo">
-    @endif
-
+    <a href="/" class="brand-logo">
     <img src="{{ asset('images/logo.png') }}" alt="logo" width="40px">
     <div class="brand-title">
         <img src="{{ asset('images/logo-text.png') }}" alt="logo" width="90px">
@@ -24,13 +18,13 @@
             <div class="collapse navbar-collapse justify-content-between">
                 <div class="header-left">
                     <div class="dashboard_bar">
-                        Hai, {{ Auth::user()->name }}
+                        Hi, {{ Auth::user()->name }}
                     </div>
                 </div>
                 <ul class="navbar-nav header-right">
 
                     @if (Auth::user()->role == 2)
-                        <span class="d-flex align-items-center" style="font-size: 15px">Kode Referral: </span>
+                        <span class="d-flex align-items-center" style="font-size: 15px">Referral Code: </span>
                         <li class="nav-item d-flex align-items-center">
                             <div class="input-group">
                                 <input type="text" class="form-control" value="{{ Auth::user()->referral }}"

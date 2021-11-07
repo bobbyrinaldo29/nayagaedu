@@ -3,7 +3,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="{{ asset('/favicon.ico') }}">
-    <title>{{ config('app.name') }}</title>
+    <title>{{ config('app.name') }} | @isset($title) {{ $title }} @endisset</title>
 
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="{{ asset('vendor/fontawesome-free/css/all.min.css') }}">
@@ -33,4 +33,5 @@
         href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i&amp;subset=latin-ext"
         rel="stylesheet">
 
+    
 </head>

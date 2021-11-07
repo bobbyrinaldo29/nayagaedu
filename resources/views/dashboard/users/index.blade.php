@@ -23,7 +23,7 @@
                                                     </svg>
                                                 </span>
                                                 <div class="media-body">
-                                                    <p class="mb-1">Saldo Komisi</p>
+                                                    <p class="mb-1">Commission Balance</p>
                                                     <h4 class="mb-0">Rp 12,000,000.00</h4>
                                                 </div>
                                             </div>
@@ -40,7 +40,7 @@
                                             <i class="fas fa-users"></i>
                                         </span>
                                         <div class="media-body text-white text-end">
-                                            <p class="mb-1">Paket Anda</p>
+                                            <p class="mb-1">Your Package</p>
                                             <h3 class="text-white">VIP</h3>
                                         </div>
                                     </div>

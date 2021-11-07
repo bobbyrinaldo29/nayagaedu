@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app', ['title' => 'Home'])
 
 @section('content')
     <!-- Banner slides -->
@@ -38,7 +38,7 @@
 
                                             <div class="col-md-10 offset-md-1 col-lg-12 offset-lg-0 col-xl-10 offset-xl-1">
                                                 <button class="btn btn-lg btn-round btn-light shadow-none mb-0"
-                                                    type="button">Daftar Sekarang</button>
+                                                    type="button">Register Now</button>
                                             </div>
                                         </div>
                                     </div>
@@ -65,7 +65,7 @@
                                     <div class="lead-sm text-white-75 pb-2 pb-xl-3 mb-5">Mengupas apakah trading forex layak
                                         untuk di jadikan bisnis yang menguntungkan untuk anda . . . </div>
                                     <a href="#" class="btn btn-round btn-lg btn-dark-gray mx-2 ml-md-0 mr-md-3"><i
-                                            class="fas fa-info"></i>Pelajari lebih lanjut</a>
+                                            class="fas fa-info"></i>More Info</a>
                                 </div>
                             </div>
                         </div>
@@ -115,7 +115,7 @@
                             <div class="col-lg-8 offset-lg-2">
                                 <div class="text-center mt-3">
 
-                                    <h2 class="h1 font-weight-800 line-height-sm mb-4">Apa itu Nayaga Edu?</h2>
+                                    <h2 class="h1 font-weight-800 line-height-sm mb-4">What is Nayaga Edu?</h2>
 
                                     <div class="zz-separator zz-separator-wide ml-auto mr-auto mb-4" data-width="93px">
                                     </div>
@@ -123,13 +123,9 @@
                                     <div data-height="20px"></div>
 
                                     <div class="lead">
-                                        Platform Edukasi yang membantu meningkatkan pengetahuan pada pasar keuangan Anda
-                                        dapat
-                                        mempelajari strategi cara mendapatkan keuntungan di pasar keuangan,mengelola
-                                        resiko
-                                        dengan lebih baik dan meningkatkan skill agar lebih percaya diri. Semua kendali
-                                        ada di
-                                        tangan anda!
+                                        Educational platform that helps increase knowledge on financial markets You can
+                                        learn strategies on how to profit in financial markets, manage risk better and
+                                        improve skills to be more confident. All control is in your hands!
                                     </div>
 
                                     <div data-height="40px"></div>
@@ -146,7 +142,7 @@
                                         class="img-fluid mb-5 add-animate" data-width="68px" data-height="68px"
                                         data-animated="zoomIn">
                                     <h5 class="font-weight-700 mb-3">Digital Platform</h5>
-                                    <p>Kehadiran platform digital membuat seluruh kegiatan bisa dilakukan dalam satu tempat.
+                                    <p>The presence of a digital platform makes all activities can be done in one place.
                                     </p>
                                 </div>
                             </div>
@@ -410,7 +406,8 @@
                                     <li>Trade Community</li>
                                     <li>50:50</li>
                                 </ul>
-                                <a href="#" role="button" class="btn btn-primary btn-lg btn-round mb-4">Daftar Sekarang</a>
+                                <a href="#" role="button" class="btn btn-primary btn-lg btn-round mb-4">Register
+                                    Now</a>
                             </div>
                         </div>
                     </div>
@@ -433,7 +430,7 @@
                                     <li>Manage Account</li>
                                     <li>70:30</li>
                                 </ul>
-                                <a href="#" role="button" class="btn btn-primary btn-lg btn-round mb-4">Daftar Sekarang</a>
+                                <a href="#" role="button" class="btn btn-primary btn-lg btn-round mb-4">Register Now</a>
                             </div>
                         </div>
                     </div>
@@ -456,7 +453,7 @@
                                     <li>Free Copy Trade manage account</li>
                                     <li>80:20</li>
                                 </ul>
-                                <a href="#" role="button" class="btn btn-primary btn-lg btn-round mb-4">Daftar Sekarang</a>
+                                <a href="#" role="button" class="btn btn-primary btn-lg btn-round mb-4">Register Now</a>
                             </div>
                         </div>
                     </div>
@@ -480,7 +477,7 @@
                                     <li>90:10</li>
                                 </ul>
                                 <a href="#" role="button"
-                                    class="btn btn-secondary btn-lg btn-round btn-gray-shadow mb-4">Daftar Sekarang</a>
+                                    class="btn btn-secondary btn-lg btn-round btn-gray-shadow mb-4">Register Now</a>
                             </div>
                         </div>
                     </div>

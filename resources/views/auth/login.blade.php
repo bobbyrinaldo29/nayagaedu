@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-@include('layouts.partials.header')
+@include('layouts.partials.header', ['title' => 'Login'])
 
 <body>
 
@@ -33,9 +33,7 @@
                     <div class="col-12 pt-5 mt-4 pt-lg-0 mt-lg-0">
                         <div class="px-3 px-xl-4">
                             <blockquote class="blockquote-2 blockquote-light-2 border-left mb-5 mb-lg-0">
-                                <p class="mb-0">Gravida ipsum dolor sit nare neca malesuada ectetur risus sem
-                                </p>
-                                <footer class="blockquote-footer">Sebastian Clements</footer>
+                                <script type="text/javascript" src="https://www.brainyquote.com/link/quotebr.js"></script>
                             </blockquote>
                         </div>
                     </div>
@@ -57,17 +55,10 @@
                     <div class="col-12">
                         <div class="row align-items-center py-4 mb-4 mb-lg-0">
 
-                            <div class="col-6 d-lg-none">
-                                <div class="px-3">
-                                    <a href="/"><img src="../..svg/upload/logo-dark.svg" alt="logo" data-width="146px"
-                                            data-height="42px"></a>
-                                </div>
-                            </div>
-
                             <div class="col-6 col-lg-12">
                                 <div class="text-right px-3 px-xl-4 mt-xl-2">
                                     <a href="/" class="text-dark font-weight-600 text-uppercase"><i
-                                            class="fas fa-angle-left mr-2"></i>Kembali ke halaman awal</a>
+                                            class="fas fa-angle-left mr-2"></i>Back to homepage</a>
                                 </div>
                             </div>
 
@@ -134,8 +125,10 @@
                                                         <span class="input-group-text input-group-icon"><i
                                                                 class="far fa-user"></i></span>
                                                     </div>
-                                                    <input type="text" class="form-control form-control-lg"
-                                                        placeholder="Email" name="email">
+                                                    <input id="email" type="email"
+                                                        class="form-control form-control-lg @error('email') is-invalid @enderror"
+                                                        name="email" value="{{ old('email') }}" required
+                                                        autocomplete="email" autofocus placeholder="Email">
                                                     <div class="input-focus-bg"></div>
                                                 </div>
                                             </div>
@@ -149,8 +142,9 @@
                                                         <span class="input-group-text input-group-icon"><i
                                                                 class="far fa-eye-slash"></i></span>
                                                     </div>
-                                                    <input type="password" class="form-control form-control-lg"
-                                                        placeholder="Password" name="password">
+                                                    <input id="password" type="password"
+                                                        class="form-control form-control-lg @error('password') is-invalid @enderror"
+                                                        name="password" required autocomplete="current-password" placeholder="Password">
                                                     <div class="input-focus-bg"></div>
                                                 </div>
                                             </div>
@@ -159,11 +153,11 @@
 
                                             <button type="submit"
                                                 class="btn btn-lg btn-round btn-primary btn-block mb-0"><i
-                                                    class="fas fa-sign-in-alt"></i>Masuk</button>
+                                                    class="fas fa-sign-in-alt"></i>Sign In</button>
 
                                             &nbsp;
                                             <label class="w-100 text-center py-2 mb-0">
-                                                Tidak punya akun? <a href="{{ route('register') }}">Daftar</a>
+                                                Don't have an account? <a href="{{ route('register') }}">Sign Up</a>
                                             </label>
 
                                         </form>
@@ -182,7 +176,7 @@
         </div>
     </div>
 
-{{-- <div class="container">
+    {{-- <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -252,4 +246,4 @@
     </div>
 </div> --}}
 
-@include('layouts.partials.js')
+    @include('layouts.partials.js')

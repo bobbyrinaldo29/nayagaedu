@@ -24,9 +24,13 @@
             <!--Navigation menu-->
             <nav class="navik-menu menu-hover-reset menu-caret submenu-top-border submenu-scale">
                 <ul>
-                    <li class="current-menu"><a href="/">Home</a></li>
-                    <li><a href="{{ route('blog') }}">Blog</a></li>
-                    <li><a href="{{ route('contact') }}">Kontak Kami</a></li>
+                    <li class="{{ request()->is('/') ? 'current-menu' : '' }}"><a href="/">Home</a></li>
+                    <li class="{{ request()->is('market') ? 'current-menu' : '' }}"><a
+                            href="{{ route('market') }}">Market View</a></li>
+                    <li class="{{ request()->is('about') ? 'current-menu' : '' }}"><a
+                            href="{{ route('about') }}">About Us</a></li>
+                    <li class="{{ request()->is('contact') ? 'current-menu' : '' }}"><a
+                            href="{{ route('contact') }}">Contact</a></li>
                     @if (Route::has('login'))
                         @auth
                             <li><a href="{{ route('dashboard') }}">Dashboard</a></li>
@@ -75,11 +79,10 @@
                                 alt="logo" data-width="146px">
 
                             <div data-height="5px"></div>
-                            <p>Peringatan!</p>
-                            <p>Pasar uang memiliki potensi dan resiko yang sangat tinggi, cermatlah sebelum anda
-                                melakukan
-                                transaksi pada pasar uang. PT. Nayotama Arya Ganesha tidak menjual program investasi dan
-                                tidak bertanggungjawab atas semua program investasi yang mengatas namakan perusahaan</p>
+                            <p>Disclaimer!</p>
+                            <p>The money market has very high potential and risk, be careful before you make a
+                                transaction on the money market. PT Nayotama Arya Ganesha does not sell investment
+                                programs and is not responsible for all investment programs on behalf of the company.</p>
 
                         </div>
 
@@ -112,7 +115,7 @@
                     <div class="col-lg-3 mb-5 mb-lg-0">
                         <div class="widget">
 
-                            <h6 class="widget-title text-white text-uppercase font-weight-700">Kantor</h6>
+                            <h6 class="widget-title text-white text-uppercase font-weight-700">Office</h6>
 
                             <ul class="custom-list fa-ul mb-0 ml-4">
                                 <li class="mb-3">
@@ -138,7 +141,7 @@
                     <div class="col-lg-3 mb-5 mb-lg-0">
                         <div class="widget">
 
-                            <h6 class="widget-title text-white text-uppercase font-weight-700">Legalitas</h6>
+                            <h6 class="widget-title text-white text-uppercase font-weight-700">Legality</h6>
 
                             <ul class="custom-list fa-ul mb-0 ml-4">
                                 <li class="mb-3">

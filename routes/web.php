@@ -16,11 +16,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::group(['middleware' => 'guest'], function () {
-    Route::view('/', 'welcome');
-    Route::view('blog', 'blog')->name('blog');
-    Route::view('contact', 'contact')->name('contact');
-});
+Route::view('/', 'welcome');
+Route::view('market', 'market')->name('market');
+Route::view('about', 'about')->name('about');
+Route::view('contact', 'contact')->name('contact');
 
 Route::group(['middleware' => 'preventBackHistory'], function () {
     Auth::routes();
@@ -29,12 +28,13 @@ Route::group(['middleware' => 'preventBackHistory'], function () {
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-// User
-Route::group(['prefix' => 'user', 'middleware' => ['isUser', 'auth', 'preventBackHistory']], function () {
-    Route::get('dashboard', [UserController::class, 'index'])->name('dashboard');
-});
-
 // Admin
 Route::group(['prefix' => 'admin', 'middleware' => ['isAdmin', 'auth', 'preventBackHistory']], function () {
     Route::get('dashboard', [AdminController::class, 'index'])->name('admin.dashboard');
+});
+
+// User
+Auth::routes(['verify' => true]);
+Route::group(['prefix' => 'user', 'middleware' => ['isUser', 'auth', 'preventBackHistory', 'verified']], function () {
+    Route::get('dashboard', [UserController::class, 'index'])->name('dashboard');
 });

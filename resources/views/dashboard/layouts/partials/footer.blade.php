@@ -1,7 +1,9 @@
 <div class="footer">
     <div class="copyright">
-        <p><strong>Peringatan!</strong></p>
-        <p>Pasar uang memiliki potensi dan resiko yang sangat tinggi, cermatlah sebelum anda melakukan transaksi pada pasar uang. PT. Nayotama Arya Ganesha tidak menjual program investasi dan tidak bertanggungjawab atas semua program investasi yang mengatas namakan perusahaan.</p>
+        <p><strong>Disclaimer!</strong></p>
+        <p>The money market has very high potential and risk, be careful before you make a
+            transaction on the money market. PT Nayotama Arya Ganesha does not sell investment
+            programs and is not responsible for all investment programs on behalf of the company.</p>
         <p>Copyright <a href="https://nayagaedu.com/" target="_blank">Nayaga Edu</a> 2021. All Rights Reserved.
         </p>
     </div>

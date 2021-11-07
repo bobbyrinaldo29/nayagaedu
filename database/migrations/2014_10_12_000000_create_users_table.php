@@ -15,6 +15,7 @@ class CreateUsersTable extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
+            $table->string('referral');
             $table->string('name', 30);
             $table->string('email', 50)->unique();
             $table->boolean('role')->nullable();
