@@ -330,7 +330,7 @@
         </div>
 
         <!-- Plans and pricing section -->
-        <div class="section bg-image py-5" data-img-src="images/upload/section-bg-shape-02.png">
+        <div class="section bg-image py-5" data-img-src="images/upload/section-bg-shape-03.png">
             <div class="container">
 
                 <div class="row mb-5 my-md-5">
