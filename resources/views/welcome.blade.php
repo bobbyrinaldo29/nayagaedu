@@ -105,7 +105,7 @@
     <div class="main-content py-0">
 
         <!-- Overview section -->
-        <div class="section bg-image py-5" data-img-src="{{ asset('images/upload/section-bg-shape-01.png') }}">
+        <div class="section bg-image py-5" data-img-src="{{ asset('images/upload/section-bg-shape-04.png') }}">
             <div class="container">
 
                 <!-- Features section -->
@@ -223,8 +223,7 @@
                     <div class="col-lg-8 offset-lg-2">
                         <div class="text-center text-white-75 mt-3">
 
-                            <h2 class="h1 font-weight-800 text-white line-height-sm mb-4">Menjadi Apa Saja yang Anda Mau
-                                di Nayottama Digital Apps</h2>
+                            <h2 class="h1 font-weight-800 text-white line-height-sm mb-4">Be What You Want at Nayottama Digital Apps</h2>
                             <div class="zz-separator zz-separator-wide zz-separator-white ml-auto mr-auto mb-4"
                                 data-width="93px"></div>
 
@@ -242,7 +241,7 @@
                                     class="icon-title d-flex justify-content-start justify-content-lg-end align-items-center mb-3">
                                     <img src="{{ asset('images/svg/icon-user-1.svg') }}" alt="icon"
                                         class="mr-3 mr-lg-0 ml-lg-3 order-lg-2" data-width="50px" data-height="50px">
-                                    <h5 class="mb-0 font-weight-700 text-white text-lg-right order-lg-1">Peserta Didik
+                                    <h5 class="mb-0 font-weight-700 text-white text-lg-right order-lg-1">Learners
                                     </h5>
                                 </div>
                                 <div class="text-white-75 text-lg-right">
@@ -267,7 +266,7 @@
                                     class="icon-title d-flex justify-content-start justify-content-lg-end align-items-center mb-3">
                                     <img src="{{ asset('images/svg/app-highlight-icon-02.svg') }}" alt="icon"
                                         class="mr-3 mr-lg-0 ml-lg-3 order-lg-2" data-width="50px" data-height="50px">
-                                    <h5 class="mb-0 font-weight-700 text-white text-lg-right order-lg-1">Market Analis
+                                    <h5 class="mb-0 font-weight-700 text-white text-lg-right order-lg-1">Market Analyst
                                     </h5>
                                 </div>
                                 <div class="text-white-75 text-lg-right">

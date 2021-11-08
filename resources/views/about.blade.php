@@ -138,12 +138,12 @@
                         <div class="px-4 py-5 p-md-5">
                             <div class="px-xl-2 py-xl-4">
 
-                                <svg class="arrow-overflow-up d-md-none d-lg-block" fill="#1B3348"
+                                <svg class="arrow-overflow-up d-md-none d-lg-block" fill="#0196D0"
                                     xmlns="http://www.w3.org/2000/svg" viewBox="3 10.2 34 18" width="34px" height="18px">
                                     <path d="M20,10.2l-17,18h34L20,10.2z" />
                                 </svg>
 
-                                <svg class="arrow-overflow-left d-none d-md-block d-lg-none" fill="#1B3348"
+                                <svg class="arrow-overflow-left d-none d-md-block d-lg-none" fill="#0196D0"
                                     xmlns="http://www.w3.org/2000/svg" viewBox="9.4 3.8 18 34" width="18px" height="34px">
                                     <path d="M27.4,3.8l-18,17l18,17V3.8z" />
                                 </svg>
