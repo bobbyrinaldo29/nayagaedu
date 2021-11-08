@@ -9,7 +9,7 @@
                 <div class="row py-5">
                     <div class="col text-center">
                         <h1 class="display-3 font-weight-800 text-white mb-0">
-                            Kontak Kami
+                            Contact Us
                         </h1>
                     </div>
                 </div>
@@ -25,8 +25,8 @@
                 <div class="row my-4">
                     <div class="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
                         <blockquote class="blockquote blockquote-light-2 text-center mb-0">
-                            <p class="mb-0">Jika kamu tidak menemukan sebuah cara untuk menghasilkan uang ketika
-                                kamu sedang tidur, kamu akan bekerja sampai kamu meninggal.</p>
+                            <p class="mb-0">If you don't find a way to make money while you sleep, you will work
+                                until you die.</p>
                             <footer class="blockquote-footer">Warren Buffet</cite></footer>
                         </blockquote>
                     </div>
@@ -45,12 +45,12 @@
                             <div class="d-none d-xl-block" data-height="64px"></div>
 
                             <h3 class="section-title-4 text-left font-weight-700 mb-4">
-                                Informasi Kontak
+                                Contact Info
                                 <div class="title-divider-round"></div>
                             </h3>
 
                             <div class="lead-sm pt-2 pb-3 mb-5">
-                                Hubungi kami kapan saja, Kami selalu siap untuk membantu Anda.
+                                Contact us anytime, We are always ready to help you.
                             </div>
 
                             <div class="row">
@@ -63,7 +63,7 @@
                                                 data-height="46px">
                                         </div>
                                         <div class="icon-info-text pl-3">
-                                            <h5 class="font-weight-700 mb-2">Lokasi</h5>
+                                            <h5 class="font-weight-700 mb-2">Location</h5>
                                             <p>Office Client Resus Business Centre Indonesia. 9th Floor Wisma Monex, Jl.
                                                 Asia Afrika
                                                 133-137</p>
@@ -96,7 +96,7 @@
                                                 data-height="46px">
                                         </div>
                                         <div class="icon-info-text pl-3">
-                                            <h5 class="font-weight-700 mb-2">Telepon</h5>
+                                            <h5 class="font-weight-700 mb-2">Phone</h5>
                                             <p>(+87) 847-292-4353</p>
                                         </div>
                                     </div>
@@ -111,7 +111,7 @@
                                         </div>
                                         <div class="icon-info-text pl-3">
                                             <h5 class="font-weight-700 mb-2">Website</h5>
-                                            <p><a href="#" class="text-reset">https://nayagaedu.com/</a></p>
+                                            <p><a href="#" class="text-reset">www.nayagaedu.com/</a></p>
                                         </div>
                                     </div>
                                 </div>
@@ -128,7 +128,7 @@
                             <div class="px-4 py-5 p-md-5">
 
                                 <h3 class="section-title-4 text-left font-weight-700 my-3">
-                                    Kami akan menghubungi Anda kembali!
+                                    Get in Touch
                                     <div class="title-divider-round"></div>
                                 </h3>
 
@@ -138,7 +138,7 @@
                                         <div class="form-group col-md-6 pb-3 mb-3">
                                             <div class="pr-md-1">
                                                 <input type="text" class="form-control form-round form-control-lg"
-                                                    placeholder="Nama *" required>
+                                                    placeholder="Name *" required>
                                             </div>
                                         </div>
 
@@ -156,11 +156,11 @@
 
                                         <div class="form-group col-12 mb-5">
                                             <textarea class="form-control form-round form-control-lg py-3" rows="7"
-                                                placeholder="Pertanyaan Anda *" required></textarea>
+                                                placeholder="Your message *" required></textarea>
                                         </div>
 
                                         <div class="col-12 text-center">
-                                            <button type="submit" class="btn btn-round btn-lg btn-indigo">Kirim</button>
+                                            <button type="submit" class="btn btn-round btn-lg btn-indigo">Send Your Message</button>
                                         </div>
 
                                     </div>
@@ -213,7 +213,7 @@
                                     <div class="map-info-box bg-indigo text-white-75 rounded-lg px-3 py-4 p-lg-4">
                                         <div class="py-2 p-lg-2">
 
-                                            <h5 class="text-white font-weight-700 mb-3">Alamat Kantor</h5>
+                                            <h5 class="text-white font-weight-700 mb-3">Our Office</h5>
                                             <div class="divider-1 divider-light-2"></div>
 
                                             <div class="row contact-info-list mb-2">
@@ -230,8 +230,7 @@
                                                             </div>
                                                             <a href="https://www.google.com/maps/dir//-6.9219409,107.6138817/@-6.9219409,107.611693,17z/data=!4m2!4m1!3e0?hl=id"
                                                                 target="_blank"
-                                                                class="btn btn-sm btn-round btn-secondary btn-gray-shadow d-inline-block mb-0 text-decoration-none">Dapatkan
-                                                                Rute</a>
+                                                                class="btn btn-sm btn-round btn-secondary btn-gray-shadow d-inline-block mb-0 text-decoration-none">Get Direction</a>
                                                         </div>
                                                     </div>
                                                 </div>

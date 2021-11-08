@@ -25,7 +25,7 @@
 
                     <div class="col-12 d-none d-lg-block">
                         <div class="px-3 py-4 p-xl-4">
-                            <a href="/"><img src="{{ asset('images/nayaga-logo-white.png') }}" alt="logo"
+                            <a href="/"><img src="{{ asset('images/logo-white.png') }}" alt="logo"
                                     data-width="146px"></a>
                         </div>
                     </div>

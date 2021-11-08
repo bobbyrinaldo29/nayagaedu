@@ -12,7 +12,7 @@
                         <div class="col text-center">
 
                             <h1 class="display-3 font-weight-800 text-white text-uppercase mt-4 mb-1">
-                                Tentang Kami
+                                About Us
                             </h1>
 
                         </div>
@@ -33,7 +33,7 @@
                 <div class="row my-5">
                     <div class="col-lg-8 offset-lg-2">
                         <div class="text-center mt-4">
-                            <h2 class="h1 section-title-3 font-weight-800 text-uppercase mb-0">Apa itu Nayaga Edu?</h2>
+                            <h2 class="h1 section-title-3 font-weight-800 text-uppercase mb-0">What is Nayaga Edu?</h2>
                             <div data-height="10px"></div>
                         </div>
                     </div>
@@ -43,10 +43,9 @@
                     <div class="col-lg-8 offset-lg-2">
                         <div class="px-4 px-lg-0">
                             <blockquote class="blockquote text-center line-height-md mb-4">
-                                <p class="mb-0">Platform Edukasi yang membantu meningkatkan pengetahuan pada pasar
-                                    keuangan Anda dapat mempelajari strategi cara mendapatkan keuntungan di pasar
-                                    keuangan,mengelola resiko dengan lebih baik dan meningkatkan skill agar lebih percaya
-                                    diri. Semua kendali ada di tangan anda!</p>
+                                <p class="mb-0">Educational platform that helps increase knowledge on financial
+                                    markets You can learn strategies on how to profit in financial markets, manage risk
+                                    better and improve skills to be more confident. All control is in your hands!</p>
                             </blockquote>
                         </div>
                     </div>
@@ -82,11 +81,11 @@
                                 </svg>
 
                                 <h2 class="h1 font-weight-800 text-uppercase mb-4">
-                                    <a href="#" class="text-white">Visi</a>
+                                    <a class="text-white">Vision</a>
                                 </h2>
 
                                 <div class="pb-5">
-                                    <p>Menjadi Perusahaan Edukasi Teknologi yang Kompeten dan Terpercaya</p>
+                                    <p>Becoming a Competent and Trusted Technology Education Company</p>
                                 </div>
 
                             </div>
@@ -115,13 +114,13 @@
                                 </svg>
 
                                 <h2 class="h1 font-weight-800 text-uppercase mb-4">
-                                    <a href="#" class="text-white">Misi</a>
+                                    <a class="text-white">Mission</a>
                                 </h2>
 
                                 <div class="pb-5">
-                                    <p>Menjadi perusahaan edukasi berbasis teknologi internet dan informasi. Memberikan
-                                        produk dan layanan edukasi yang terkini dan berkelanjutan, berorientasi kepada
-                                        harapan klien</p>
+                                    <p>To become an education company based on internet and information technology. provide
+                                        up-to-date and sustainable educational products and services, oriented to client
+                                        expectations</p>
                                 </div>
 
                             </div>
@@ -150,7 +149,7 @@
                                 </svg>
 
                                 <h2 class="h1 font-weight-800 text-uppercase mb-4">
-                                    <a href="#" class="text-white">Legalitas</a>
+                                    <a class="text-white">Legality</a>
                                 </h2>
 
                                 <div class="pb-5">
@@ -250,7 +249,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                
+
                             </div>
                         </div>
                     </div>

@@ -60,7 +60,8 @@
                             <div class="align-self-center w-100 px-md-5 pr-lg-0 pl-lg-3 ml-lg-n3 py-5 overflow-hidden">
                                 <div class="pl-lg-4 pl-xl-5 text-center text-lg-left add-animate slide-animate"
                                     data-animated="fadeInRight">
-                                    <h1 class="display-4 font-weight-800 text-white mb-3">Ada apa dengan<br>Trading Forex?
+                                    <h1 class="display-4 font-weight-800 text-white mb-3">What is<br>Forex
+                                        Trading?
                                     </h1>
                                     <div class="lead-sm text-white-75 pb-2 pb-xl-3 mb-5">Mengupas apakah trading forex layak
                                         untuk di jadikan bisnis yang menguntungkan untuk anda . . . </div>
@@ -108,7 +109,7 @@
             <div class="container">
 
                 <!-- Features section -->
-                <div class="section py-5">
+                <div class="section py-0">
                     <div class="container">
 
                         <div class="row my-5">
@@ -152,8 +153,9 @@
                                     <img src="{{ asset('images/svg/app-feature-icon-06.svg') }}" alt="icon"
                                         class="img-fluid mb-5 add-animate" data-width="68px" data-height="68px"
                                         data-animated="zoomIn">
-                                    <h5 class="font-weight-700 mb-3">Webinar</h5>
-                                    <p>Scelerisque lectus in tincidun bibendum erat iaculis in aenean nunc quam</p>
+                                    <h5 class="font-weight-700 mb-3">Webinars</h5>
+                                    <p>Trading education services from basic to expert through animated videos, meetings and
+                                        HD quality webinars.</p>
                                 </div>
                             </div>
 
@@ -163,7 +165,8 @@
                                         class="img-fluid mb-5 add-animate" data-width="68px" data-height="68px"
                                         data-animated="zoomIn">
                                     <h5 class="font-weight-700 mb-3">Workshop</h5>
-                                    <p>Luctus justo fermentum tempus quisque risus euismod nec vestibulum nec</p>
+                                    <p>Provides facilities for unlimited internal trader communication and discussions with
+                                        members of the Trader community.</p>
                                 </div>
                             </div>
 
@@ -174,8 +177,41 @@
                     </div>
                 </div>
 
-                <div class="d-none d-xl-block" data-height="15px"></div>
+            </div>
+        </div>
 
+        <!-- Highlight section -->
+        <div class="section bg-light py-5">
+            <div class="container">
+                <div class="row align-items-center py-5">
+
+                    <div class="col-lg-6 order-2 order-lg-1 overflow-hidden py-3">
+                        <div class="pr-lg-5 add-animate" data-animated="fadeInLeft">
+
+                            <h2 class="h1 font-weight-800 line-height-sm mb-4">Financial Market</h2>
+
+                            <div class="zz-separator zz-separator-wide mb-4" data-width="93px"></div>
+
+                            <div data-height="20px"></div>
+
+                            <div class="lead mb-5">
+                                Having high liquidity numbers means providing opportunities for market participants to
+                                earn big profits.
+                            </div>
+
+                            <a href="#" class="btn btn-round btn-lg btn-primary"><i class="fas fa-info"></i>Learn More</a>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 order-1 order-lg-2">
+                        <div class="px-3 pb-4 mb-5 px-md-5 px-lg-0 pb-lg-0 mb-lg-0">
+                            <img src="{{ asset('images/upload/smartphone-users-01.png') }}" alt="image"
+                                class="img-fluid add-animate" data-animated="fadeInRight">
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
 
@@ -293,77 +329,6 @@
             </div>
         </div>
 
-        <!-- Screenshot section -->
-        <div class="section bg-light py-5 py-lg-0">
-            <div class="container">
-                <div class="row align-items-center">
-
-                    <div class="col-lg-6">
-                        <div class="my-5 my-xl-0 pr-xl-5">
-
-                            <h2 class="h1 font-weight-800 line-height-sm mb-4">Pasar Keuangan</h2>
-
-                            <div class="zz-separator zz-separator-wide mb-4" data-width="93px"></div>
-
-                            <div data-height="20px"></div>
-
-                            <div class="lead mb-5">
-                                <p>
-                                    Memiliki angka liquiditas tinggi yang berarti memberi peluang bagi para pelaku pasar
-                                    untuk mendapatkan keuntungan besar.
-                                </p>
-                            </div>
-
-                            <a href="#" class="btn btn-round btn-lg btn-primary"><i class="fas fa-info"></i>Pelajari
-                                Lebih Lanjut</a>
-
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 mt-lg-n5 my-xl-n5">
-                        <div class="px-4 mt-4 mb-5 mt-lg-0 my-xl-0">
-                            <div class="carousel-component" data-carousel-gutter="20" data-autoplay="true"
-                                data-dots="false" data-nav="true" data-carousel-col="1" data-carousel-col-sm="1"
-                                data-carousel-col-md="2" data-carousel-col-lg="2" data-carousel-col-xl="2">
-                                <div class="carousel-component-inner owl-carousel owl-theme">
-
-                                    <div class="carousel-component-item">
-                                        <div>
-                                            <img src="images/upload/phone-screenshot-01.png" alt="image"
-                                                class="img-fluid">
-                                        </div>
-                                    </div>
-
-                                    <div class="carousel-component-item">
-                                        <div>
-                                            <img src="images/upload/phone-screenshot-02.png" alt="image"
-                                                class="img-fluid">
-                                        </div>
-                                    </div>
-
-                                    <div class="carousel-component-item">
-                                        <div>
-                                            <img src="images/upload/phone-screenshot-03.png" alt="image"
-                                                class="img-fluid">
-                                        </div>
-                                    </div>
-
-                                    <div class="carousel-component-item">
-                                        <div>
-                                            <img src="images/upload/phone-screenshot-04.png" alt="image"
-                                                class="img-fluid">
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
         <!-- Plans and pricing section -->
         <div class="section bg-image py-5" data-img-src="images/upload/section-bg-shape-02.png">
             <div class="container">
@@ -376,13 +341,6 @@
 
                             <div class="zz-separator zz-separator-wide ml-auto mr-auto mb-4" data-width="93px"></div>
 
-                            <div data-height="20px"></div>
-
-                            <div class="lead">
-                                Fermentum tempus quisque vehicula sapien in laoreet finibus semper fuspendisse tristique
-                                laoreet elit maecenas nisi auctor luctus
-                            </div>
-
                             <div data-height="40px"></div>
 
                         </div>
@@ -392,9 +350,9 @@
                 <div class="row mb-5">
 
                     <div class="col-md-8 offset-md-2 col-lg-3 offset-lg-0">
-                        <div class="card card-price-table border-0 shadow-lg rounded-ultra text-center add-animate"
+                        <div class="card h-100 card-price-table border-0 shadow-lg rounded-ultra text-center add-animate"
                             data-animated="fadeInLeft">
-                            <div class="card-body">
+                            <div class="card-body d-flex flex-column">
                                 <div class="card-price d-flex justify-content-center mt-3">
                                     <div class="currency align-self-start">$</div>
                                     <div class="price text-primary">3.000</div>
@@ -406,16 +364,17 @@
                                     <li>Trade Community</li>
                                     <li>50:50</li>
                                 </ul>
-                                <a href="#" role="button" class="btn btn-primary btn-lg btn-round mb-4">Register
+                                <a href="{{ route('register') }}" role="button"
+                                    class="mt-auto btn btn-primary btn-lg btn-round mb-4">Register
                                     Now</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-md-8 offset-md-2 col-lg-3 offset-lg-0">
-                        <div class="card card-price-table border-0 shadow-lg rounded-ultra text-center add-animate"
+                        <div class="card h-100 card-price-table border-0 shadow-lg rounded-ultra text-center add-animate"
                             data-animated="fadeInRight">
-                            <div class="card-body">
+                            <div class="card-body d-flex flex-column">
                                 <div class="card-price d-flex justify-content-center mt-3">
                                     <div class="currency align-self-start">$</div>
                                     <div class="price text-primary">5.000</div>
@@ -430,15 +389,16 @@
                                     <li>Manage Account</li>
                                     <li>70:30</li>
                                 </ul>
-                                <a href="#" role="button" class="btn btn-primary btn-lg btn-round mb-4">Register Now</a>
+                                <a href="{{ route('register') }}" role="button"
+                                    class="mt-auto btn btn-primary btn-lg btn-round mb-4">Register Now</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-md-8 offset-md-2 col-lg-3 offset-lg-0">
-                        <div class="card card-price-table border-0 shadow-lg rounded-ultra text-center add-animate"
+                        <div class="card h-100 card-price-table border-0 shadow-lg rounded-ultra text-center add-animate"
                             data-animated="fadeInRight">
-                            <div class="card-body">
+                            <div class="card-body d-flex flex-column">
                                 <div class="card-price d-flex justify-content-center mt-3">
                                     <div class="currency align-self-start">$</div>
                                     <div class="price text-primary">15.000</div>
@@ -453,15 +413,16 @@
                                     <li>Free Copy Trade manage account</li>
                                     <li>80:20</li>
                                 </ul>
-                                <a href="#" role="button" class="btn btn-primary btn-lg btn-round mb-4">Register Now</a>
+                                <a href="{{ route('register') }}" role="button"
+                                    class="mt-auto btn btn-primary btn-lg btn-round mb-4">Register Now</a>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-md-8 offset-md-2 col-lg-3 offset-lg-0">
-                        <div class="card card-price-table border-0 shadow-lg rounded-ultra text-center text-white-75 bg-indigo add-animate"
+                        <div class="card h-100 card-price-table border-0 shadow-lg rounded-ultra text-center text-white-75 bg-indigo add-animate"
                             data-animated="fadeInUp">
-                            <div class="card-body">
+                            <div class="card-body d-flex flex-column">
                                 <div class="card-price d-flex justify-content-center mt-3">
                                     <div class="currency align-self-start text-white-75">$</div>
                                     <div class="price text-white">20.000</div>
@@ -476,8 +437,9 @@
                                     <li>Free Copy Trade manage account</li>
                                     <li>90:10</li>
                                 </ul>
-                                <a href="#" role="button"
-                                    class="btn btn-secondary btn-lg btn-round btn-gray-shadow mb-4">Register Now</a>
+                                <a href="{{ route('register') }}" role="button"
+                                    class="mt-auto btn btn-secondary btn-lg btn-round btn-gray-shadow mb-4">Register
+                                    Now</a>
                             </div>
                         </div>
                     </div>

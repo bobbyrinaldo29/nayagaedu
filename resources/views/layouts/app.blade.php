@@ -9,9 +9,9 @@
         <div class="navik-header-container">
 
             <!--Logo-->
-            <div class="logo" data-mobile-logo="{{ asset('images/nayaga-logo.png') }}"
-                data-sticky-logo="{{ asset('images/nayaga-logo.png') }}" width="10px">
-                <a href="#"><img src="{{ asset('images/nayaga-logo-white.png') }}" alt="logo" /></a>
+            <div class="logo" data-mobile-logo="{{ asset('images/logo.png') }}"
+                data-sticky-logo="{{ asset('images/logo.png') }}" width="10px">
+                <a href="#"><img src="{{ asset('images/logo-white.png') }}" alt="logo" /></a>
             </div>
 
             <!-- Burger menu -->
@@ -25,8 +25,13 @@
             <nav class="navik-menu menu-hover-reset menu-caret submenu-top-border submenu-scale">
                 <ul>
                     <li class="{{ request()->is('/') ? 'current-menu' : '' }}"><a href="/">Home</a></li>
-                    <li class="{{ request()->is('market') ? 'current-menu' : '' }}"><a
-                            href="{{ route('market') }}">Market View</a></li>
+                    <li><a href="#">Market View</a>
+                        <ul>
+                            <li><a href="#">Forex</a></li>
+                            <li><a href="#">Cryptocurrency</a></li>
+                            <li><a href="#">Stock</a></li>
+                        </ul>
+                    </li>
                     <li class="{{ request()->is('about') ? 'current-menu' : '' }}"><a
                             href="{{ route('about') }}">About Us</a></li>
                     <li class="{{ request()->is('contact') ? 'current-menu' : '' }}"><a
@@ -75,14 +80,15 @@
 
                         <div class="widget">
 
-                            <img class="img-fluid d-block mb-4" src="{{ asset('images/nayaga-logo-white.png') }}"
-                                alt="logo" data-width="146px">
+                            <img class="img-fluid d-block mb-4" src="{{ asset('images/logo-white.png') }}" alt="logo"
+                                data-width="150px">
 
                             <div data-height="5px"></div>
                             <p>Disclaimer!</p>
                             <p>The money market has very high potential and risk, be careful before you make a
                                 transaction on the money market. PT Nayotama Arya Ganesha does not sell investment
-                                programs and is not responsible for all investment programs on behalf of the company.</p>
+                                programs and is not responsible for all investment programs on behalf of the company.
+                            </p>
 
                         </div>
 
