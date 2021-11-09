@@ -4,7 +4,7 @@
     <div class="content-body">
         <div class="container-fluid">
             @if (session('errors'))
-                <div class="alert alert-success solid alert-dismissible fade show" role="alert">
+                <div class="alert alert-warning solid alert-dismissible fade show" role="alert">
                     @foreach ($errors->all() as $error)
                         <li>{{ $error }}</li>
                     @endforeach
@@ -64,7 +64,10 @@
                                             </td>
                                             <td><button type="button" class="btn btn-rounded btn-primary"
                                                     data-bs-toggle="modal" data-bs-target="#editBank{{ $item->id }}"
-                                                    data-id="{{ $item->id }}">Edit</button></td>
+                                                    data-id="{{ $item->id }}">Edit</button>
+                                                <button type="button" class="btn btn-rounded btn-danger"
+                                                    data-id="{{ $item->id }}">Delete</button>
+                                            </td>
                                         </tr>
                                         <?php $no++; ?>
                                         @include('dashboard.admin.components.editBank')

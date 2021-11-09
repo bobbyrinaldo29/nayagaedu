@@ -37,7 +37,7 @@ Route::group(['prefix' => 'admin', 'middleware' => ['isAdmin', 'auth', 'preventB
     Route::get('settings', [SettingsController::class, 'index'])->name('admin.settings');
 
     // POST
-    Route::post('settings', [SettingsController::class, 'store']);
+    Route::post('settings', [SettingsController::class, 'create']);
 
     // PUT
     Route::put('settings/{id}', [SettingsController::class, 'update']);
