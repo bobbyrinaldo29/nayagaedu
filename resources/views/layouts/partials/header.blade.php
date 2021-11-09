@@ -33,5 +33,6 @@
         href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i&amp;subset=latin-ext"
         rel="stylesheet">
 
-    
+    {!! ReCaptcha::htmlScriptTagJsApi() !!}
+
 </head>

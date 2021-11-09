@@ -20,7 +20,7 @@
         <div class="row min-vh-100">
 
             <div class="col-lg-4 bg-image order-2 order-lg-1"
-                data-img-src="{{ asset('images/upload/mega-menu-service-02.jpg') }}">
+                data-img-src="{{ asset('images/upload/mega-menu-service-05.jpg') }}">
                 <div class="row h-100 align-content-between">
 
                     <div class="col-12 d-none d-lg-block">
@@ -82,50 +82,27 @@
                                             User Registration
                                             <div class="title-divider-round"></div>
                                         </h3>
-                                        @error('name')
-                                            <div class="alert alert-warning alert-icon alert-dismissible fade show mb-5"
-                                                role="alert">
-                                                <i class="far fa-question-circle"></i>
-                                                <strong>{{ $message }}</a>
-                                                    <button type="button" class="close" data-dismiss="alert"
-                                                        aria-label="Close">
-                                                        <span aria-hidden="true"></span>
-                                                    </button>
+                                        @if (session('errors'))
+                                            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                                @foreach ($errors->all() as $error)
+                                                    <li>{{ $error }}</li>
+                                                @endforeach
+                                                <button type="button" class="close" data-dismiss="alert"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">×</span>
+                                                </button>
                                             </div>
-                                        @enderror
-                                        @error('email')
-                                            <div class="alert alert-warning alert-icon alert-dismissible fade show mb-5"
-                                                role="alert">
-                                                <i class="far fa-question-circle"></i>
-                                                <strong>{{ $message }}</a>
-                                                    <button type="button" class="close" data-dismiss="alert"
-                                                        aria-label="Close">
-                                                        <span aria-hidden="true"></span>
-                                                    </button>
+                                        @endif
+                                        @if (Session::has('success'))
+                                            <div class="alert alert-success">
+                                                {{ Session::get('success') }}
                                             </div>
-                                        @enderror
-                                        @error('password')
-                                            <div class="alert alert-warning alert-icon alert-dismissible fade show mb-5"
-                                                role="alert">
-                                                <i class="far fa-question-circle"></i>
-                                                <strong>{{ $message }}</a>
-                                                    <button type="button" class="close" data-dismiss="alert"
-                                                        aria-label="Close">
-                                                        <span aria-hidden="true"></span>
-                                                    </button>
+                                        @endif
+                                        @if (Session::has('error'))
+                                            <div class="alert alert-danger">
+                                                {{ Session::get('error') }}
                                             </div>
-                                        @enderror
-                                        @error('password_confirmation')
-                                            <div class="alert alert-warning alert-icon alert-dismissible fade show mb-5"
-                                                role="alert">
-                                                <i class="far fa-question-circle"></i>
-                                                <strong>{{ $message }}</a>
-                                                    <button type="button" class="close" data-dismiss="alert"
-                                                        aria-label="Close">
-                                                        <span aria-hidden="true"></span>
-                                                    </button>
-                                            </div>
-                                        @enderror
+                                        @endif
                                         @if (Session::has('success'))
                                             <div class="alert alert-success alert-icon alert-dismissible fade show mb-5"
                                                 role="alert">
@@ -200,6 +177,10 @@
                                                         autocomplete="new-password" placeholder="Password Confirm">
                                                     <div class="input-focus-bg"></div>
                                                 </div>
+                                            </div>
+
+                                            <div class="input-group input-group-lg input-group-round mb-4 d-flex justify-content-center">
+                                                {!! htmlFormSnippet() !!}
                                             </div>
 
                                             <div data-height="5px"></div>

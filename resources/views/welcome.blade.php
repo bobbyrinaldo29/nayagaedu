@@ -244,9 +244,6 @@
                                     <h5 class="mb-0 font-weight-700 text-white text-lg-right order-lg-1">Learners
                                     </h5>
                                 </div>
-                                <div class="text-white-75 text-lg-right">
-                                    <p>Aenean sed mattis arcu rhoncus risus duis pretium purus eget cursus molestie</p>
-                                </div>
                             </div>
 
                             <div class="icon-info-3 pb-2 mb-5 add-animate" data-animated="fadeInLeft">
@@ -255,9 +252,6 @@
                                     <img src="{{ asset('images/svg/app-highlight-icon-03.svg') }}" alt="icon"
                                         class="mr-3 mr-lg-0 ml-lg-3 order-lg-2" data-width="50px" data-height="50px">
                                     <h5 class="mb-0 font-weight-700 text-white text-lg-right order-lg-1">Mentor</h5>
-                                </div>
-                                <div class="text-white-75 text-lg-right">
-                                    <p>Magna nec semper magna quis malesuada dolor nullam ornare dictum magna</p>
                                 </div>
                             </div>
 
@@ -268,9 +262,6 @@
                                         class="mr-3 mr-lg-0 ml-lg-3 order-lg-2" data-width="50px" data-height="50px">
                                     <h5 class="mb-0 font-weight-700 text-white text-lg-right order-lg-1">Market Analyst
                                     </h5>
-                                </div>
-                                <div class="text-white-75 text-lg-right">
-                                    <p>Nam dolor sapien felis eu donec interdum neca placerat lacinia nullam enim</p>
                                 </div>
                             </div>
 
@@ -295,9 +286,6 @@
                                         class="mr-3" data-width="50px" data-height="50px">
                                     <h5 class="mb-0 font-weight-700 text-white">Signal Marker</h5>
                                 </div>
-                                <div class="text-white-75">
-                                    <p>Vestibulum sem ipsum primis metus neca charetra justo sapien purus cursus</p>
-                                </div>
                             </div>
 
                             <div class="icon-info-3 pb-2 mb-5 add-animate" data-animated="fadeInRight">
@@ -306,9 +294,6 @@
                                         class="mr-3" data-width="50px" data-height="50px">
                                     <h5 class="mb-0 font-weight-700 text-white">Creator</h5>
                                 </div>
-                                <div class="text-white-75">
-                                    <p>Hendrerit volutpat in laoreet elementum luctus a consequat bibendum</p>
-                                </div>
                             </div>
 
                             <div class="icon-info-3 add-animate" data-animated="fadeInRight">
@@ -316,9 +301,6 @@
                                     <img src="{{ asset('images/svg/app-highlight-icon-04.svg') }}" alt="icon"
                                         class="mr-3" data-width="50px" data-height="50px">
                                     <h5 class="mb-0 font-weight-700 text-white">Marketing</h5>
-                                </div>
-                                <div class="text-white-75">
-                                    <p>Morbi tristique ac cursus dignissim sapien nunc commodo orci vestibulum</p>
                                 </div>
                             </div>
                         </div>

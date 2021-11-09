@@ -3,7 +3,7 @@
         <ul class="metismenu" id="menu">
             &nbsp;
             @if (Auth::user()->role == 2)
-                {{-- ADMIN SIDEBAR --}}
+                {{-- USER SIDEBAR --}}
                 <li><a href="{{ route('dashboard') }}" class="" aria-expanded="false">
                         <i class="fas fa-home"></i>
                         <span class="nav-text">Dashboard</span>
@@ -15,16 +15,20 @@
                     </a>
                 </li>
             @else
-                {{-- USER SIDEBAR --}}
+                {{-- ADMIN SIDEBAR --}}
                 <li><a href="{{ route('admin.dashboard') }}" class="" aria-expanded="false">
                         <i class="fas fa-home"></i>
                         <span class="nav-text">Dashboard</span>
                     </a>
                 </li>
-                <li><a href="#" class="" aria-expanded="false">
-                        <i class="fas fa-user-check"></i>
-                        <span class="nav-text">Member</span>
+                <li><a class="has-arrow " href="javascript:void()" aria-expanded="false">
+                        <i class="fas fa-user-cog"></i>
+                        <span class="nav-text">Settings</span>
                     </a>
+                    <ul aria-expanded="false">
+                        <li><a href="{{ route('admin.settings') }}">Bank Status</a></li>
+                    </ul>
+
                 </li>
             @endif
 

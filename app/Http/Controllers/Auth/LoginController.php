@@ -57,14 +57,16 @@ class LoginController extends Controller
             'password' => 'required',
         ]);
 
-        if (Auth::attempt(array('email' => $input['email'], 'password' => $input['password']))) {
+        $credentials = $request->only('email', 'password');
+        if (Auth::attempt($credentials)) {
             if (Auth::user()->role == 1) {
                 return redirect()->route('admin.dashboard');
             } elseif (Auth::user()->role == 2) {
                 return redirect()->route('dashboard');
             }
         } else {
-            return redirect()->route('login')->with('error', 'Email or Password are wrong!');
+            // dd($credentials);
+            return redirect('login')->withErrors('Email or Password are wrong!');
         }
     }
 }

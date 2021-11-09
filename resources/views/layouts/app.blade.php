@@ -76,7 +76,7 @@
             <div class="container">
                 <div class="row py-5">
 
-                    <div class="col-lg-3 mb-5 mb-lg-0">
+                    <div class="col-lg-4 mb-5 mb-lg-0">
 
                         <div class="widget">
 
@@ -118,7 +118,7 @@
 
                     </div>
 
-                    <div class="col-lg-3 mb-5 mb-lg-0">
+                    <div class="col-lg-4 mb-5 mb-lg-0">
                         <div class="widget">
 
                             <h6 class="widget-title text-white text-uppercase font-weight-700">Office</h6>
@@ -144,7 +144,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 mb-5 mb-lg-0">
+                    <div class="col-lg-4 mb-5 mb-lg-0">
                         <div class="widget">
 
                             <h6 class="widget-title text-white text-uppercase font-weight-700">Legality</h6>
@@ -164,107 +164,6 @@
                                     NIB : 9120402830164
                                 </li>
                             </ul>
-
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3">
-                        <div class="widget">
-
-                            <h6 class="widget-title text-white text-uppercase font-weight-700">Gallery feed</h6>
-
-                            <div class="row widget-gallery-feed">
-                                <div class="col-4 gallery-feed-item">
-                                    <div class="hover-item hover-uncaption rounded shadow-sm">
-                                        <a href="#" target="_blank">
-                                            <div class="hover-transition">
-                                                <div class="hover-down p-0">
-                                                    <i class="far fa-eye fa-lg hover-icon"></i>
-                                                </div>
-                                            </div>
-                                            <figure>
-                                                <img class="w-100"
-                                                    src="images/upload/widget-gallery-feed-01.jpg" alt="image">
-                                            </figure>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-4 gallery-feed-item">
-                                    <div class="hover-item hover-uncaption rounded shadow-sm">
-                                        <a href="#" target="_blank">
-                                            <div class="hover-transition">
-                                                <div class="hover-down p-0">
-                                                    <i class="far fa-eye fa-lg hover-icon"></i>
-                                                </div>
-                                            </div>
-                                            <figure>
-                                                <img class="w-100"
-                                                    src="images/upload/widget-gallery-feed-02.jpg" alt="image">
-                                            </figure>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-4 gallery-feed-item">
-                                    <div class="hover-item hover-uncaption rounded shadow-sm">
-                                        <a href="#" target="_blank">
-                                            <div class="hover-transition">
-                                                <div class="hover-down p-0">
-                                                    <i class="far fa-eye fa-lg hover-icon"></i>
-                                                </div>
-                                            </div>
-                                            <figure>
-                                                <img class="w-100"
-                                                    src="images/upload/widget-gallery-feed-03.jpg" alt="image">
-                                            </figure>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-4 gallery-feed-item">
-                                    <div class="hover-item hover-uncaption rounded shadow-sm">
-                                        <a href="#" target="_blank">
-                                            <div class="hover-transition">
-                                                <div class="hover-down p-0">
-                                                    <i class="far fa-eye fa-lg hover-icon"></i>
-                                                </div>
-                                            </div>
-                                            <figure>
-                                                <img class="w-100"
-                                                    src="images/upload/widget-gallery-feed-04.jpg" alt="image">
-                                            </figure>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-4 gallery-feed-item">
-                                    <div class="hover-item hover-uncaption rounded shadow-sm">
-                                        <a href="#" target="_blank">
-                                            <div class="hover-transition">
-                                                <div class="hover-down p-0">
-                                                    <i class="far fa-eye fa-lg hover-icon"></i>
-                                                </div>
-                                            </div>
-                                            <figure>
-                                                <img class="w-100"
-                                                    src="images/upload/widget-gallery-feed-05.jpg" alt="image">
-                                            </figure>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-4 gallery-feed-item">
-                                    <div class="hover-item hover-uncaption rounded shadow-sm">
-                                        <a href="#" target="_blank">
-                                            <div class="hover-transition">
-                                                <div class="hover-down p-0">
-                                                    <i class="far fa-eye fa-lg hover-icon"></i>
-                                                </div>
-                                            </div>
-                                            <figure>
-                                                <img class="w-100"
-                                                    src="images/upload/widget-gallery-feed-06.jpg" alt="image">
-                                            </figure>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
 
                         </div>
                     </div>

@@ -9,7 +9,7 @@
 
                 <div class="col-md-6">
                     <div class="text-center text-md-left px-4 mb-4 mb-md-0">
-                        <a href="/"><img src="{{ asset('/images/nayaga-logo.png') }}" alt="logo" width="146px"></a>
+                        <a href="/"><img src="{{ asset('/images/logo.png') }}" alt="logo" width="146px"></a>
                     </div>
                 </div>
 
@@ -49,8 +49,9 @@
 
                                 <h6 class="text-center py-2 mb-0">
                                     {{ __('Before proceeding, please check your email for a verification link.') }}
-                                    {{ __('If you did not receive the email') }},
+                                    {{ __('If you do not receive the confirmation message within a few minutes of signing up, please check your Junk E-mail folder') }}
                                 </h6>
+                                <p class="text-center py-2 mb-0">{{ __('If you did not receive the email') }}</p>
                                 &nbsp;
                                 <form class="d-inline" method="POST"
                                     action="{{ route('verification.resend') }}">

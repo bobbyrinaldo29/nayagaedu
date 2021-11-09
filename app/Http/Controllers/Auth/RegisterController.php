@@ -49,11 +49,21 @@ class RegisterController extends Controller
      */
     protected function validator(array $data)
     {
+
+        $message = [
+            'name.min' => 'Name minimum 3 character',
+            'email.unique' => 'Email already exist', 
+            'password.confirmed' => 'Password confirm does not match', 
+            'password.min' => 'Password minimum 8 character',
+            'g-recaptcha-response.recaptcha' => 'Recaptcha is require',
+        ];
+
         return Validator::make($data, [
-            'name' => ['required', 'string', 'max:255'],
+            'name' => ['required', 'string', 'max:255', 'min:3'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
-        ]);
+            'g-recaptcha-response' => 'recaptcha',
+        ], $message);
     }
 
     /**

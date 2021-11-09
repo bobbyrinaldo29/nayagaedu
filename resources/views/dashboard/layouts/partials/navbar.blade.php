@@ -1,9 +1,9 @@
 <div class="nav-header">
     <a href="/" class="brand-logo">
-    <img src="{{ asset('images/logo.png') }}" alt="logo" width="40px">
-    <div class="brand-title">
-        <img src="{{ asset('images/logo-text.png') }}" alt="logo" width="90px">
-    </div>
+        <img src="{{ asset('images/svg/logo-image.svg') }}" alt="logo" width="70px">
+        <div class="brand-title">
+            <img src="{{ asset('images/svg/logo-text.svg') }}" alt="logo" width="70px">
+        </div>
     </a>
     <div class="nav-control">
         <div class="hamburger">
@@ -34,7 +34,8 @@
                             </div>
                         </li>
                     @else
-                        <span class="d-flex align-items-center" style="font-size: 15px"><strong>Akun Admin!</strong></span>
+                        <span class="d-flex align-items-center" style="font-size: 15px"><strong>Admin
+                                Account!</strong></span>
                     @endif
 
                     <li class="nav-item dropdown header-profile">
@@ -42,15 +43,17 @@
                             <img src="{{ asset('images/user.png') }}" alt="user" />
                         </a>
                         <div class="dropdown-menu dropdown-menu-end">
-                            <a href="./app-profile.html" class="dropdown-item ai-icon">
-                                <svg id="icon-user1" xmlns="http://www.w3.org/2000/svg" class="text-primary"
-                                    width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                                    <circle cx="12" cy="7" r="4"></circle>
-                                </svg>
-                                <span class="ms-2">Profile </span>
-                            </a>
+                            @if (Auth::user()->role == 2)
+                                <a href="{{ route('profile') }}" class="dropdown-item ai-icon">
+                                    <svg id="icon-user1" xmlns="http://www.w3.org/2000/svg" class="text-primary"
+                                        width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="12" cy="7" r="4"></circle>
+                                    </svg>
+                                    <span class="ms-2">Profile </span>
+                                </a>
+                            @endif
 
                             @if (Route::has('login'))
                                 @auth
@@ -71,7 +74,7 @@
                                     </form>
                                 @endauth
                             @endif
-                            
+
                         </div>
                     </li>
                 </ul>
