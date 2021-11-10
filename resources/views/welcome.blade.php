@@ -13,12 +13,11 @@
                         <div class="row">
                             <div class="col-lg-8 col-xl-6 text-center text-lg-left py-5">
                                 <div class="px-md-5 pr-xl-0 py-5 overflow-hidden">
-                                    <h2 class="h3 font-weight-300 text-white add-animate slide-animate" data-animated="fadeInLeft">A Digital Creative Agency</h2>
-                                    <h1 class="display-4 font-weight-800 text-white mb-3 add-animate slide-animate" data-animated="fadeInRight">We Help Growing<br>Your Business</h1>
-                                    <div class="lead-sm text-white-75 pb-3 mb-5 add-animate slide-animate" data-animated="fadeInLeft">Donec eget est commodo suscipit est tempor blandit enim rhoncus malesuada massa litora rhoncus massa nec lacinia mattis arcu</div>
+                                    <h2 class="h3 font-weight-300 text-white add-animate slide-animate" data-animated="fadeInLeft">Be educated and</h2>
+                                    <h1 class="display-4 font-weight-800 text-white mb-3 add-animate slide-animate" data-animated="fadeInRight">Let other's<br>Be educated</h1>
+                                    <div class="lead-sm text-white-75 pb-3 mb-5 add-animate slide-animate" data-animated="fadeInLeft">Nayaga Edu is a trusted place to learn forex trading since 2019</div>
                                     <div class="add-animate slide-animate" data-animated="fadeIn">
-                                        <a href="#" class="btn btn-lg btn-round btn-primary btn-gray-shadow mx-2 ml-lg-0"><i class="fas fa-credit-card"></i>Plans & Pricing</a>
-                                        <a href="#" class="btn btn-lg btn-round btn-secondary btn-gray-shadow mx-2"><i class="fas fa-envelope"></i>Quick contact</a>
+                                        <a href="#" class="btn btn-lg btn-round btn-primary btn-gray-shadow mx-2 ml-lg-0"><i class="fas fa-info"></i>Learn More</a>
                                     </div>
                                 </div>
                             </div>
@@ -29,17 +28,15 @@
 
             <!-- Slide item -->
             <div class="d-flex flex-column">
-                <div class="page-header-block-height d-flex align-items-center bg-image" data-img-src="../../../assets/images/upload/section-banner-slide-19.jpg">
+                <div class="page-header-block-height d-flex align-items-center bg-image" data-img-src="{{ asset('images/upload/banner-02.jpg') }}">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-8 col-xl-6 text-center text-lg-left py-5">
                                 <div class="px-md-5 pr-xl-0 py-5 overflow-hidden">
-                                    <h2 class="h3 font-weight-300 text-white add-animate slide-animate" data-animated="fadeInLeft">Let's Work Together</h2>
-                                    <h1 class="display-4 font-weight-800 text-white mb-3 add-animate slide-animate" data-animated="fadeInRight">Making Your Business Ideas Come True</h1>
-                                    <div class="lead-sm text-white-75 pb-3 mb-5 add-animate slide-animate" data-animated="fadeInLeft">Fusce sem massa congue nec varius gravida urna viverra rhoncus aliquam odio posuere in lobortis sit amet dolor nulla massa</div>
+                                    <h1 class="display-4 font-weight-800 text-white mb-3 add-animate slide-animate" data-animated="fadeInRight">What is Forex Trading?</h1>
+                                    <div class="lead-sm text-white-75 pb-3 mb-5 add-animate slide-animate" data-animated="fadeInLeft">Exploring whether forex trading is worthy of being a profitable business for you...</div>
                                     <div class="add-animate slide-animate" data-animated="fadeIn">
-                                        <a href="#" class="btn btn-lg btn-round btn-primary btn-gray-shadow mx-2 ml-lg-0"><i class="fas fa-folder-open"></i>Our Showcase</a>
-                                        <a href="#" class="btn btn-lg btn-round btn-secondary btn-gray-shadow mx-2"><i class="fas fa-envelope"></i>Quick contact</a>
+                                        <a href="#" class="btn btn-lg btn-round btn-primary btn-gray-shadow mx-2 ml-lg-0"><i class="fas fa-info"></i>Learn More</a>
                                     </div>
                                 </div>
                             </div>
@@ -187,18 +184,17 @@
                         <div class="text-center text-white-75 mt-3">
 
                             <h2 class="h1 font-weight-800 text-white line-height-sm mb-4">Be What You Want at Nayottama Digital Apps</h2>
-                            <div class="zz-separator zz-separator-wide zz-separator-white ml-auto mr-auto mb-4"
+                            <div class="zz-separator zz-separator-wide zz-separator-white ml-auto mr-auto mb-2"
                                 data-width="93px"></div>
-
                         </div>
                     </div>
                 </div>
+                <h5 class="text-center text-white-75">Coming Soon</h5>
 
                 <div class="row align-items-lg-center mb-5">
 
                     <div class="col-md-6 col-lg-4 order-2 order-lg-1">
                         <div class="px-4 px-lg-0 pl-xl-4 pr-xl-5">
-
                             <div class="icon-info-3 pb-2 mb-5 add-animate" data-animated="fadeInLeft">
                                 <div
                                     class="icon-title d-flex justify-content-start justify-content-lg-end align-items-center mb-3">

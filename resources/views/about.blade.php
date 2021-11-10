@@ -33,7 +33,7 @@
                 <div class="row my-5">
                     <div class="col-lg-8 offset-lg-2">
                         <div class="text-center mt-4">
-                            <h2 class="h1 section-title-3 font-weight-800 text-uppercase mb-0">What is Nayaga Edu?</h2>
+                            <h2 class="h1 section-title-3 font-weight-800 text-uppercase mb-0">About Nayaga Edu</h2>
                             <div data-height="10px"></div>
                         </div>
                     </div>
@@ -41,12 +41,20 @@
 
                 <div class="row mb-5">
                     <div class="col-lg-8 offset-lg-2">
-                        <div class="px-4 px-lg-0">
-                            <blockquote class="blockquote text-center line-height-md mb-4">
-                                <p class="mb-0">Educational platform that helps increase knowledge on financial
-                                    markets You can learn strategies on how to profit in financial markets, manage risk
-                                    better and improve skills to be more confident. All control is in your hands!</p>
-                            </blockquote>
+                        <div class="px-4 px-lg-0 pb-4">
+                            <p>Nayaga Edu is a trusted place to learn forex trading since 2019.
+                                Headquartered in Bandung, this company specializes in trading education in Currency
+                                (Forex), Gold, with very competitive fees.</p>
+                            <p>In this program, traders will get an interactive and fun trading
+                                learning experience with a professional mentor. With learning methods designed in such a
+                                way, participants will find their own trading style and system.</p>
+                            <p>At the end of the program the candidate is expected to be able to create a trading system
+                                that suits him. Guidance from Nayaga Edu has a number of advantages that greatly benefit the
+                                participants.</p>
+                            <p>Guidance from Nayaga Edu will be very suitable for beginners in the trading world. In this
+                                program, Nayaga Edu provides education with various levels of experience, knowledge and
+                                interest. Starting from basic to expert classes guided by professional master Nayaga edu.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -129,7 +137,7 @@
 
                     <!-- Grid item image -->
                     <div class="col-md-6 col-lg-4 bg-image order-md-5 order-lg-3"
-                        data-img-src="{{ asset('images/upload/document.jpg') }}">
+                        data-img-src="{{ asset('images/upload/document-01.jpg') }}">
                         <img class="w-100 d-md-none" src="{{ asset('images/upload/document.jpg') }}" alt="image">
                     </div>
 
@@ -190,61 +198,71 @@
                             data-carousel-col-md="2" data-carousel-col-lg="3" data-carousel-col-xl="3">
                             <div class="carousel-component-inner owl-carousel owl-theme">
 
-                                <div class="carousel-component-item">
-                                    <div class="bg-white rounded-xl shadow px-4 py-5 p-xl-5 my-4">
-                                        <div class="testimonial-3">
-                                            <div class="testimonial-quote-icon text-primary">
-                                                <i class="far fa-comment-dots fa-2x"></i>
-                                            </div>
-                                            <div class="testimonial-quote">
-                                                <h6 class="text-reset font-weight-500 line-height-md mb-0">Sangat membantu
-                                                    sekali, pada saat saya sibuk melakukan rutinitas seperti biasa, robot
-                                                    terus menumbuhkan keuntungan dalam akun mt4 saya. semoga semakin besar
-                                                    dan bermanfaat bagi banyak orang.
-                                                </h6>
-                                            </div>
-                                            <div class="tesimonial-name font-weight-700 text-uppercase">
-                                                Yusuf
-                                                <span>Wiraswasta</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-component-item">
-                                    <div class="bg-white rounded-xl shadow px-4 py-5 p-xl-5 my-4">
-                                        <div class="testimonial-3">
-                                            <div class="testimonial-quote-icon text-primary">
-                                                <i class="far fa-comment-dots fa-2x"></i>
-                                            </div>
-                                            <div class="testimonial-quote">
-                                                <h6 class="text-reset font-weight-500 line-height-md mb-0">Berangkat dari
-                                                    ketidaktahuan sama sekali di
-                                                    dunia trading forex, Alhamdulillah, Setelah bergabung di komunitas saya
-                                                    sudah mendapatkan keuntungan yang lumayan besar bagi saya. Terima kasih.
-                                                </h6>
-                                            </div>
-                                            <div class="tesimonial-name font-weight-700 text-uppercase">
-                                                H Khaerudin
-                                                <span>PNS</span>
+                                <div class="col-md-12 offset-md-2 col-lg-12 offset-lg-0">
+                                    <div class="card h-100 border-0 shadow rounded-xl text-center px-4 py-5 p-xl-5 my-4">
+                                        <div class="card-body d-flex flex-column">
+                                            <div class="testimonial-3">
+                                                <div class="testimonial-quote-icon text-primary">
+                                                    <i class="far fa-comment-dots fa-2x"></i>
+                                                </div>
+                                                <div class="testimonial-quote">
+                                                    <h6 class="text-reset font-weight-500 line-height-md mb-0">Berangkat
+                                                        dari
+                                                        ketidaktahuan sama sekali di
+                                                        dunia trading forex, Alhamdulillah, Setelah bergabung di komunitas
+                                                        saya
+                                                        sudah mendapatkan keuntungan yang lumayan besar bagi saya. Terima
+                                                        kasih.
+                                                    </h6>
+                                                </div>
+                                                <div class="tesimonial-name font-weight-700 text-uppercase">
+                                                    H Khaerudin
+                                                    <span>PNS</span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="carousel-component-item">
-                                    <div class="bg-white rounded-xl shadow px-4 py-5 p-xl-5 my-4">
-                                        <div class="testimonial-3">
-                                            <div class="testimonial-quote-icon text-primary">
-                                                <i class="far fa-comment-dots fa-2x"></i>
+                                <div class="col-md-12 offset-md-2 col-lg-12 offset-lg-0">
+                                    <div class="card h-100 border-0 shadow rounded-xl text-center px-4 py-5 p-xl-5 my-4">
+                                        <div class="card-body d-flex flex-column">
+                                            <div class="testimonial-3">
+                                                <div class="testimonial-quote-icon text-primary">
+                                                    <i class="far fa-comment-dots fa-2x"></i>
+                                                </div>
+                                                <div class="testimonial-quote">
+                                                    <h6 class="text-reset font-weight-500 line-height-md mb-0">
+                                                        Terima kasih atas support EA dan edukasinya sangat membantu saya
+                                                        untuk mendapatkan profit yang konsisten. EA ini sangat bekerja
+                                                        dengan baik.
+                                                    </h6>
+                                                </div>
+                                                <div class="tesimonial-name font-weight-700 text-uppercase">
+                                                    Rizal Anwar
+                                                    <span>Trader</span>
+                                                </div>
                                             </div>
-                                            <div class="testimonial-quote">
-                                                <h6 class="text-reset font-weight-500 line-height-md mb-0">Terima kasih atas
-                                                    support EA dan edukasi nya sangat membantu saya untuk mendapatkan profit
-                                                    yang konsisten.EA ini sangat bekerja dengan baik
-                                                </h6>
-                                            </div>
-                                            <div class="tesimonial-name font-weight-700 text-uppercase">
-                                                Asep
-                                                <span>Trader</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 offset-md-2 col-lg-12 offset-lg-0">
+                                    <div class="card h-100 border-0 shadow rounded-xl text-center px-4 py-5 p-xl-5 my-4">
+                                        <div class="card-body d-flex flex-column">
+                                            <div class="testimonial-3">
+                                                <div class="testimonial-quote-icon text-primary">
+                                                    <i class="far fa-comment-dots fa-2x"></i>
+                                                </div>
+                                                <div class="testimonial-quote">
+                                                    <h6 class="text-reset font-weight-500 line-height-md mb-0">
+                                                        Sangat membantu sekali, pada saat saya sibuk melakukan rutinitas
+                                                        seperti biasa, robot terus menumbuhkan keuntungan dalam akun mt4
+                                                        saya. semoga semakin besar dan bermanfaat bagi banyak orang.
+                                                    </h6>
+                                                </div>
+                                                <div class="tesimonial-name font-weight-700 text-uppercase">
+                                                    Yusuf
+                                                    <span>Wiraswasta</span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
