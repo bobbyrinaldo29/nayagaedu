@@ -27,6 +27,7 @@ class BankNameRequest extends FormRequest
         return [
             'name' => 'required|min:3|unique:bank_names,name,' . $id,
             'code' => 'required|min:3|unique:bank_names,code,' . $id,
+            'status' => ''
         ];
     }
 

@@ -34,7 +34,7 @@
                             data-bs-target="#addBank"><span class="btn-icon-start text-success"><i
                                     class="fa fa-plus color-success"></i>
                             </span>Add</button>
-                        @include('dashboard.admin.components.addBank')
+                        @include('dashboard.admin.components.bankName.addBank')
                     </div>
                     <div class="card-body">
                         <div class="table-responsive">
@@ -65,15 +65,27 @@
                                             <td><button type="button" class="btn btn-rounded btn-primary"
                                                     data-bs-toggle="modal" data-bs-target="#editBank{{ $item->id }}"
                                                     data-id="{{ $item->id }}">Edit</button>
-                                                <button type="button" class="btn btn-rounded btn-danger"
-                                                    data-id="{{ $item->id }}">Delete</button>
+                                                @if ($item->status == '1')
+                                                    <button type="button" class="btn btn-rounded btn-danger"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#deleteBank{{ $item->id }}"
+                                                        data-id="{{ $item->id }}" disabled>Delete</button>
+                                                @else
+                                                    <button type="button" class="btn btn-rounded btn-danger"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#deleteBank{{ $item->id }}"
+                                                        data-id="{{ $item->id }}">Delete</button>
+                                                @endif
+
                                             </td>
                                         </tr>
                                         <?php $no++; ?>
-                                        @include('dashboard.admin.components.editBank')
+                                        @include('dashboard.admin.components.bankName.editBank')
+                                        @include('dashboard.admin.components.bankName.deleteBank')
                                     @endforeach
                                 </tbody>
                             </table>
+                            <p><strong>Note:</strong> Disable first if you want to delete</p>
                         </div>
                     </div>
                 </div>

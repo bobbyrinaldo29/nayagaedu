@@ -26,7 +26,7 @@
                         <span class="nav-text">Settings</span>
                     </a>
                     <ul aria-expanded="false">
-                        <li><a href="{{ route('admin.settings') }}">Bank Status</a></li>
+                        <li><a href="{{ route('admin.bankName') }}">Bank Status</a></li>
                     </ul>
 
                 </li>

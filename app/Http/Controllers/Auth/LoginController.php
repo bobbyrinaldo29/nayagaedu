@@ -65,7 +65,6 @@ class LoginController extends Controller
                 return redirect()->route('dashboard');
             }
         } else {
-            // dd($credentials);
             return redirect('login')->withErrors('Email or Password are wrong!');
         }
     }
