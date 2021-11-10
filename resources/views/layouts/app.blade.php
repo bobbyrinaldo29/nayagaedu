@@ -9,9 +9,9 @@
         <div class="navik-header-container">
 
             <!--Logo-->
-            <div class="logo" data-mobile-logo="{{ asset('images/logo.png') }}"
-                data-sticky-logo="{{ asset('images/logo.png') }}" width="10px">
-                <a href="#"><img src="{{ asset('images/logo-white.png') }}" alt="logo" /></a>
+            <div class="logo" data-mobile-logo="{{ asset('images/svg/logo.svg') }}"
+                data-sticky-logo="{{ asset('images/svg/logo.svg') }}" width="10px">
+                <a href="#"><img src="{{ asset('images/svg/logo-white.svg') }}" alt="logo" /></a>
             </div>
 
             <!-- Burger menu -->

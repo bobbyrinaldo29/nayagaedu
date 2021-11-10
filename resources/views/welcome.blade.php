@@ -7,80 +7,43 @@
         <div class="banner-slides-container owl-carousel owl-theme owl-dot-light-1">
 
             <!-- Slide item -->
-            <div class="bg-image overflow-hidden" data-img-src="{{ asset('images/upload/section-banner-slide-02.jpg') }}">
-                <div class="container d-flex flex-column">
-                    <div class="row page-header-block-height align-items-center">
-
-                        <div class="col-lg-6">
-                            <div class="px-4 px-md-5 px-lg-4 pt-5 pt-lg-0">
-                                <div class="d-none d-xl-block" data-height="150px"></div>
-                                <img src="{{ asset('images/upload/phone-mockup-02.png') }}" alt="image"
-                                    class="img-fluid mt-4 mt-md-5 mt-lg-0 add-animate slide-animate"
-                                    data-animated="slideInUp">
-                                <div class="d-none d-xl-block" data-height="60px"></div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6">
-                            <div class="px-md-5 px-lg-0 py-5">
-                                <div class="text-center px-lg-4">
-
-                                    <div class="add-animate slide-animate" data-animated="fadeInDown">
-                                        <h1 class="display-4 font-weight-800 text-white mb-3"><u>Be Educated</u><br>and
-                                            let's
-                                            other<br>
-                                            Be Educated</h1>
+            <div class="d-flex flex-column">
+                <div class="page-header-block-height d-flex align-items-center bg-image" data-img-src="{{ asset('images/upload/banner-01.jpg') }}">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 col-xl-6 text-center text-lg-left py-5">
+                                <div class="px-md-5 pr-xl-0 py-5 overflow-hidden">
+                                    <h2 class="h3 font-weight-300 text-white add-animate slide-animate" data-animated="fadeInLeft">A Digital Creative Agency</h2>
+                                    <h1 class="display-4 font-weight-800 text-white mb-3 add-animate slide-animate" data-animated="fadeInRight">We Help Growing<br>Your Business</h1>
+                                    <div class="lead-sm text-white-75 pb-3 mb-5 add-animate slide-animate" data-animated="fadeInLeft">Donec eget est commodo suscipit est tempor blandit enim rhoncus malesuada massa litora rhoncus massa nec lacinia mattis arcu</div>
+                                    <div class="add-animate slide-animate" data-animated="fadeIn">
+                                        <a href="#" class="btn btn-lg btn-round btn-primary btn-gray-shadow mx-2 ml-lg-0"><i class="fas fa-credit-card"></i>Plans & Pricing</a>
+                                        <a href="#" class="btn btn-lg btn-round btn-secondary btn-gray-shadow mx-2"><i class="fas fa-envelope"></i>Quick contact</a>
                                     </div>
-
-                                    <div class="px-3 mb-4 mb-md-5 mb-lg-0 add-animate slide-animate"
-                                        data-animated="fadeInUp">
-                                        <div class="row">
-
-                                            <div class="col-md-10 offset-md-1 col-lg-12 offset-lg-0 col-xl-10 offset-xl-1">
-                                                <button class="btn btn-lg btn-round btn-light shadow-none mb-0"
-                                                    type="button">Register Now</button>
-                                            </div>
-                                        </div>
-                                    </div>
-
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
 
             <!-- Slide item -->
-            <div class="bg-image overflow-hidden" data-img-src="{{ asset('images/upload/section-banner-slide-06.jpg') }}">
-                <div class="container d-flex flex-column">
-                    <div class="row page-header-block-height">
-
-                        <div class="col-lg-6 d-flex">
-                            <div class="align-self-center w-100 px-md-5 pr-lg-0 pl-lg-3 ml-lg-n3 py-5 overflow-hidden">
-                                <div class="pl-lg-4 pl-xl-5 text-center text-lg-left add-animate slide-animate"
-                                    data-animated="fadeInRight">
-                                    <h1 class="display-4 font-weight-800 text-white mb-3">What is<br>Forex
-                                        Trading?
-                                    </h1>
-                                    <div class="lead-sm text-white-75 pb-2 pb-xl-3 mb-5">Mengupas apakah trading forex layak
-                                        untuk di jadikan bisnis yang menguntungkan untuk anda . . . </div>
-                                    <a href="#" class="btn btn-round btn-lg btn-dark-gray mx-2 ml-md-0 mr-md-3"><i
-                                            class="fas fa-info"></i>More Info</a>
+            <div class="d-flex flex-column">
+                <div class="page-header-block-height d-flex align-items-center bg-image" data-img-src="../../../assets/images/upload/section-banner-slide-19.jpg">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 col-xl-6 text-center text-lg-left py-5">
+                                <div class="px-md-5 pr-xl-0 py-5 overflow-hidden">
+                                    <h2 class="h3 font-weight-300 text-white add-animate slide-animate" data-animated="fadeInLeft">Let's Work Together</h2>
+                                    <h1 class="display-4 font-weight-800 text-white mb-3 add-animate slide-animate" data-animated="fadeInRight">Making Your Business Ideas Come True</h1>
+                                    <div class="lead-sm text-white-75 pb-3 mb-5 add-animate slide-animate" data-animated="fadeInLeft">Fusce sem massa congue nec varius gravida urna viverra rhoncus aliquam odio posuere in lobortis sit amet dolor nulla massa</div>
+                                    <div class="add-animate slide-animate" data-animated="fadeIn">
+                                        <a href="#" class="btn btn-lg btn-round btn-primary btn-gray-shadow mx-2 ml-lg-0"><i class="fas fa-folder-open"></i>Our Showcase</a>
+                                        <a href="#" class="btn btn-lg btn-round btn-secondary btn-gray-shadow mx-2"><i class="fas fa-envelope"></i>Quick contact</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="col-lg-6 d-flex">
-                            <div class="align-self-end w-100 px-5">
-                                <div class="px-md-5 px-lg-4 px-xl-5 mt-md-4 mt-xl-0">
-                                    <div class="d-none d-xl-block" data-height="120px"></div>
-                                    <img src="{{ asset('images/upload/hand-holding-phone-01.png') }}" alt="image"
-                                        class="img-fluid add-animate slide-animate" data-animated="slideInLeft">
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
             </div>
@@ -272,7 +235,7 @@
 
                     <div class="col-lg-4 order-1 order-lg-2">
                         <div class="text-center px-4 pb-4 mb-5 pb-lg-0 mb-lg-0">
-                            <img src="images/upload/phone-mockup-05.png" alt="image" class="img-fluid add-animate"
+                            <img src="images/upload/Apple-iPhone-11-Pro-Max-2.png" alt="image" class="img-fluid add-animate"
                                 data-animated="fadeInUp">
                         </div>
                     </div>
