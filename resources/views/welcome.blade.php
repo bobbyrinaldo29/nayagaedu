@@ -198,9 +198,9 @@
                             <div class="icon-info-3 pb-2 mb-5 add-animate" data-animated="fadeInLeft">
                                 <div
                                     class="icon-title d-flex justify-content-start justify-content-lg-end align-items-center mb-3">
-                                    <img src="{{ asset('images/svg/icon-user-1.svg') }}" alt="icon"
+                                    <img src="{{ asset('images/svg/app-highlight-icon-02.svg') }}" alt="icon"
                                         class="mr-3 mr-lg-0 ml-lg-3 order-lg-2" data-width="50px" data-height="50px">
-                                    <h5 class="mb-0 font-weight-700 text-white text-lg-right order-lg-1">Learners
+                                    <h5 class="mb-0 font-weight-700 text-white text-lg-right order-lg-1">Course Challenge
                                     </h5>
                                 </div>
                             </div>
@@ -208,18 +208,9 @@
                             <div class="icon-info-3 pb-2 mb-5 add-animate" data-animated="fadeInLeft">
                                 <div
                                     class="icon-title d-flex justify-content-start justify-content-lg-end align-items-center mb-3">
-                                    <img src="{{ asset('images/svg/app-highlight-icon-03.svg') }}" alt="icon"
+                                    <img src="{{ asset('images/svg/icon-user-1.svg') }}" alt="icon"
                                         class="mr-3 mr-lg-0 ml-lg-3 order-lg-2" data-width="50px" data-height="50px">
-                                    <h5 class="mb-0 font-weight-700 text-white text-lg-right order-lg-1">Mentor</h5>
-                                </div>
-                            </div>
-
-                            <div class="icon-info-3 add-animate" data-animated="fadeInLeft">
-                                <div
-                                    class="icon-title d-flex justify-content-start justify-content-lg-end align-items-center mb-3">
-                                    <img src="{{ asset('images/svg/app-highlight-icon-02.svg') }}" alt="icon"
-                                        class="mr-3 mr-lg-0 ml-lg-3 order-lg-2" data-width="50px" data-height="50px">
-                                    <h5 class="mb-0 font-weight-700 text-white text-lg-right order-lg-1">Market Analyst
+                                    <h5 class="mb-0 font-weight-700 text-white text-lg-right order-lg-1">Access The Course
                                     </h5>
                                 </div>
                             </div>
@@ -243,25 +234,18 @@
                                 <div class="icon-title d-flex justify-content-start align-items-center mb-3">
                                     <img src="{{ asset('images/svg/icon-wireless-10.svg') }}" alt="icon"
                                         class="mr-3" data-width="50px" data-height="50px">
-                                    <h5 class="mb-0 font-weight-700 text-white">Signal Marker</h5>
+                                    <h5 class="mb-0 font-weight-700 text-white">Communication Platform For Financial Team</h5>
                                 </div>
                             </div>
 
                             <div class="icon-info-3 pb-2 mb-5 add-animate" data-animated="fadeInRight">
                                 <div class="icon-title d-flex justify-content-start align-items-center mb-3">
-                                    <img src="{{ asset('images/svg/app-highlight-icon-01.svg') }}" alt="icon"
+                                    <img src="{{ asset('images/svg/app-highlight-icon-04.svg') }}" alt="icon"
                                         class="mr-3" data-width="50px" data-height="50px">
-                                    <h5 class="mb-0 font-weight-700 text-white">Creator</h5>
+                                    <h5 class="mb-0 font-weight-700 text-white">Meet Other Trader</h5>
                                 </div>
                             </div>
 
-                            <div class="icon-info-3 add-animate" data-animated="fadeInRight">
-                                <div class="icon-title d-flex justify-content-start align-items-center mb-3">
-                                    <img src="{{ asset('images/svg/app-highlight-icon-04.svg') }}" alt="icon"
-                                        class="mr-3" data-width="50px" data-height="50px">
-                                    <h5 class="mb-0 font-weight-700 text-white">Marketing</h5>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
