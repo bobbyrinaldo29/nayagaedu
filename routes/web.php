@@ -52,4 +52,7 @@ Route::group(['prefix' => 'user', 'middleware' => ['isUser', 'auth', 'preventBac
     // GET
     Route::get('dashboard', [UserController::class, 'index'])->name('dashboard');
     Route::get('profile', [ProfileController::class, 'index'])->name('profile');
+
+    // POST
+    Route::post('profile', [ProfileController::class, 'create'])->name('profile.update');
 });
