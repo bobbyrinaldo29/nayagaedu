@@ -35,7 +35,7 @@
                         </div>
                         <div class="card-body">
                             <div class="form-validation">
-                                <form class="needs-validation" action="{{ route('profile.update') }}" method="POST">
+                                <form class="needs-validation" action="{{ route('profile.create') }}" method="POST">
                                     @csrf
                                     <div class="row">
                                         <div class="col-xl-6">
@@ -98,7 +98,21 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div class="mb-3 row">
+                                                <label class="col-lg-4 col-form-label" for="validationCustom08">Photo
+                                                </label>
+                                                <div class="col-lg-6">
+                                                    <div class="form-file">
+                                                        <input type="file" class="form-control" id="validationCustom08"
+                                                            name="photo">
+                                                        <div class="invalid-feedback">
+                                                            Please enter a phone no.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
+
                                         <div class="col-xl-6">
                                             <div class="mb-3 row">
                                                 <label class="col-lg-4 col-form-label" for="validationCustom06">ID Card
@@ -166,7 +180,8 @@
                                             </label>
                                             <div class="col-lg-6">
                                                 <input type="text" class="form-control" id="validationCustom01"
-                                                    placeholder="Enter a full name" name="fullName" value="{{ Auth::user()->fullName }}" required>
+                                                    placeholder="Enter a full name" name="fullName"
+                                                    value="{{ Auth::user()->fullName }}" required>
                                                 <div class="invalid-feedback">
                                                     Please enter a full name.
                                                 </div>
@@ -174,11 +189,17 @@
                                         </div>
                                         <div class="mb-3 row">
                                             <label class="col-lg-4 col-form-label" for="validationCustom05">Bank Name
+                                                <span class="text-danger">*</span>
                                             </label>
                                             <div class="col-lg-6">
                                                 <select class="default-select wide form-control" id="validationCustom05"
                                                     name="bankName">
-                                                    <option data-display="Select">Please select</option>
+                                                    @if (\Auth::user()->bankName)
+                                                        <option value="{{ Auth::user()->bankName }}">
+                                                            {{ Auth::user()->bankName }}</option>
+                                                    @else
+                                                        <option data-display="Select">Please select</option>
+                                                    @endif
                                                     @foreach ($bankName as $item)
                                                         @if ($item->status == '1')
                                                             <option value="{{ $item->name }}">{{ $item->name }}
@@ -233,7 +254,9 @@
                         </div>
                         <div class="card-body">
                             <div class="form-validation">
-                                <form class="needs-validation" novalidate>
+                                <form class="needs-validation" action="{{ route('profile.update') }}" method="POST">
+                                    @method('put')
+                                    @csrf
                                     <div class="row">
                                         <div class="col-xl-6">
                                             <div class="mb-3 row">
@@ -255,8 +278,8 @@
                                                     Password
                                                 </label>
                                                 <div class="col-lg-6">
-                                                    <input type="text" class="form-control" id="validationCustom06"
-                                                        placeholder="Please enter a password..." required>
+                                                    <input type="password" class="form-control" id="validationCustom06"
+                                                        placeholder="Please enter a password..." name="password" required>
                                                     <div class="invalid-feedback">
                                                         Please enter a password.
                                                     </div>

@@ -54,5 +54,8 @@ Route::group(['prefix' => 'user', 'middleware' => ['isUser', 'auth', 'preventBac
     Route::get('profile', [ProfileController::class, 'index'])->name('profile');
 
     // POST
-    Route::post('profile', [ProfileController::class, 'create'])->name('profile.update');
+    Route::post('profile', [ProfileController::class, 'create'])->name('profile.create');
+
+    // PUT
+    Route::put('profile', [ProfileController::class, 'update'])->name('profile.update');
 });

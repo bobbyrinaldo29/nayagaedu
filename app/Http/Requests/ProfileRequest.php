@@ -27,6 +27,7 @@ class ProfileRequest extends FormRequest
             'name' => 'min:3',
             'gender' => 'required',
             'phone' => 'min:8',
+            'photo' => 'image|mimes:jpeg,png,jpg,svg,PNG,JPG,SVG,JPEG|max:2048',
             'idCard' => 'required',
             'address' => 'required',
             'postalCode' => 'required',
@@ -42,6 +43,8 @@ class ProfileRequest extends FormRequest
             'name.min' => 'Name minimum 3 character',
             'gender.required' => 'Gender is required',
             'phone.min' => 'Phone minimum 8 character',
+            'photo.mimes' => 'Photo support jpeg, png, jpg, svg',
+            'photo.max' => 'Maximum file size 2MB',
         ];
     }
 }
