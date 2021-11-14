@@ -54,6 +54,7 @@ Route::group(['prefix' => 'user', 'middleware' => ['isUser', 'auth', 'preventBac
     // GET
     Route::get('dashboard', [UserController::class, 'index'])->name('dashboard');
     Route::get('profile', [ProfileController::class, 'index'])->name('profile');
+    Route::get('register-package', []);
 
     // SHOW
     Route::get('package', [PackageController::class, 'show'])->name('package');
