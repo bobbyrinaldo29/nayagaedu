@@ -9,9 +9,9 @@
                         <span class="nav-text">Dashboard</span>
                     </a>
                 </li>
-                <li><a href="#" class="" aria-expanded="false">
+                <li><a href="{{ route('package') }}" class="" aria-expanded="false">
                         <i class="fas fa-user-check"></i>
-                        <span class="nav-text">Member</span>
+                        <span class="nav-text">Package</span>
                     </a>
                 </li>
             @else
@@ -27,13 +27,17 @@
                     </a>
                     <ul aria-expanded="false">
                         <li><a href="{{ route('admin.bankName') }}">Bank Status</a></li>
+                        <li><a href="{{ route('admin.package') }}">Package Status</a></li>
                     </ul>
 
                 </li>
             @endif
 
             <div class="copyright">
-                <p><strong>Nayaga Edu</strong> © 2021. All Rights Reserved.</p>
+                <p><strong>Disclaimer!</strong></p>
+                <p>The money market has very high potential and risk, be careful before you make a
+                    transaction on the money market. PT Nayotama Arya Ganesha does not sell investment
+                    programs and is not responsible for all investment programs on behalf of the company.</p>
             </div>
     </div>
 </div>

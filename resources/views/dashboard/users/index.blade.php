@@ -5,9 +5,27 @@
         <!-- row -->
         <div class="container-fluid">
             <div class="row">
-                <div class="col-xl-12">
+                <div class="col-xl-6">
                     <div class="row">
-                        <div class="col-xl-6">
+                        <div class="col-xl-12">
+                            <div class="card bg-primary">
+                                <div class="card-body tryal row">
+                                    <div class="col-xl-7 col-sm-6">
+                                        <h2>You don't have a package yet</h2>
+                                        <span>Find the package you want at Nayaga Edu</span>
+                                        <a href="{{ route('package') }}" class="btn btn-rounded  fs-18 font-w500">Choose Package</a>
+                                    </div>
+                                    <div class="col-xl-5 col-sm-6">
+                                        <img src="{{ asset('images/upload/chart.png') }}" alt="" class="sd-shape">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="row">
+                        <div class="col-xl-12">
                             <div class="row">
                                 <div class="col-xl-12">
                                     <div class="widget-stat card">
@@ -24,24 +42,26 @@
                                                 </span>
                                                 <div class="media-body">
                                                     <p class="mb-1">Commission Balance</p>
-                                                    <h4 class="mb-0">Rp 12,000,000.00</h4>
+                                                    <h4 class="mb-0">Rp {{ Auth::user()->balance }}</h4>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-xl-3 col-xxl-6 col-lg-6 col-sm-6">
-                            <div class="widget-stat card bg-primary">
-                                <div class="card-body p-4">
-                                    <div class="media">
-                                        <span class="me-3">
-                                            <i class="fas fa-users"></i>
-                                        </span>
-                                        <div class="media-body text-white text-end">
-                                            <p class="mb-1">Your Package</p>
-                                            <h3 class="text-white">VIP</h3>
+
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="widget-stat card">
+                                        <div class="card-body  p-4">
+                                            <div class="media ai-icon">
+                                                <span class="me-3 bgl-primary text-primary">
+                                                    <i class="fas fa-users"></i>
+                                                </span>
+                                                <div class="media-body text-end">
+                                                    <p class="mb-1">Your Package</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -52,5 +72,4 @@
             </div>
         </div>
     </div>
-
 @endsection

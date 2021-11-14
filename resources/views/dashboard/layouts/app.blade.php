@@ -16,7 +16,7 @@
         @include('dashboard.layouts.partials.sidebar')
 
         @yield('content')
-
+        
         @include('dashboard.layouts.partials.footer')
     </div>
 

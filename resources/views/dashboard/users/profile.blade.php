@@ -98,19 +98,6 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="mb-3 row">
-                                                <label class="col-lg-4 col-form-label" for="validationCustom08">Photo
-                                                </label>
-                                                <div class="col-lg-6">
-                                                    <div class="form-file">
-                                                        <input type="file" class="form-control" id="validationCustom08"
-                                                            name="photo">
-                                                        <div class="invalid-feedback">
-                                                            Please enter a phone no.
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
                                         </div>
 
                                         <div class="col-xl-6">

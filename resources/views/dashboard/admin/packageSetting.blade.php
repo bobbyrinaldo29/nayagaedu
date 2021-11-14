@@ -1,4 +1,4 @@
-@extends('dashboard.layouts.app', ['title' => 'Bank Settings'])
+@extends('dashboard.layouts.app', ['title' => 'Package Settings'])
 
 @section('content')
     <div class="content-body">
@@ -31,10 +31,10 @@
                     <div class="card-header">
                         <h4 class="card-title">Bank Status</h4>
                         <button type="button" class="btn btn-rounded btn-success" data-bs-toggle="modal"
-                            data-bs-target="#addBank"><span class="btn-icon-start text-success"><i
+                            data-bs-target="#addPackage"><span class="btn-icon-start text-success"><i
                                     class="fa fa-plus color-success"></i>
                             </span>Add</button>
-                        @include('dashboard.admin.components.bankName.addBank')
+                        @include('dashboard.admin.components.packages.addPackage')
                     </div>
                     <div class="card-body">
                         <div class="table-responsive">
@@ -42,46 +42,29 @@
                                 <thead>
                                     <tr>
                                         <th>No</th>
-                                        <th>Bank Name</th>
-                                        <th>Code</th>
-                                        <th>Status</th>
+                                        <th>Package Name</th>
+                                        <th>Price</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <?php $no = 1; ?>
-                                    @foreach ($bank as $item)
+                                    @foreach ($package as $item)
                                         <tr>
                                             <td>{{ $no }}</td>
-                                            <td>{{ $item->name }}</td>
-                                            <td>{{ $item->code }}</td>
-                                            <td>
-                                                @if ($item->status == '1')
-                                                    <span class="badge light badge-success">Active</span>
-                                                @else
-                                                    <span class="badge light badge-danger">Disable</span>
-                                                @endif
-                                            </td>
+                                            <td>{{ $item->packageName }}</td>
+                                            <td>{{ $item->price }}</td>
                                             <td><button type="button" class="btn btn-rounded btn-primary"
-                                                    data-bs-toggle="modal" data-bs-target="#editBank{{ $item->id }}"
+                                                    data-bs-toggle="modal" data-bs-target="#editPackage{{ $item->id }}"
                                                     data-id="{{ $item->id }}">Edit</button>
-                                                @if ($item->status == '1')
-                                                    <button type="button" class="btn btn-rounded btn-danger"
-                                                        data-bs-toggle="modal"
-                                                        data-bs-target="#deleteBank{{ $item->id }}"
-                                                        data-id="{{ $item->id }}" disabled>Delete</button>
-                                                @else
-                                                    <button type="button" class="btn btn-rounded btn-danger"
-                                                        data-bs-toggle="modal"
-                                                        data-bs-target="#deleteBank{{ $item->id }}"
-                                                        data-id="{{ $item->id }}">Delete</button>
-                                                @endif
-
+                                                <button type="button" class="btn btn-rounded btn-danger"
+                                                    data-bs-toggle="modal" data-bs-target="#deletePackage{{ $item->id }}"
+                                                    data-id="{{ $item->id }}">Delete</button>
                                             </td>
                                         </tr>
                                         <?php $no++; ?>
-                                        @include('dashboard.admin.components.bankName.editBank')
-                                        @include('dashboard.admin.components.bankName.deleteBank')
+                                        @include('dashboard.admin.components.packages.editPackage')
+                                        @include('dashboard.admin.components.packages.deletePackage')
                                     @endforeach
                                 </tbody>
                             </table>

@@ -21,7 +21,6 @@ class CreateUsersTable extends Migration
             $table->boolean('role')->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password')->nullable();
-            $table->string('photo')->nullable();
             $table->string('gender', '10')->nullable();
             $table->string('phone', '15')->nullable();
             $table->string('idCard', '50')->nullable();
@@ -30,6 +29,8 @@ class CreateUsersTable extends Migration
             $table->string('fullName', '50')->nullable();
             $table->string('bankName', '50')->nullable();
             $table->string('accountNumber', '50')->nullable();
+            $table->string('package', '10')->nullable();
+            $table->string('balance')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
