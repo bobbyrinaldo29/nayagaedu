@@ -21,7 +21,7 @@
                                         <h1>{{ $item->price }}</h1>
                                     </div>
                                 </div>
-                                <h3 class="card-price-title text-uppercase"><i class="fas fa-paper-plane text-primary"></i>
+                                <h3 class="card-price-title text-uppercase text-success">
                                     {{ $item->packageName }}
                                 </h3>
                                 <ul class="card-price-list mt-3">
@@ -33,7 +33,7 @@
                             </div>
                         </div>
                     </div>
-                @endforeach                
+                @endforeach
             </div>
         </div>
     </div>
