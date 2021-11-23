@@ -8,16 +8,22 @@
 
             <!-- Slide item -->
             <div class="d-flex flex-column">
-                <div class="page-header-block-height d-flex align-items-center bg-image" data-img-src="{{ asset('images/upload/banner-01.jpg') }}">
+                <div class="page-header-block-height d-flex align-items-center bg-image"
+                    data-img-src="{{ asset('images/upload/banner-01.jpg') }}">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-8 col-xl-6 text-center text-lg-left py-5">
                                 <div class="px-md-5 pr-xl-0 py-5 overflow-hidden">
-                                    <h2 class="h3 font-weight-300 text-white add-animate slide-animate" data-animated="fadeInLeft">Be educated and</h2>
-                                    <h1 class="display-4 font-weight-800 text-white mb-3 add-animate slide-animate" data-animated="fadeInRight">Let other's<br>Be educated</h1>
-                                    <div class="lead-sm text-white-75 pb-3 mb-5 add-animate slide-animate" data-animated="fadeInLeft">Nayaga Edu is a trusted place to learn forex trading since 2019</div>
+                                    <h2 class="h3 font-weight-300 text-white add-animate slide-animate"
+                                        data-animated="fadeInLeft">Be educated and</h2>
+                                    <h1 class="display-4 font-weight-800 text-white mb-3 add-animate slide-animate"
+                                        data-animated="fadeInRight">Let other's<br>Be educated</h1>
+                                    <div class="lead-sm text-white-75 pb-3 mb-5 add-animate slide-animate"
+                                        data-animated="fadeInLeft">Nayaga Edu is a trusted place to learn forex trading
+                                        since 2019</div>
                                     <div class="add-animate slide-animate" data-animated="fadeIn">
-                                        <a href="#" class="btn btn-lg btn-round btn-primary btn-gray-shadow mx-2 ml-lg-0"><i class="fas fa-info"></i>Learn More</a>
+                                        <a href="#" class="btn btn-lg btn-round btn-primary btn-gray-shadow mx-2 ml-lg-0"><i
+                                                class="fas fa-info"></i>Learn More</a>
                                     </div>
                                 </div>
                             </div>
@@ -28,15 +34,20 @@
 
             <!-- Slide item -->
             <div class="d-flex flex-column">
-                <div class="page-header-block-height d-flex align-items-center bg-image" data-img-src="{{ asset('images/upload/banner-02.jpg') }}">
+                <div class="page-header-block-height d-flex align-items-center bg-image"
+                    data-img-src="{{ asset('images/upload/banner-02.jpg') }}">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-8 col-xl-6 text-center text-lg-left py-5">
                                 <div class="px-md-5 pr-xl-0 py-5 overflow-hidden">
-                                    <h1 class="display-4 font-weight-800 text-white mb-3 add-animate slide-animate" data-animated="fadeInRight">What is Forex Trading?</h1>
-                                    <div class="lead-sm text-white-75 pb-3 mb-5 add-animate slide-animate" data-animated="fadeInLeft">Exploring whether forex trading is worthy of being a profitable business for you...</div>
+                                    <h1 class="display-4 font-weight-800 text-white mb-3 add-animate slide-animate"
+                                        data-animated="fadeInRight">What is Forex Trading?</h1>
+                                    <div class="lead-sm text-white-75 pb-3 mb-5 add-animate slide-animate"
+                                        data-animated="fadeInLeft">Exploring whether forex trading is worthy of being a
+                                        profitable business for you...</div>
                                     <div class="add-animate slide-animate" data-animated="fadeIn">
-                                        <a href="#" class="btn btn-lg btn-round btn-primary btn-gray-shadow mx-2 ml-lg-0"><i class="fas fa-info"></i>Learn More</a>
+                                        <a href="#" class="btn btn-lg btn-round btn-primary btn-gray-shadow mx-2 ml-lg-0"><i
+                                                class="fas fa-info"></i>Learn More</a>
                                     </div>
                                 </div>
                             </div>
@@ -159,7 +170,8 @@
                                 earn big profits.
                             </div>
 
-                            <a href="#" class="btn btn-round btn-lg btn-primary"><i class="fas fa-info"></i>Learn More</a>
+                            <a href="#" class="btn btn-round btn-lg btn-primary"><i class="fas fa-info"></i>Learn
+                                More</a>
 
                         </div>
                     </div>
@@ -183,7 +195,8 @@
                     <div class="col-lg-8 offset-lg-2">
                         <div class="text-center text-white-75 mt-3">
 
-                            <h2 class="h1 font-weight-800 text-white line-height-sm mb-4">Be What You Want at Nayottama Digital Apps</h2>
+                            <h2 class="h1 font-weight-800 text-white line-height-sm mb-4">Be What You Want at Nayottama
+                                Digital Apps</h2>
                             <div class="zz-separator zz-separator-wide zz-separator-white ml-auto mr-auto mb-2"
                                 data-width="93px"></div>
                         </div>
@@ -234,7 +247,8 @@
                                 <div class="icon-title d-flex justify-content-start align-items-center mb-3">
                                     <img src="{{ asset('images/svg/icon-wireless-10.svg') }}" alt="icon"
                                         class="mr-3" data-width="50px" data-height="50px">
-                                    <h5 class="mb-0 font-weight-700 text-white">Communication Platform For Financial Team</h5>
+                                    <h5 class="mb-0 font-weight-700 text-white">Communication Platform For Financial Team
+                                    </h5>
                                 </div>
                             </div>
 
@@ -261,7 +275,7 @@
                     <div class="col-lg-8 offset-lg-2">
                         <div class="text-center">
 
-                            <h2 class="h1 font-weight-800 line-height-sm mb-4">Plans and Pricing</h2>
+                            <h2 class="h1 font-weight-800 line-height-sm mb-4">Market View</h2>
 
                             <div class="zz-separator zz-separator-wide ml-auto mr-auto mb-4" data-width="93px"></div>
 
@@ -271,103 +285,14 @@
                     </div>
                 </div>
 
-                <div class="row mb-5">
-
-                    <div class="col-md-8 offset-md-2 col-lg-3 offset-lg-0">
-                        <div class="card h-100 card-price-table border-0 shadow-lg rounded-ultra text-center add-animate"
-                            data-animated="fadeInLeft">
-                            <div class="card-body d-flex flex-column">
-                                <div class="card-price d-flex justify-content-center mt-3">
-                                    <div class="currency align-self-start">$</div>
-                                    <div class="price text-primary">3.000</div>
-                                </div>
-                                <h5 class="card-price-title text-uppercase"><i
-                                        class="fas fa-paper-plane text-primary"></i>Basic</h5>
-                                <ul class="card-price-list">
-                                    <li>Free Nagita Apps</li>
-                                    <li>Trade Community</li>
-                                    <li>50:50</li>
-                                </ul>
-                                <a href="{{ route('register') }}" role="button"
-                                    class="mt-auto btn btn-primary btn-lg btn-round mb-4">Register
-                                    Now</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-8 offset-md-2 col-lg-3 offset-lg-0">
-                        <div class="card h-100 card-price-table border-0 shadow-lg rounded-ultra text-center add-animate"
-                            data-animated="fadeInRight">
-                            <div class="card-body d-flex flex-column">
-                                <div class="card-price d-flex justify-content-center mt-3">
-                                    <div class="currency align-self-start">$</div>
-                                    <div class="price text-primary">5.000</div>
-                                </div>
-                                <h5 class="card-price-title text-uppercase"><i
-                                        class="fas fa-star text-primary"></i>Beginner</h5>
-                                <ul class="card-price-list">
-                                    <li>Free Nagita Apps</li>
-                                    <li>Trade Community</li>
-                                    <li>Basic Trade Education</li>
-                                    <li>Free Copy Trade</li>
-                                    <li>Manage Account</li>
-                                    <li>70:30</li>
-                                </ul>
-                                <a href="{{ route('register') }}" role="button"
-                                    class="mt-auto btn btn-primary btn-lg btn-round mb-4">Register Now</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-8 offset-md-2 col-lg-3 offset-lg-0">
-                        <div class="card h-100 card-price-table border-0 shadow-lg rounded-ultra text-center add-animate"
-                            data-animated="fadeInRight">
-                            <div class="card-body d-flex flex-column">
-                                <div class="card-price d-flex justify-content-center mt-3">
-                                    <div class="currency align-self-start">$</div>
-                                    <div class="price text-primary">15.000</div>
-                                </div>
-                                <h5 class="card-price-title text-uppercase"><i
-                                        class="fas fa-gem text-primary"></i>Intermediate</h5>
-                                <ul class="card-price-list">
-                                    <li>Free Nagita Apps</li>
-                                    <li>Trade Community</li>
-                                    <li>Basic to Intermediate</li>
-                                    <li>Free Trade Education</li>
-                                    <li>Free Copy Trade manage account</li>
-                                    <li>80:20</li>
-                                </ul>
-                                <a href="{{ route('register') }}" role="button"
-                                    class="mt-auto btn btn-primary btn-lg btn-round mb-4">Register Now</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-8 offset-md-2 col-lg-3 offset-lg-0">
-                        <div class="card h-100 card-price-table border-0 shadow-lg rounded-ultra text-center text-white-75 bg-indigo add-animate"
-                            data-animated="fadeInUp">
-                            <div class="card-body d-flex flex-column">
-                                <div class="card-price d-flex justify-content-center mt-3">
-                                    <div class="currency align-self-start text-white-75">$</div>
-                                    <div class="price text-white">20.000</div>
-                                </div>
-                                <h5 class="card-price-title text-uppercase text-white"><i
-                                        class="fas fa-rocket text-white"></i>Expert</h5>
-                                <ul class="card-price-list">
-                                    <li>Free Nagita Apps</li>
-                                    <li>Trade Community</li>
-                                    <li>Basic to Intermediate</li>
-                                    <li>Free Trade Education Copy</li>
-                                    <li>Free Copy Trade manage account</li>
-                                    <li>90:10</li>
-                                </ul>
-                                <a href="{{ route('register') }}" role="button"
-                                    class="mt-auto btn btn-secondary btn-lg btn-round btn-gray-shadow mb-4">Register
-                                    Now</a>
-                            </div>
-                        </div>
-                    </div>
-
+                <div class="row mb-5 mx-auto">
+                    <iframe
+                        src="https://www.widgets.investing.com/live-currency-cross-rates?theme=darkTheme&pairs=1,3,2,4,7,5,8,6,9,10,49,11"
+                        width="100%" height="550px" frameborder="0" allowtransparency="false" marginwidth="0"
+                        marginheight="0"></iframe>
+                    <div class="poweredBy" style="font-family: Arial, Helvetica, sans-serif;">Powered by <a
+                            href="https://www.investing.com?utm_source=WMT&amp;utm_medium=referral&amp;utm_campaign=LIVE_CURRENCY_X_RATES&amp;utm_content=Footer%20Link"
+                            target="_blank" rel="nofollow">Investing.com</a></div>
                 </div>
             </div>
         </div>
