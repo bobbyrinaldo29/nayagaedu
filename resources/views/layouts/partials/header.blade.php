@@ -8,6 +8,7 @@
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="{{ asset('vendor/fontawesome-free/css/all.min.css') }}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+    <link href="{{ asset('vendor/jquery-nice-select/css/nice-select.css') }}" rel="stylesheet">
 
     <!-- Animate CSS -->
     <link rel="stylesheet" href="{{ asset('vendor/animate.css/animate.min.css') }}">

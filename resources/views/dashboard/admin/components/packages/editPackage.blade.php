@@ -19,7 +19,7 @@
                             name="packageName">
                     </div>
                     <div class="mb-3">
-                        <label class="col-lg-4 col-form-label" for="validationCustom06">Code
+                        <label class="col-lg-4 col-form-label" for="validationCustom06">Price
                             <span class="text-danger">*</span>
                         </label>
                         <input type="text" class="form-control input-default" value="{{ $item->price }}" name="price">

@@ -16,24 +16,24 @@ class PackageSeeder extends Seeder
     {
         DB::table('packages')->insert([
             [
-                'packageName' => 'Basic',
-                'price' => '3000',
-                'description' => 'Free Nagita App, Trade Community, 50:50',
+                'packageName' => 'Starter',
+                'price' => '500000',
+                'description' => 'Starter Nagita Featured, Affiliate Program, License 1 Year',
             ],
             [
                 'packageName' => 'Beginner',
-                'price' => '5000',
-                'description' => 'Free Nagita App, Trade Community, Basic Trade Education, Free Copy Trade, Manage Account, 70:30',
+                'price' => '2000000',
+                'description' => 'Beginner Nagita Featured, Affiliate Program, License 1 Year',
             ],
             [
                 'packageName' => 'Intermediate',
-                'price' => '15000',
-                'description' => 'Free Nagita App, Trade Community, Basic To Intermediate, Free Trade Education, Free Copy Trade Manage Account, 80:20',
+                'price' => '3000000',
+                'description' => 'Intermediate Nagita Featured, Affiliate Program, License 1 Year',
             ],
             [
                 'packageName' => 'Expert',
-                'price' => '20000',
-                'description' => 'Free Nagita App, Trade Community, Basic To Intermediate, Free Trade Education Copy, Free Copy Trade Manage Account, 90:10',
+                'price' => '5000000',
+                'description' => 'Expert Nagita Featured, Affiliate Program, License 1 Year',
             ],
         ]);
     }

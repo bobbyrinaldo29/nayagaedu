@@ -127,7 +127,7 @@
                                 <li class="mb-3">
                                     <span class="fa-li"><i
                                             class="fas fa-map-marker-alt text-primary"></i></span>
-                                    Office Client Resus Business Centre Indonesia. 9th Floor Wisma Monex, Jl. Asia
+                                    Office Client Regus Business Centre Indonesia. 9th Floor Wisma Monex, Jl. Asia
                                     Afrika
                                     133-137
                                 </li>

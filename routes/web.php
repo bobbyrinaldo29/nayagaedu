@@ -3,6 +3,7 @@
 use App\Http\Controllers\Admin\BankNameController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\PackageController;
+use App\Http\Controllers\Payment\TransactionController;
 use App\Http\Controllers\User\ProfileController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Auth;
@@ -30,22 +31,18 @@ Route::group(['middleware' => 'preventBackHistory'], function () {
 
 // Admin
 Route::group(['prefix' => 'admin', 'middleware' => ['isAdmin', 'auth', 'preventBackHistory']], function () {
-    // GET
     Route::get('dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
-    Route::get('bank-setting', [BankNameController::class, 'index'])->name('admin.bankName');
+    
     Route::get('package-setting', [PackageController::class, 'index'])->name('admin.package');
-
-    // POST
-    Route::post('bank-setting', [BankNameController::class, 'create'])->name('bankName.create');
     Route::post('package-setting', [PackageController::class, 'create'])->name('package.create');
-
-    // PUT
-    Route::put('bank-name/{id}', [BankNameController::class, 'update']);
     Route::put('package-setting/{id}', [PackageController::class, 'update']);
-
-    // Delete
-    Route::delete('bank-name/{id}/destroy', [BankNameController::class, 'destroy']);
     Route::delete('package-setting/{id}/destroy', [PackageController::class, 'destroy']);
+    
+    Route::get('bank-setting', [BankNameController::class, 'index'])->name('admin.bankName');
+    Route::post('bank-setting', [BankNameController::class, 'create'])->name('bankName.create');
+    Route::put('bank-name/{id}', [BankNameController::class, 'update']);
+    Route::delete('bank-name/{id}/destroy', [BankNameController::class, 'destroy']);
+
 });
 
 // User
@@ -53,15 +50,15 @@ Auth::routes(['verify' => true]);
 Route::group(['prefix' => 'user', 'middleware' => ['isUser', 'auth', 'preventBackHistory', 'verified']], function () {
     // GET
     Route::get('dashboard', [UserController::class, 'index'])->name('dashboard');
-    Route::get('profile', [ProfileController::class, 'index'])->name('profile');
-    Route::get('register-package', []);
 
-    // SHOW
     Route::get('package', [PackageController::class, 'show'])->name('package');
-
-    // POST
+    
+    Route::get('profile', [ProfileController::class, 'index'])->name('profile');
     Route::post('profile', [ProfileController::class, 'create'])->name('profile.create');
-
-    // PUT
     Route::put('profile', [ProfileController::class, 'update'])->name('profile.update');
+    
+    Route::get('package/{id}/checkout', [TransactionController::class, 'index']);
+    Route::post('package/checkout', [TransactionController::class, 'create'])->name('invoice.create');
+    Route::get('package/checkout/{reference}', [TransactionController::class, 'show'])->name('invoice.show');
+
 });

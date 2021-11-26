@@ -29,7 +29,7 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-header">
-                        <h4 class="card-title">Bank Status</h4>
+                        <h4 class="card-title">Package Status</h4>
                         <button type="button" class="btn btn-rounded btn-success" data-bs-toggle="modal"
                             data-bs-target="#addPackage"><span class="btn-icon-start text-success"><i
                                     class="fa fa-plus color-success"></i>
@@ -53,7 +53,7 @@
                                         <tr>
                                             <td>{{ $no }}</td>
                                             <td>{{ $item->packageName }}</td>
-                                            <td>{{ $item->price }}</td>
+                                            <td>IDR {{ number_format($item->price) }}</td>
                                             <td><button type="button" class="btn btn-rounded btn-primary"
                                                     data-bs-toggle="modal" data-bs-target="#editPackage{{ $item->id }}"
                                                     data-id="{{ $item->id }}">Edit</button>
