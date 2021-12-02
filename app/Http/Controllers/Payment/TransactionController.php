@@ -29,7 +29,7 @@ class TransactionController extends Controller
 
         $time = Transaction::where('reference', $reference)->first()->created_at->toDateTimeString();
 
-        return view('dashboard.users.invoice', compact('detail', 'time'));
+        return view('dashboard.users.payment', compact('detail', 'time'));
     }
 
     public function create(Request $request)

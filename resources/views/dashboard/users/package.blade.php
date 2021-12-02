@@ -33,7 +33,7 @@
                                         Now</a>
                                 @else
                                     <a role="button"
-                                        class="mt-auto btn btn-dark btn-lg btn-round mb-4">Your Package</a>
+                                        class="mt-auto btn btn-dark btn-lg btn-round mb-4">Current</a>
                                 @endif
                             </div>
                         </div>

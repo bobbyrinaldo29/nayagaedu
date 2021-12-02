@@ -2601,13 +2601,13 @@ textarea.form-control-lg {
     color: #000;
     background-color: #1b3348;
     border-color: #0196D0;
-    box-shadow: 0 0 0 0.25rem rgba(182, 71, 164, 0.5); }
+    box-shadow: 0 0 0 0.25rem rgba(1, 150, 208, 0.5); }
   .btn-check:checked + .btn-info, .btn-check:active + .btn-info, .btn-info:active, .btn-info.active, .show > .btn-info.dropdown-toggle {
     color: #000;
     background-color: #de75cd;
     border-color: #0196D0; }
     .btn-check:checked + .btn-info:focus, .btn-check:active + .btn-info:focus, .btn-info:active:focus, .btn-info.active:focus, .show > .btn-info.dropdown-toggle:focus {
-      box-shadow: 0 0 0 0.25rem rgba(182, 71, 164, 0.5); }
+      box-shadow: 0 0 0 0.25rem rgba(1, 150, 208, 0.5); }
   .btn-info:disabled, .btn-info.disabled {
     color: #000;
     background-color: #0196D0;

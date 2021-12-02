@@ -1,4 +1,4 @@
-@extends('dashboard.layouts.app', ['title' => 'Checkout'])
+@extends('dashboard.layouts.app', ['title' => 'Payment'])
 
 @section('content')
     <div class="content-body">

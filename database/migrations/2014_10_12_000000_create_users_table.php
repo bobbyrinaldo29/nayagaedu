@@ -29,7 +29,7 @@ class CreateUsersTable extends Migration
             $table->string('fullName', '50')->nullable();
             $table->string('bankName', '50')->nullable();
             $table->string('accountNumber', '50')->nullable();
-            $table->string('package', '10')->nullable();
+            $table->string('package', '50')->nullable();
             $table->string('balance')->nullable();
             $table->rememberToken();
             $table->timestamps();

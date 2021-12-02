@@ -13,8 +13,12 @@ class HistoryController extends Controller
     {
         $email = Auth::user()->email;
         $historyTransaction = Transaction::where('email', $email)->latest()->get();
-        $setUser = Transaction::where('email', $email)->latest()->first();
 
         return view('dashboard.users.history', compact('email', 'historyTransaction'));
+    }
+
+    public function show($id)
+    {
+        
     }
 }

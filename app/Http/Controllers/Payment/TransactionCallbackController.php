@@ -35,12 +35,18 @@ class TransactionCallbackController extends Controller
         $data = json_decode($json);
         $reference = $data->reference;
         $detail = $this->tripayService->detailTransaction($reference);
-        
-        $userUpdate = User::where('email', $detail->customer_email)->first();
-        
+        $pack = $detail->order_items[0]->name;
+
         $transaction = Transaction::where('reference', $reference)
             ->where('status', 'UNPAID')
             ->first();
+
+        if ($data->status == "PAID") {
+            User::where('email', strval($detail->customer_email))
+                ->update([
+                    'package' => strval($pack),
+                ]);
+        }
 
         if (!$transaction) {
             return 'Invoice not found or current status is not UNPAID';
@@ -53,7 +59,6 @@ class TransactionCallbackController extends Controller
         switch ($data->status) {
             case 'PAID':
                 $transaction->update(['status' => 'PAID']);
-                $userUpdate->update(['package' => $detail->order_items[0]->name]);
                 return response()->json(['success' => true]);
 
             case 'EXPIRED':

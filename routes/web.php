@@ -65,5 +65,6 @@ Route::group(['prefix' => 'user', 'middleware' => ['isUser', 'auth', 'preventBac
     Route::get('package/checkout/{reference}', [TransactionController::class, 'show'])->name('invoice.show');
 
     Route::get('history', [HistoryController::class, 'index'])->name('history');
+    Route::get('history/invoice/{id}', [HistoryController::class, 'show'])->name('history.invoice');
 
 });
