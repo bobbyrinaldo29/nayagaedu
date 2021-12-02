@@ -15,8 +15,6 @@
                                     <tr>
                                         <th>No</th>
                                         <th>Invoice Number</th>
-                                        <th>Package Name</th>
-                                        <th>Payment Type</th>
                                         <th>Status</th>
                                         <th>Date</th>
                                         <th>Amount</th>
@@ -29,8 +27,6 @@
                                         <tr>
                                             <td>{{ $no }}</td>
                                             <td>{{ $item->merchant_ref }}</td>
-                                            <td>{{ $item->package_name }}</td>
-                                            <td>{{ $item->method }}</td>
                                             <td>
                                                 @if ($item->status == "PAID")
                                                 <span class="badge light badge-success">{{ $item->status }}</span></td>
@@ -39,7 +35,7 @@
                                                 @endif
                                             <td>{{ $item->created_at }}</td>
                                             <td><strong>IDR {{ number_format($item->total_amount) }}</strong></td>
-                                            <td><button type="button" class="btn btn-primary btn-xs">Invoice</button></td>
+                                            <td><a href="" type="button" class="btn btn-primary btn-xs">Invoice</a></td>
                                         </tr>
                                         <?php $no++; ?>
                                     @endforeach
