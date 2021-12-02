@@ -2,13 +2,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" href="{{ asset('/favicon.png') }}">
-    <title>{{ config('app.name') }} | @isset($title) {{ $title }} @endisset</title>
+    <link rel="icon" href="{{ asset('/favicon.ico') }}">
+    <title>{{ config('app.name') }}</title>
 
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="{{ asset('vendor/fontawesome-free/css/all.min.css') }}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
-    <link href="{{ asset('vendor/jquery-nice-select/css/nice-select.css') }}" rel="stylesheet">
 
     <!-- Animate CSS -->
     <link rel="stylesheet" href="{{ asset('vendor/animate.css/animate.min.css') }}">

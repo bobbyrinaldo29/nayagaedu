@@ -22,6 +22,9 @@
 	<link rel="stylesheet" href="{{ asset('vendor/perfect-scrollbar/perfect-scrollbar.css') }}" />
 	<link rel="stylesheet" href="{{ asset('icons/flaticon/flaticon.css') }}" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+
+	<!-- Toastr -->
+    <link rel="stylesheet" href="{{ asset('/vendor/toastr/css/toastr.min.css') }}">
 	
 	<!-- Style css -->
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">

@@ -35,7 +35,7 @@
             <!-- Slide item -->
             <div class="d-flex flex-column">
                 <div class="page-header-block-height d-flex align-items-center bg-image"
-                    data-img-src="{{ asset('images/upload/banner-02.jpg') }}">
+                    data-img-src="">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-8 col-xl-6 text-center text-lg-left py-5">

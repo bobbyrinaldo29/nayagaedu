@@ -20,28 +20,18 @@
                                             <li class="list-group-item d-flex justify-content-between lh-condensed">
                                                 <div>
                                                     <h6 class="my-0">{{ $package->packageName }}</h6>
-                                                    <small class="text-muted">{{ $package->description }}</small>
+                                                    <ul class="mt-2">
+                                                        <li>
+                                                            {{ $package->description }}
+                                                        </li>
+                                                    </ul>
+                                                    <small class="text-muted"></small>
                                                 </div>
+                                                <input type="hidden" value="{{ $package->price }}" name="price">
                                                 <span class="text-muted">IDR
                                                     {{ number_format($package->price) }}</span>
                                             </li>
-                                            <li class="list-group-item d-flex justify-content-between lh-condensed">
-                                                <div>
-                                                    <h6 class="my-0">Service Fee</h6>
-                                                    <small class="text-muted" id="dispSelectedRadio"></small>
-                                                </div>
-                                                <span class="text-muted">IDR
-                                                    5,000</span>
-                                            </li>
-                                            <li class="list-group-item d-flex justify-content-between">
-                                                <span>Total</span>
-                                                <input type="hidden" name="price" value="{{ $package->price }}" readonly>
-                                                <strong>IDR {{ number_format($package->price + 5000) }}</strong>
-                                            </li>
                                         </ul>
-                                        <div id="displayHere">
-                                            <div id="dispSelectedRadio"></div>
-                                        </div>
                                     </div>
                                     <div class="col-lg-8 order-lg-1">
                                         <h4 class="mb-3">Billing address</h4>
@@ -53,10 +43,9 @@
                                         </div>
 
                                         <div class="mb-3">
-                                            <label for="email" class="form-label">Email <span
-                                                    class="text-muted">(Optional)</span></label>
+                                            <label for="email" class="form-label">Email</label>
                                             <input type="email" class="form-control" id="email" name="email"
-                                                placeholder="you@example.com" value="{{ Auth::user()->email }}">
+                                                placeholder="you@example.com" value="{{ Auth::user()->email }}" readonly>
                                         </div>
 
                                         <div class="mb-3">
@@ -89,24 +78,22 @@
 
                                         <hr class="mb-4">
 
-                                        <h4 class="mb-3">Payment</h4>
+                                        <h4 class="mb-3">Payment Method</h4>
 
                                         <div class="d-block my-3">
-                                            @foreach ($channels as $item)
-                                                @if ($item->active)
-                                                    <div class="form-check custom-radio mb-2">
-                                                        <input id="virtualAccount" name="method" type="radio"
-                                                            class="form-check-input" value="{{ $item->code }}"
-                                                            onclick="displaySelectedRadio(this)" required>
-                                                        <label class="form-check-label"
-                                                            for="virtualAccount">{{ $item->name }}</label>
-                                                    </div>
-                                                @endif
-                                            @endforeach
+                                            <select class="default-select form-control wide mb-5" name="method">
+                                                @foreach ($channels as $item)
+                                                    @if ($item->active)
+                                                        <option value="{{ $item->code }}">{{ $item->name }}</option>
+                                                    @endif
+                                                @endforeach
+                                            </select>
                                         </div>
                                         <hr class="mb-4">
-                                        <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to
-                                            checkout</button>
+                                        <div>
+                                            <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to
+                                                checkout</button>
+                                        </div>
                                     </div>
                                 </div>
                             </form>
@@ -119,20 +106,21 @@
 
     <script>
         function displaySelectedRadio(id) {
-            document.getElementById("dispSelectedRadio").innerHTML = id.value;
-        }
+            var check_prod_attr = $("input:radio[name=methodPay]:checked").val();
+            var nameArr = check_prod_attr.split(',');
+            var total_price = (parseInt({{ $package->price }}) + parseInt(nameArr[1])).toLocaleString('id-ID', {
+                style: 'currency',
+                currency: 'IDR'
+            });
 
-        function displaySelectedCheckBox(id) {
-            if (id.checked) {
-                if (document.getElementById(id.value + "-disp")) {
-                    document.getElementById(id.value + "-disp").innerHTML = id.value;
-                } else {
-                    document.getElementById("displayHere").innerHTML = document.getElementById("displayHere").innerHTML +
-                        '<p id="' + id.value + '-disp" >' + id.value + '</p>';
-                }
-            } else {
-                document.getElementById(id.value + "-disp").innerHTML = "";
+            if (check_prod_attr) {
+                console.log(check_prod_attr)
             }
+
+            document.getElementById("dispSelectedRadio").innerHTML = nameArr[0];
+            document.getElementById("dispSelectedRadioTwo").innerHTML = nameArr[1];
+            document.getElementById("total_price").innerHTML = total_price;
+
         }
     </script>
 @endsection

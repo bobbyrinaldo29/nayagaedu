@@ -24,7 +24,7 @@ class CreateTransactionsTable extends Migration
             $table->string('address');
             $table->integer('total_amount');
             $table->string('method', 20);
-            $table->enum('status', ['PAID', 'UNPAID'])->default('UNPAID');
+            $table->enum('status', ['PAID', 'EXPIRED', 'FAILED', 'UNPAID'])->default('UNPAID');
             $table->timestamps();
         });
     }

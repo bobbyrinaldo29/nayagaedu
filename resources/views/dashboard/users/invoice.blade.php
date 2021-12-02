@@ -12,25 +12,62 @@
                                 @csrf
                                 <div class="row">
                                     <div class="col-lg-6 order-lg-1 mb-4">
-                                        <div class="card-header d-block">
-                                            <h4 class="card-title">Payment Created</h4>
-                                        </div>
+
+                                        <h5 class="mb-4">{{ $detail->merchant_ref }}</h5>
 
                                         <div class="row mt-4">
-                                            <h3 for="zip" class="d-flex justify-content-center">Pay Before</h3>
-                                            <h2 id="demo" class="d-flex justify-content-center"></h2>
+                                            @if ($detail->status == 'UNPAID')
+                                                <h6 for="zip" class="d-flex justify-content-center">Pay With
+                                                    {{ $detail->payment_name }}</h6>
+                                                <h1 class="d-flex justify-content-center" id="pay_code">
+                                                    {{ $detail->pay_code }}<span>&nbsp;<a href="#"
+                                                            onclick="copyElementText('pay_code')"
+                                                            id="toastr-success-top-center" title="Copy Text"><i
+                                                                class="far fa-copy"></i></a><span></h1>
+                                                <h3 for="zip" class="d-flex justify-content-center">Pay Before</h3>
+                                                <h2 id="demo" class="d-flex justify-content-center"></h2>
+                                            @else
+                                                <h3 for="zip" class="d-flex justify-content-center">Payment</h3>
+                                                @if ($detail->status == 'PAID')
+                                                    <h1 for="zip" class="d-flex justify-content-center text-success">
+                                                        {{ $detail->status }}</h1>
+                                                @else
+                                                    <h1 for="zip" class="d-flex justify-content-center text-danger">
+                                                        {{ $detail->status }}</h1>
+                                                @endif
+                                            @endif
                                         </div>
 
                                         <hr class="mb-4">
 
-                                        <h4 class="mb-3">Payment</h4>
+                                        <h4 class="mb-4">Payment Detail</h4>
+                                        <div class="row">
+                                            <div class="col-lg-12 d-flex justify-content-between">
+                                                <h5 class="mb-3">Price</h5>
+                                                <h5 class="mb-3">IDR
+                                                    {{ number_format($detail->amount_received) }}</h5>
+                                            </div>
+                                            <div class="col-lg-12 d-flex justify-content-between">
+                                                <h5 class="mb-3">Service Fee</h5>
+                                                <h5 class="mb-3">IDR
+                                                    {{ number_format($detail->fee_customer) }}</h5>
+                                            </div>
+                                            <div class="col-lg-12 d-flex justify-content-between">
+                                                <h5 class="mb-3 text-danger">Total Amount</h5>
+                                                <h5 class="mb-3 text-danger">IDR
+                                                    {{ number_format($detail->amount) }}</h5>
+                                            </div>
+                                        </div>
 
                                         <div class="d-block my-3">
 
                                         </div>
                                         <hr class="mb-4">
-                                        <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to
-                                            checkout</button>
+                                        <button class="btn btn-info btn-lg btn-block mb-3" type="button"
+                                            onclick="window.location.reload(true);">Check Payment Status</button>
+                                        <button class="btn btn-primary btn-lg btn-block" type="button"
+                                            onclick="window.location='{{ url('user/dashboard') }}'">Back To
+                                            Homepage</button>
                                     </div>
                                     <div class="col-lg-6 order-lg-2 mb-4">
                                         <div class="card-header d-block">
@@ -104,5 +141,17 @@
                 document.getElementById("demo").innerHTML = "EXPIRED";
             }
         }, 1000);
+    </script>
+
+    <script>
+        function copyElementText(id) {
+            var text = document.getElementById(id).innerText;
+            var elem = document.createElement("textarea");
+            document.body.appendChild(elem);
+            elem.value = text;
+            elem.select();
+            document.execCommand("copy");
+            document.body.removeChild(elem);
+        }
     </script>
 @endsection

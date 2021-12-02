@@ -24,7 +24,3 @@
     <!-- Custom js -->
     <script src="{{ asset('js/custom.js') }}"></script>
     <script src="{{ asset('vendor/leaflet/leaflet.js') }}"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-duration-format/1.3.0/moment-duration-format.min.js">
-    </script>

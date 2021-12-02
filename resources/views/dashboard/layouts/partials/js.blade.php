@@ -11,6 +11,12 @@
 <script src="{{ asset('vendor/datatables/js/jquery.dataTables.min.js') }}"></script>
 <script src="{{ asset('js/plugins-init/datatables.init.js') }}"></script>
 
+<!-- Toastr -->
+<script src="{{ asset('/vendor/toastr/js/toastr.min.js') }}"></script>
+
+<!-- All init script -->
+<script src="{{ asset('/js/plugins-init/toastr-init.js') }}"></script>
+
 <!-- Chart piety plugin files -->
 <script src="{{ asset('vendor/peity/jquery.peity.min.js') }}"></script>
 

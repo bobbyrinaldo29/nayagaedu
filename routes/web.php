@@ -3,7 +3,9 @@
 use App\Http\Controllers\Admin\BankNameController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\PackageController;
+use App\Http\Controllers\Payment\TransactionCallbackController;
 use App\Http\Controllers\Payment\TransactionController;
+use App\Http\Controllers\User\HistoryController;
 use App\Http\Controllers\User\ProfileController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Auth;
@@ -29,6 +31,8 @@ Route::group(['middleware' => 'preventBackHistory'], function () {
     Auth::routes();
 });
 
+Auth::routes(['verify' => true]);
+
 // Admin
 Route::group(['prefix' => 'admin', 'middleware' => ['isAdmin', 'auth', 'preventBackHistory']], function () {
     Route::get('dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
@@ -46,7 +50,6 @@ Route::group(['prefix' => 'admin', 'middleware' => ['isAdmin', 'auth', 'preventB
 });
 
 // User
-Auth::routes(['verify' => true]);
 Route::group(['prefix' => 'user', 'middleware' => ['isUser', 'auth', 'preventBackHistory', 'verified']], function () {
     // GET
     Route::get('dashboard', [UserController::class, 'index'])->name('dashboard');
@@ -60,5 +63,7 @@ Route::group(['prefix' => 'user', 'middleware' => ['isUser', 'auth', 'preventBac
     Route::get('package/{id}/checkout', [TransactionController::class, 'index']);
     Route::post('package/checkout', [TransactionController::class, 'create'])->name('invoice.create');
     Route::get('package/checkout/{reference}', [TransactionController::class, 'show'])->name('invoice.show');
+
+    Route::get('history', [HistoryController::class, 'index'])->name('history');
 
 });

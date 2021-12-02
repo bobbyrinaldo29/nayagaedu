@@ -14,6 +14,11 @@
                         <span class="nav-text">Package</span>
                     </a>
                 </li>
+                <li><a href="{{ route('history') }}" class="" aria-expanded="false">
+                        <i class="fas fa-history"></i>
+                        <span class="nav-text">History</span>
+                    </a>
+                </li>
             @else
                 {{-- ADMIN SIDEBAR --}}
                 <li><a href="{{ route('admin.dashboard') }}" class="" aria-expanded="false">
@@ -21,11 +26,11 @@
                         <span class="nav-text">Dashboard</span>
                     </a>
                 </li>
-                <li><a class="has-arrow " href="javascript:void()" aria-expanded="false">
+                <li><a class="has-arrow " href="javascript:void()" aria-expanded="true">
                         <i class="fas fa-user-cog"></i>
                         <span class="nav-text">Settings</span>
                     </a>
-                    <ul aria-expanded="false">
+                    <ul aria-expanded="true">
                         <li><a href="{{ route('admin.bankName') }}">Bank Status</a></li>
                         <li><a href="{{ route('admin.package') }}">Package Status</a></li>
                     </ul>

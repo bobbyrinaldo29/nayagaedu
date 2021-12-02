@@ -73,7 +73,6 @@ class TripayServices
 
         $response = json_decode($response)->data;
 
-        // dd($response)->data;
         return $response ?: $error;
     }
 

@@ -27,9 +27,14 @@
                                 <ul class="card-price-list mt-3">
                                     <li>{{ $item->description }}</li>
                                 </ul>
-                                <a href="package/{{ $item->id }}/checkout" role="button"
-                                    class="mt-auto btn btn-primary btn-lg btn-round mb-4">Register
-                                    Now</a>
+                                @if (Auth::user()->package !== $item->packageName)
+                                    <a href="package/{{ $item->id }}/checkout" role="button"
+                                        class="mt-auto btn btn-primary btn-lg btn-round mb-4">Register
+                                        Now</a>
+                                @else
+                                    <a role="button"
+                                        class="mt-auto btn btn-dark btn-lg btn-round mb-4">Your Package</a>
+                                @endif
                             </div>
                         </div>
                     </div>

@@ -19,6 +19,7 @@ class TransactionController extends Controller
     {
         $package = Package::findOrFail($id);
         $channels = $this->tripayService->getPaymentChannel();
+
         return view('dashboard.users.checkout', compact('package', 'channels'));
     }
 
