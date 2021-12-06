@@ -27,7 +27,8 @@ class ProfileController extends Controller
         $data = $request->validated();
         User::findOrFail($id)
             ->update([
-                'name' => Str::ucfirst($data['name']),
+                'firstname' => Str::ucfirst($data['firstname']),
+                'lastname' => Str::ucfirst($data['lastname']),
                 'gender' => $data['gender'],
                 'phone' => $data['phone'],
                 'idCard' => $data['idCard'],

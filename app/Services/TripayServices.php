@@ -42,6 +42,7 @@ class TripayServices
             'amount'         => $request->price,
             'customer_name'  => $request->fullname,
             'customer_email' => $request->email,
+            'customer_phone' => $request->phone,
             'order_items'    => [
                 [
                     'name'        => $request->package_name,

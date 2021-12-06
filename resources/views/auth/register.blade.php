@@ -118,7 +118,7 @@
                                         <form method="POST" action="{{ route('register') }}">
                                             @csrf
                                             <div class="input-group input-group-lg input-group-round mb-4">
-                                                <label class="text-uppercase px-3">Name</label>
+                                                <label class="text-uppercase px-3">Username</label>
                                                 <div class="input-group-inner">
                                                     <div class="input-group-prepend">
                                                         <span class="input-group-text input-group-icon"><i
@@ -126,8 +126,8 @@
                                                     </div>
                                                     <input id="name" type="text"
                                                         class="form-control form-control-lg @error('name') is-invalid @enderror"
-                                                        name="name" value="{{ old('name') }}" required
-                                                        autocomplete="name" autofocus placeholder="Name">
+                                                        name="username" value="{{ old('username') }}" required
+                                                        autocomplete="username" autofocus placeholder="Username">
                                                     <div class="input-focus-bg"></div>
                                                 </div>
                                             </div>
@@ -178,8 +178,24 @@
                                                     <div class="input-focus-bg"></div>
                                                 </div>
                                             </div>
+                                            <div class="input-group input-group-lg input-group-round mb-4">
+                                                <div class="d-flex w-100 justify-content-between">
+                                                    <label class="text-uppercase px-3">Referral (Optional)</label>
+                                                </div>
+                                                <div class="input-group-inner">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text input-group-icon"><i
+                                                                class="fas fa-users"></i></span>
+                                                    </div>
+                                                    <input id="referral" type="text"
+                                                        class="form-control form-control-lg" name="referred_by"
+                                                        autocomplete="referral" placeholder="Referral" value="{{ app('request')->input('referred_by') }}">
+                                                    <div class="input-focus-bg"></div>
+                                                </div>
+                                            </div>
 
-                                            <div class="input-group input-group-lg input-group-round mb-4 d-flex justify-content-center">
+                                            <div
+                                                class="input-group input-group-lg input-group-round mb-4 d-flex justify-content-center">
                                                 {!! htmlFormSnippet() !!}
                                             </div>
 

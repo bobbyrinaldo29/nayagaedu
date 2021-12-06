@@ -18,8 +18,9 @@ class User extends Authenticatable implements MustVerifyEmail
      * @var string[]
      */
     protected $fillable = [
-        'referral',
-        'name',
+        'username',
+        'firstname',
+        'lastname',
         'email',
         'role',
         'password',
@@ -33,6 +34,7 @@ class User extends Authenticatable implements MustVerifyEmail
         'accountNumber',
         'package',
         'balance',
+        'referral',
     ];
 
     /**

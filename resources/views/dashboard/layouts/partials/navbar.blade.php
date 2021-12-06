@@ -18,16 +18,16 @@
             <div class="collapse navbar-collapse justify-content-between">
                 <div class="header-left">
                     <div class="dashboard_bar">
-                        Hi, {{ Auth::user()->name }}
+                        Hi, {{ Auth::user()->username }}
                     </div>
                 </div>
                 <ul class="navbar-nav header-right">
 
                     @if (Auth::user()->role == 2)
-                        <span class="d-flex align-items-center" style="font-size: 15px">Referral Code: </span>
+                        <span class="d-flex align-items-center" style="font-size: 15px">Referral: </span>
                         <li class="nav-item d-flex align-items-center">
                             <div class="input-group">
-                                <input type="text" class="form-control" value="{{ Auth::user()->referral }}"
+                                <input type="text" class="form-control" value="{{ Auth::user()->username }}"
                                     id="myInput" readonly>
                                 <button class="btn btn-primary" onclick="myFunction()"><i
                                         class="far fa-copy"></i><span id="referralCode"> Copy</span></button>

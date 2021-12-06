@@ -40,15 +40,21 @@
                                     <div class="row">
                                         <div class="col-xl-6">
                                             <div class="mb-3 row">
-                                                <label class="col-lg-4 col-form-label" for="validationCustom01">Name
+                                                <label class="col-lg-4 col-form-label" for="validationCustom01">First Name
                                                     <span class="text-danger">*</span>
                                                 </label>
                                                 <div class="col-lg-6">
                                                     <input type="text" class="form-control" id="validationCustom01"
-                                                        value="{{ Auth::user()->name }}" name="name" required>
-                                                    <div class="invalid-feedback">
-                                                        Please enter a name.
-                                                    </div>
+                                                        value="{{ Auth::user()->name }}" name="firstname" required>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3 row">
+                                                <label class="col-lg-4 col-form-label" for="validationCustom01">Last Name
+                                                    <span class="text-danger">*</span>
+                                                </label>
+                                                <div class="col-lg-6">
+                                                    <input type="text" class="form-control" id="validationCustom01"
+                                                        value="{{ Auth::user()->name }}" name="lastname" required>
                                                 </div>
                                             </div>
                                             <div class="mb-3 row">

@@ -24,7 +24,8 @@ class ProfileRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'min:3',
+            'firstname' => 'min:3',
+            'lastname' => 'min:3',
             'gender' => 'required',
             'phone' => 'min:8',
             'idCard' => 'required',
@@ -40,7 +41,8 @@ class ProfileRequest extends FormRequest
     public function messages()
     {
         return [
-            'name.min' => 'Name minimum 3 character',
+            'firstname.min' => 'Name minimum 3 character',
+            'lastname.min' => 'Name minimum 3 character',
             'gender.required' => 'Gender is required',
             'phone.min' => 'Phone minimum 8 character',
         ];

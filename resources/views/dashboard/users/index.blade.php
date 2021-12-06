@@ -72,11 +72,11 @@
                                         <div class="card-body  p-4">
                                             <div class="media ai-icon">
                                                 <span class="me-3 bgl-primary text-primary">
-                                                    <i class="fas fa-users"></i>
+                                                    <i class="fas fa-user-check"></i>
                                                 </span>
                                                 <div class="media-body text-end">
                                                     <p class="mb-1">Your Package</p>
-                                                    <h4 class="mb-0">{{ Auth::user()->package }}</h4>
+                                                    <h4 class="mb-0">{{ Auth::user()->package ?: 'Package not found' }}</h4>
                                                 </div>
                                             </div>
                                         </div>
@@ -90,18 +90,11 @@
                                         <div class="card-body  p-4">
                                             <div class="media ai-icon">
                                                 <span class="me-3 bgl-primary text-primary">
-                                                    <svg id="icon-revenue" xmlns="http://www.w3.org/2000/svg" width="30"
-                                                        height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                        class="feather feather-dollar-sign">
-                                                        <line x1="12" y1="1" x2="12" y2="23"></line>
-                                                        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6">
-                                                        </path>
-                                                    </svg>
+                                                    <i class="fas fa-users"></i>
                                                 </span>
                                                 <div class="media-body text-end">
-                                                    <p class="mb-1">Commission Balance</p>
-                                                    <h4 class="mb-0">Rp {{ Auth::user()->balance }}</h4>
+                                                    <p class="mb-1">Total Group Member</p>
+                                                    <h4 class="mb-0">{{ $memberCount - 1 }}</h4>
                                                 </div>
                                             </div>
                                         </div>
@@ -109,7 +102,23 @@
                                 </div>
                             </div>
 
-
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="widget-stat card">
+                                        <div class="card-body  p-4">
+                                            <div class="media ai-icon">
+                                                <span class="me-3 bgl-primary text-primary">
+                                                    <i class="fas fa-dollar-sign"></i>
+                                                </span>
+                                                <div class="media-body text-end">
+                                                    <p class="mb-1">Commission Balance</p>
+                                                    <h4 class="mb-0">IDR {{ Auth::user()->balance ?: 0 }}</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
                         </div>
                     </div>

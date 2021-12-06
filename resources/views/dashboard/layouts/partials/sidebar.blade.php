@@ -14,8 +14,13 @@
                         <span class="nav-text">Package</span>
                     </a>
                 </li>
+                <li><a href="#" class="" aria-expanded="false">
+                        <i class="fas fa-users"></i>
+                        <span class="nav-text">Member</span>
+                    </a>
+                </li>
                 <li><a href="{{ route('history') }}" class="" aria-expanded="false">
-                        <i class="fas fa-history"></i>
+                        <i class="fas fa-history"> </i>
                         <span class="nav-text">History</span>
                     </a>
                 </li>
@@ -27,6 +32,15 @@
                     </a>
                 </li>
                 <li><a class="has-arrow " href="javascript:void()" aria-expanded="true">
+                        <i class="fas fa-pen"></i>
+                        <span class="nav-text">Content</span>
+                    </a>
+                    <ul aria-expanded="true">
+                        <li><a href="{{ route('admin.bankName') }}">Bank Status</a></li>
+                        <li><a href="{{ route('admin.package') }}">Package Status</a></li>
+                    </ul>
+                </li>
+                <li><a class="has-arrow " href="javascript:void()" aria-expanded="true">
                         <i class="fas fa-user-cog"></i>
                         <span class="nav-text">Settings</span>
                     </a>
@@ -34,7 +48,6 @@
                         <li><a href="{{ route('admin.bankName') }}">Bank Status</a></li>
                         <li><a href="{{ route('admin.package') }}">Package Status</a></li>
                     </ul>
-
                 </li>
             @endif
 

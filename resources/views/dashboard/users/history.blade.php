@@ -35,7 +35,7 @@
                                                 @endif
                                             <td>{{ $item->created_at }}</td>
                                             <td><strong>IDR {{ number_format($item->total_amount) }}</strong></td>
-                                            <td><a href="" type="button" class="btn btn-primary btn-xs">Invoice</a></td>
+                                            <td><a href="history/invoice/{{ $item->reference }}" type="button" class="btn btn-primary btn-xs">Invoice</a></td>
                                         </tr>
                                         <?php $no++; ?>
                                     @endforeach

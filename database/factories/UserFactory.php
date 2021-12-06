@@ -23,8 +23,9 @@ class UserFactory extends Factory
     public function definition()
     {
         return [
-            'referral' => 0,
-            'name' => 'Admin',
+            'username' => 0,
+            'firstname' => 'Admin',
+            'lastname' => 'NayagaEdu',
             'email' => 'admin@nayagaedu.com',
             'role' => 1,
             'password' => Hash::make('12345678'),

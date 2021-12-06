@@ -75,6 +75,7 @@
     function myFunction() {
         /* Get the text field */
         var copyText = document.getElementById("myInput");
+        var base_url = window.location.origin;
 
         /* Select the text field */
         copyText.select();
@@ -82,7 +83,7 @@
 
         /* Copy the text inside the text field */
         document.execCommand("copy");
-        navigator.clipboard.writeText(copyText.value);
+        navigator.clipboard.writeText(base_url + "/register?referred_by=" + copyText.value);
 
         /* Alert the copied text */
         document.getElementById("referralCode").innerHTML = " Copied!";
