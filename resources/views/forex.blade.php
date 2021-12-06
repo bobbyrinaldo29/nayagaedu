@@ -13,7 +13,7 @@
                         <div class="col text-center">
 
                             <h1 class="display-3 font-weight-800 text-white mt-4 mb-1">
-                                Blog
+                                Forex
                             </h1>
 
                             <div class="lead text-white-75">

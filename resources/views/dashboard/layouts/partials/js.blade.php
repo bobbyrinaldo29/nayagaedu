@@ -14,8 +14,12 @@
 <!-- Toastr -->
 <script src="{{ asset('/vendor/toastr/js/toastr.min.js') }}"></script>
 
+<!-- Nestable -->
+<script src="{{ asset('/vendor/nestable2/js/jquery.nestable.min.js') }}"></script>
+
 <!-- All init script -->
 <script src="{{ asset('/js/plugins-init/toastr-init.js') }}"></script>
+<script src="{{ asset('/js/plugins-init/nestable-init.js') }}"></script>
 
 <!-- Chart piety plugin files -->
 <script src="{{ asset('vendor/peity/jquery.peity.min.js') }}"></script>

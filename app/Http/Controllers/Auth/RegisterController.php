@@ -51,17 +51,20 @@ class RegisterController extends Controller
     {
 
         $message = [
-            'username.min' => 'Username minimum 3 character',
+            'username.min' => 'Username minimum 5 character',
+            'username.unique' => 'Username already exist',
             'email.unique' => 'Email already exist',
             'password.confirmed' => 'Password confirm does not match',
             'password.min' => 'Password minimum 8 character',
+            'referred_by.exists' => 'Referral invalid',
             'g-recaptcha-response.recaptcha' => 'Recaptcha is require',
         ];
 
         return Validator::make($data, [
-            'username' => ['required', 'string', 'max:255', 'min:3'],
+            'username' => ['required', 'string', 'max:255', 'min:5', 'unique:users,username'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'referred_by' => ['exists:users,username', 'nullable'],
             'g-recaptcha-response' => 'recaptcha',
         ], $message);
     }
@@ -74,26 +77,13 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        // $length = rand(1,4);
-        // $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-        // $charactersLength = strlen($characters);
-        // $referral = '';
-        // for ($i = 0; $i < $length; $i++) {
-        //     $referral .= $characters[rand(0, $charactersLength - 1)];
-        // }
-
-        $ref = User::where('username', $data['referred_by'])->get();
-
-        if ($ref) {
-            return User::create([
-                'username' => $data['username'],
-                'email' => $data['email'],
-                'role' => 2,
-                'password' => Hash::make($data['password']),
-                'referred_by' => $data['referred_by'],
-            ]);
-        }
-
-        return redirect('/register');
+        // dd($data);
+        return User::create([
+            'username' => $data['username'],
+            'email' => $data['email'],
+            'role' => 2,
+            'password' => Hash::make($data['password']),
+            'referred_by' => $data['referred_by'],
+        ]);
     }
 }

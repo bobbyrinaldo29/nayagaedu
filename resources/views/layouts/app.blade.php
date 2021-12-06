@@ -27,7 +27,7 @@
                     <li class="{{ request()->is('/') ? 'current-menu' : '' }}"><a href="/">Home</a></li>
                     <li><a href="#">Market View</a>
                         <ul>
-                            <li><a href="#">Forex</a></li>
+                            <li><a href="{{ route('forex') }}">Forex</a></li>
                             <li><a href="#">Cryptocurrency</a></li>
                             <li><a href="#">Stock</a></li>
                         </ul>

@@ -23,7 +23,7 @@ class UserFactory extends Factory
     public function definition()
     {
         return [
-            'username' => 0,
+            'username' => '-',
             'firstname' => 'Admin',
             'lastname' => 'NayagaEdu',
             'email' => 'admin@nayagaedu.com',

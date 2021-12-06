@@ -25,6 +25,9 @@
 
 	<!-- Toastr -->
     <link rel="stylesheet" href="{{ asset('/vendor/toastr/css/toastr.min.css') }}">
+
+	<!-- Nestable -->
+    <link href="{{ asset('/vendor/nestable2/css/jquery.nestable.min.css') }}" rel="stylesheet">
 	
 	<!-- Style css -->
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">

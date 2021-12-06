@@ -94,7 +94,7 @@
                                                 </span>
                                                 <div class="media-body text-end">
                                                     <p class="mb-1">Total Group Member</p>
-                                                    <h4 class="mb-0">{{ $memberCount - 1 }}</h4>
+                                                    <h4 class="mb-0">{{ $memberList->count() }}</h4>
                                                 </div>
                                             </div>
                                         </div>

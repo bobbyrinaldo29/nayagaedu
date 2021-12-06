@@ -51,6 +51,6 @@ class PackageController extends Controller
     public function destroy($id)
     {
         Package::findOrFail($id)->delete();
-        return redirect()->route('admin.package')->withSuccess('Data has been delete');
+        return redirect()->route('admin.package')->withSuccess('Data has been deleted');
     }
 }

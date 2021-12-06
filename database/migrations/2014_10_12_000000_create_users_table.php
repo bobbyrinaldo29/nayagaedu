@@ -16,12 +16,13 @@ class CreateUsersTable extends Migration
         Schema::create('users', function (Blueprint $table) {
             $table->id();
             $table->string('username')->unique();
-            $table->string('firstname', 30)->nullable();;
-            $table->string('lastname', 30)->nullable();;
             $table->string('email', 50)->unique();
             $table->boolean('role')->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password')->nullable();
+            $table->string('referred_by')->nullable();
+            $table->string('firstname', 30)->nullable();
+            $table->string('lastname', 30)->nullable();
             $table->string('gender', '10')->nullable();
             $table->string('phone', '15')->nullable();
             $table->string('idCard', '50')->nullable();
@@ -32,7 +33,6 @@ class CreateUsersTable extends Migration
             $table->string('accountNumber', '50')->nullable();
             $table->string('package', '50')->nullable();
             $table->string('balance')->nullable();
-            $table->string('referred_by')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

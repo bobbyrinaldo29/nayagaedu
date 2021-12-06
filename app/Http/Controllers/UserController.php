@@ -26,7 +26,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        $memberCount = User::where('username', Auth::user()->username)->count();
-        return view('dashboard.users.index', compact('memberCount'));
+        $memberList = User::where('referred_by', Auth::user()->username)->where('package', '!=', null)->get();
+        return view('dashboard.users.index', compact('memberList'));
     }
 }

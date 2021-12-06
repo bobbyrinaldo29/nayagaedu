@@ -14,7 +14,7 @@
                         <span class="nav-text">Package</span>
                     </a>
                 </li>
-                <li><a href="#" class="" aria-expanded="false">
+                <li><a href="{{ route('members') }}" class="" aria-expanded="false">
                         <i class="fas fa-users"></i>
                         <span class="nav-text">Member</span>
                     </a>
@@ -36,8 +36,8 @@
                         <span class="nav-text">Content</span>
                     </a>
                     <ul aria-expanded="true">
-                        <li><a href="{{ route('admin.bankName') }}">Bank Status</a></li>
-                        <li><a href="{{ route('admin.package') }}">Package Status</a></li>
+                        <li><a href="{{ route('admin.categories') }}">Categories</a></li>
+                        <li><a href="{{ route('admin.articles') }}">Articles</a></li>
                     </ul>
                 </li>
                 <li><a class="has-arrow " href="javascript:void()" aria-expanded="true">

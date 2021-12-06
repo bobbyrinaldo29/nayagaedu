@@ -17,7 +17,7 @@
                                                     <i class="fas fa-users"></i>
                                                 </span>
                                                 <div class="media-body">
-                                                    <p class="mb-1">Total Member</p>
+                                                    <p class="mb-1">Total Active Members</p>
                                                     <h4 class="mb-0">{{ $userCount }}</h4>
                                                 </div>
                                             </div>
@@ -55,7 +55,7 @@
                                                     <i class="fas fa-money-bill-wave"></i>
                                                 </span>
                                                 <div class="media-body">
-                                                    <p class="mb-1">Total Commission</p>
+                                                    <p class="mb-1">Total Commissions</p>
                                                     <h4 class="mb-0">{{ $userCount }}</h4>
                                                 </div>
                                             </div>
@@ -74,8 +74,8 @@
                                                     <i class="fas fa-file-invoice"></i>
                                                 </span>
                                                 <div class="media-body">
-                                                    <p class="mb-1">Total Transaction</p>
-                                                    <h4 class="mb-0">{{ $userCount }}</h4>
+                                                    <p class="mb-1">Total Transaction Members</p>
+                                                    <h4 class="mb-0">{{ $transactionCount }}</h4>
                                                 </div>
                                             </div>
                                         </div>

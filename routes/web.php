@@ -1,11 +1,14 @@
 <?php
 
+use App\Http\Controllers\Admin\ArticleController;
 use App\Http\Controllers\Admin\BankNameController;
+use App\Http\Controllers\Admin\CategoryArticleController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\PackageController;
 use App\Http\Controllers\Payment\TransactionCallbackController;
 use App\Http\Controllers\Payment\TransactionController;
 use App\Http\Controllers\User\HistoryController;
+use App\Http\Controllers\User\MemberController;
 use App\Http\Controllers\User\ProfileController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Auth;
@@ -23,7 +26,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::view('/', 'welcome');
-Route::view('market', 'market')->name('market');
 Route::view('about', 'about')->name('about');
 Route::view('contact', 'contact')->name('contact');
 
@@ -47,10 +49,20 @@ Route::group(['prefix' => 'admin', 'middleware' => ['isAdmin', 'auth', 'preventB
     Route::put('bank-name/{id}', [BankNameController::class, 'update']);
     Route::delete('bank-name/{id}/destroy', [BankNameController::class, 'destroy']);
 
+    Route::get('content/categories', [CategoryArticleController::class, 'index'])->name('admin.categories');
+    Route::post('content/categories', [CategoryArticleController::class, 'create'])->name('categories.create');
+    Route::put('content/categories/{id}', [CategoryArticleController::class, 'update']);
+    Route::delete('content/categories/{id}/destroy', [CategoryArticleController::class, 'destroy']);
+
+    Route::get('content/articles', [ArticleController::class, 'index'])->name('admin.articles');
+
 });
 
 // User
 Route::group(['prefix' => 'user', 'middleware' => ['isUser', 'auth', 'preventBackHistory', 'verified']], function () {
+
+    Route::view('forex', 'forex')->name('forex');
+
     // GET
     Route::get('dashboard', [UserController::class, 'index'])->name('dashboard');
 
@@ -66,5 +78,7 @@ Route::group(['prefix' => 'user', 'middleware' => ['isUser', 'auth', 'preventBac
 
     Route::get('history', [HistoryController::class, 'index'])->name('history');
     Route::get('history/invoice/{id}', [HistoryController::class, 'show'])->name('history.invoice');
+
+    Route::get('members', [MemberController::class, 'index'])->name('members');
 
 });
