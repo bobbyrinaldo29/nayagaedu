@@ -3,6 +3,14 @@
 @section('content')
     <div class="content-body">
         <div class="container-fluid">
+            <div class="project-page d-flex justify-content-between align-items-center flex-wrap">
+                <div class="project mb-4">
+                    <h1 class="nav-link active" data-bs-toggle="tab" href="#AllStatus" role="tab">Create New Article</h1>
+                </div>
+                <div class="mb-4">
+                    <a href="javascript:void(0);" class="btn btn-primary btn-rounded fs-18">Save and Close</a>
+                </div>
+            </div>
 
             <div class="row">
                 <div class="col-lg-12">
@@ -41,10 +49,9 @@
                                 <div class="card-body">
                                     <label class="form-label">Category<span class="text-danger">*</span></label>
                                     <select class="default-select wide form-control" id="validationCustom05" name="status">
-                                        <option data-display="Disable" value="0" selected>Disable</option>
-                                        <option data-display="Active" value="1">Active</option>
-                                        <option data-display="Active" value="1" selected>Active</option>
-                                        <option data-display="Disable" value="0">Disable</option>
+                                        @foreach ($category as $item)
+                                            <option value="{{ $item->name }}" selected>{{ $item->name }}</option>
+                                        @endforeach
                                     </select>
                                 </div>
                             </div>

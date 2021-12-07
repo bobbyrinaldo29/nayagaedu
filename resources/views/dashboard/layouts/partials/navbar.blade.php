@@ -18,7 +18,7 @@
             <div class="collapse navbar-collapse justify-content-between">
                 <div class="header-left">
                     <div class="dashboard_bar">
-                        Hi, {{ Auth::user()->username }}
+                        Hi, {{ Auth::user()->firstname ?: Auth::user()->username }}
                     </div>
                 </div>
                 <ul class="navbar-nav header-right">

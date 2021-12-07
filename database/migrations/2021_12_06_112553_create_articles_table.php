@@ -18,7 +18,7 @@ class CreateArticlesTable extends Migration
             $table->string('title', 100);
             $table->string('category', 50);
             $table->string('editor', 50);
-            $table->string('content');
+            $table->longText('content', 10000);
             $table->timestamps();
         });
     }
