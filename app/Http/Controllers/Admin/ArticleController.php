@@ -11,4 +11,9 @@ class ArticleController extends Controller
     {
         return view('dashboard.admin.articles');
     }
+
+    public function create()
+    {
+        return view('dashboard.admin.components.article.addArticle');
+    }
 }

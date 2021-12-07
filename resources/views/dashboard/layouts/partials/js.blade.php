@@ -32,7 +32,33 @@
 <script src="{{ asset('js/custom.min.js') }}"></script>
 <script src="{{ asset('js/dlabnav-init.js') }}"></script>
 <script src="{{ asset('js/demo.js') }}"></script>
+
+<script src="{{ asset('/dist/trumbowyg.js') }}"></script>
+
 <script>
+    $('#trumbowyg').trumbowyg({
+        lang: 'id',
+        btns: [
+            ['viewHTML'],
+            ['undo', 'redo'], // Only supported in Blink browsers
+            ['formatting'],
+            ['strong', 'em', 'del'],
+            ['superscript', 'subscript'],
+            ['link'],
+            ['insertImage'],
+            ['justifyLeft', 'justifyCenter', 'justifyRight', 'justifyFull'],
+            ['unorderedList', 'orderedList'],
+            ['horizontalRule'],
+            ['removeformat'],
+            ['fullscreen']
+        ],
+        autogrow: true,
+        changeActiveDropdownIcon: true,
+        imageWidthModalEdit: true,
+        urlProtocol: true,
+        defaultLinkTarget: '_blank',
+    });
+
     function cardsCenter() {
 
         /*  testimonial one function by = owl.carousel.js */

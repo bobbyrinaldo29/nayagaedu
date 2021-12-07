@@ -55,6 +55,7 @@ Route::group(['prefix' => 'admin', 'middleware' => ['isAdmin', 'auth', 'preventB
     Route::delete('content/categories/{id}/destroy', [CategoryArticleController::class, 'destroy']);
 
     Route::get('content/articles', [ArticleController::class, 'index'])->name('admin.articles');
+    Route::get('content/articles/create', [ArticleController::class, 'create'])->name('articles.create');
 
 });
 

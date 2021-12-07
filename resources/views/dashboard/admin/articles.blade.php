@@ -29,12 +29,10 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-header">
-                        <h4 class="card-title">Categories</h4>
-                        <button type="button" class="btn btn-rounded btn-success" data-bs-toggle="modal"
-                            data-bs-target="#addCategory"><span class="btn-icon-start text-success"><i
+                        <h4 class="card-title">Articles</h4>
+                        <a href="{{ route('articles.create') }}" class="btn btn-rounded btn-success"><span class="btn-icon-start text-success"><i
                                     class="fa fa-plus color-success"></i>
-                            </span>Add</button>
-                        @include('dashboard.admin.components.categories.addCategory')
+                            </span>Add</a>
                     </div>
                     <div class="card-body">
                         <div class="table-responsive">
