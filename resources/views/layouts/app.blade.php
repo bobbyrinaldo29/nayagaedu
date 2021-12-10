@@ -27,9 +27,9 @@
                     <li class="{{ request()->is('/') ? 'current-menu' : '' }}"><a href="/">Home</a></li>
                     <li><a href="#">Market View</a>
                         <ul>
-                            <li><a href="{{ route('forex') }}">Forex</a></li>
-                            <li><a href="#">Cryptocurrency</a></li>
-                            <li><a href="#">Stock</a></li>
+                            @foreach ($categoryList as $item)
+                            <li><a href="/{{ Str::lower($item->name) }}">{{ $item->name }}</a></li>
+                            @endforeach
                         </ul>
                     </li>
                     <li class="{{ request()->is('about') ? 'current-menu' : '' }}"><a

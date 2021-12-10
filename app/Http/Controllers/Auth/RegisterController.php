@@ -86,9 +86,4 @@ class RegisterController extends Controller
             'referred_by' => $data['referred_by'],
         ]);
     }
-
-    public function store(Type $var = null)
-    {
-        # code...
-    }
 }

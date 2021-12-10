@@ -50,14 +50,4 @@ class ArticleController extends Controller
 
         return redirect()->route('admin.articles')->withSuccess('Data has been created');
     }
-
-    public function show()
-    {
-        $articleList = Article::latest()->paginate(4);
-        $categoryList = CategoryArticle::all();
-
-        $forexList = Article::where('category', 'Forex')->latest()->paginate(4);
-
-        return view('forex', compact('articleList', 'categoryList', 'forexList'));
-    }
 }

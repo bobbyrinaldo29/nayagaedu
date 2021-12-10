@@ -84,7 +84,9 @@
                                 @endforeach
                             </div>
                         </div>
+
                         {{ $articleList->links('layouts.partials.pagination') }}
+
                     </div>
                 </div>
                 @include('layouts.partials.sidebarWidget')

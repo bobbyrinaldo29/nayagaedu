@@ -159,8 +159,14 @@
                                                 placeholder="Your message *" required></textarea>
                                         </div>
 
+                                        <div
+                                            class="input-group input-group-lg input-group-round mb-4 d-flex justify-content-center">
+                                            {!! htmlFormSnippet() !!}
+                                        </div>
+
                                         <div class="col-12 text-center">
-                                            <button type="submit" class="btn btn-round btn-lg btn-indigo">Send Your Message</button>
+                                            <button type="submit" class="btn btn-round btn-lg btn-indigo">Send Your
+                                                Message</button>
                                         </div>
 
                                     </div>
@@ -230,7 +236,8 @@
                                                             </div>
                                                             <a href="https://www.google.com/maps/dir//-6.9219409,107.6138817/@-6.9219409,107.611693,17z/data=!4m2!4m1!3e0?hl=id"
                                                                 target="_blank"
-                                                                class="btn btn-sm btn-round btn-secondary btn-gray-shadow d-inline-block mb-0 text-decoration-none">Get Direction</a>
+                                                                class="btn btn-sm btn-round btn-secondary btn-gray-shadow d-inline-block mb-0 text-decoration-none">Get
+                                                                Direction</a>
                                                         </div>
                                                     </div>
                                                 </div>

@@ -15,7 +15,7 @@
 
         <!-- Widget recent news -->
         <div class="widget">
-            <h5 class="widget-title section-title-3 font-weight-700 text-left">Recent News</h5>
+            <h5 class="widget-title section-title-3 font-weight-700 text-left">Recent News {{ Str::ucfirst($category) }}</h5>
             <ul class="recent-blogs">
                 @foreach ($articleList as $list)
                     <li class="pb-4 mb-3">
