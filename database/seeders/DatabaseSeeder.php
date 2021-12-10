@@ -17,5 +17,6 @@ class DatabaseSeeder extends Seeder
         User::factory(1)->create();
         $this->call(BankNameSeeder::class);
         $this->call(PackageSeeder::class);
+        $this->call(CategoryArticleSeeder::class);
     }
 }

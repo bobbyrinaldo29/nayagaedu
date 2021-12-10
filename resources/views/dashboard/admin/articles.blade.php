@@ -30,8 +30,8 @@
                 <div class="card">
                     <div class="card-header">
                         <h4 class="card-title">Articles</h4>
-                        <a href="{{ route('articles.create') }}" class="btn btn-rounded btn-success"><span class="btn-icon-start text-success"><i
-                                    class="fa fa-plus color-success"></i>
+                        <a href="{{ route('articles.create') }}" class="btn btn-rounded btn-success"><span
+                                class="btn-icon-start text-success"><i class="fa fa-plus color-success"></i>
                             </span>Add</a>
                     </div>
                     <div class="card-body">
@@ -47,23 +47,24 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    {{-- 
-                                    @foreach ($categoriesList as $item)
+                                    <?php $no = 1; ?>
+                                    @foreach ($articleList as $item)
                                         <tr>
                                             <td>{{ $no }}</td>
-                                            <td>{{ $item->name }}</td>
+                                            <td>{{ $item->title }}</td>
+                                            <td>{{ $item->category }}</td>
+                                            <td>{{ $item->editor }}</td>
                                             <td><button type="button" class="btn btn-rounded btn-primary"
                                                     data-bs-toggle="modal" data-bs-target="#editCategory{{ $item->id }}"
                                                     data-id="{{ $item->id }}">Edit</button>
                                                 <button type="button" class="btn btn-rounded btn-danger"
-                                                    data-bs-toggle="modal" data-bs-target="#deleteCategory{{ $item->id }}"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#deleteCategory{{ $item->id }}"
                                                     data-id="{{ $item->id }}">Delete</button>
                                             </td>
                                         </tr>
-                                        
-                                        @include('dashboard.admin.components.categories.editCategory')
-                                        @include('dashboard.admin.components.categories.deleteCategory')
-                                    @endforeach --}}
+                                        <?php $no++; ?>
+                                    @endforeach
                                 </tbody>
                             </table>
                         </div>

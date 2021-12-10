@@ -5,7 +5,6 @@ use App\Http\Controllers\Admin\BankNameController;
 use App\Http\Controllers\Admin\CategoryArticleController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\PackageController;
-use App\Http\Controllers\Payment\TransactionCallbackController;
 use App\Http\Controllers\Payment\TransactionController;
 use App\Http\Controllers\User\HistoryController;
 use App\Http\Controllers\User\MemberController;
@@ -35,6 +34,8 @@ Route::group(['middleware' => 'preventBackHistory'], function () {
 
 Auth::routes(['verify' => true]);
 
+Route::get('forex', [ArticleController::class, 'show'])->name('forex');
+
 // Admin
 Route::group(['prefix' => 'admin', 'middleware' => ['isAdmin', 'auth', 'preventBackHistory']], function () {
     Route::get('dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
@@ -56,13 +57,12 @@ Route::group(['prefix' => 'admin', 'middleware' => ['isAdmin', 'auth', 'preventB
 
     Route::get('content/articles', [ArticleController::class, 'index'])->name('admin.articles');
     Route::get('content/articles/create', [ArticleController::class, 'create'])->name('articles.create');
+    Route::post('content/articles/store', [ArticleController::class, 'store'])->name('articles.store');
 
 });
 
 // User
 Route::group(['prefix' => 'user', 'middleware' => ['isUser', 'auth', 'preventBackHistory', 'verified']], function () {
-
-    Route::view('forex', 'forex')->name('forex');
 
     // GET
     Route::get('dashboard', [UserController::class, 'index'])->name('dashboard');

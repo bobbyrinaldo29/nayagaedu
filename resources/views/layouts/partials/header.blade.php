@@ -2,6 +2,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="NayagaEdu, Forex, Broker">
+    <meta name="author" content="NayagaEdu">
+    <meta name="robots" content="Education">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Nayaga Edu : Nayaga Education Center">
+    <meta property="og:title" content="Nayaga Edu : Nayaga Education Center">
+    <meta property="og:description" content="Nayaga Edu : Nayaga Education Center">
     <link rel="icon" href="{{ asset('/favicon.ico') }}">
     <title>{{ config('app.name') }}</title>
 
