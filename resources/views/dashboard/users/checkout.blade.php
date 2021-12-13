@@ -80,16 +80,29 @@
 
                                         <h4 class="mb-3">Payment Method</h4>
 
-                                        <div class="d-block my-3">
-                                            <select class="default-select form-control wide mb-5" name="method">
-                                                @foreach ($channels as $item)
-                                                    @if ($item->active)
-                                                        <option value="{{ $item->code }}">{{ $item->name }}</option>
-                                                    @endif
-                                                @endforeach
-                                            </select>
-                                        </div>
+
+                                        <select class="default-select form-control wide mb-5" name="method">
+                                            @foreach ($channels as $item)
+                                                @if ($item->active)
+                                                    <option value="{{ $item->code }}">{{ $item->name }}</option>
+                                                @endif
+                                            @endforeach
+                                        </select>
+
                                         <hr class="mb-4">
+
+                                        <input type="checkbox" class="form-check-input" id="term" required>
+                                        <label class="form-check-label" for="term">I Accept
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModalLong"
+                                                class="text-primary">Term & Conditions</a> of Nayaga Edu and
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#riskDisclosure"
+                                                class="text-primary">Risk Disclosure</a></label>
+
+                                        @include('dashboard.users.components.termCondition')
+                                        @include('dashboard.users.components.riskDisclosure')
+
+                                        <hr class="mb-4">
+
                                         <div>
                                             <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to
                                                 checkout</button>

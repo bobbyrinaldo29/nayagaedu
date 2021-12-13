@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Article;
 use App\Models\CategoryArticle;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
@@ -28,9 +29,16 @@ class HomeController extends Controller
 
     public function show($category)
     {
-        $articleList = Article::where('category', $category)->latest()->paginate(4);
         $categoryList = CategoryArticle::all();
+
+        if (Auth::user()->package !== null) {
+            $articleList = Article::where('category', $category)->latest()->paginate(4);
+
+            return view('blog', compact('articleList', 'categoryList', 'category'));
+        } else {
+            return redirect()->route('dashboard', compact('categoryList'));
+        }
+
         
-        return view('blog', compact('articleList', 'categoryList', 'category'));
     }
 }
