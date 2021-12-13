@@ -28,7 +28,7 @@
                     <li><a href="#">Market View</a>
                         <ul>
                             @foreach ($categoryList as $item)
-                            <li><a href="/{{ Str::lower($item->name) }}">{{ $item->name }}</a></li>
+                                <li><a href="/{{ Str::lower($item->name) }}">{{ $item->name }}</a></li>
                             @endforeach
                         </ul>
                     </li>
