@@ -15,7 +15,7 @@
                             <div class="card-body d-flex flex-column">
                                 <div class="card-price d-flex justify-content-center mt-3">
                                     <div class="currency align-self-start">
-                                        <h4>IDR</h4>
+                                        <h4>$</h4>
                                     </div>
                                     <div class="price text-primary">
                                         <h1>{{ number_format($item->price) }}</h1>

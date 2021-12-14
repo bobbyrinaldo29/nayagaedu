@@ -28,8 +28,24 @@
                                                     <small class="text-muted"></small>
                                                 </div>
                                                 <input type="hidden" value="{{ $package->price }}" name="price">
-                                                <span class="text-muted">IDR
+                                                <span class="text-muted">USD
                                                     {{ number_format($package->price) }}</span>
+                                            </li>
+                                        </ul>
+                                        <ul class="list-group mb-3">
+                                            <li class="list-group-item d-flex justify-content-between lh-condensed">
+                                                <div>
+                                                    <h6 class="my-0">Current Rate</h6>
+                                                    <ul class="mt-2">
+                                                        <li>
+                                                            USD/IDR 
+                                                        </li>
+                                                    </ul>
+                                                    <small class="text-muted"></small>
+                                                </div>
+                                                <input type="hidden" value="{{ $package->price }}" name="price">
+                                                <span class="text-muted">IDR
+                                                    {{ number_format($convert->IDR) }}</span>
                                             </li>
                                         </ul>
                                     </div>

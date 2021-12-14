@@ -4,11 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Article;
 use App\Models\CategoryArticle;
-<<<<<<< HEAD
-=======
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
->>>>>>> 599835561c8031fe0b7c7a973a5d5176cb8c6562
 
 class HomeController extends Controller
 {

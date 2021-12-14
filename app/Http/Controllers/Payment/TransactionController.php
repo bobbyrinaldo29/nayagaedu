@@ -5,22 +5,25 @@ namespace App\Http\Controllers\Payment;
 use App\Http\Controllers\Controller;
 use App\Models\Package;
 use App\Models\Transaction;
+use App\Services\CurrencyConverter;
 use App\Services\TripayServices;
 use Illuminate\Http\Request;
 
 class TransactionController extends Controller
 {
-    public function __construct(TripayServices $tripayServices)
+    public function __construct(TripayServices $tripayServices, CurrencyConverter $converter)
     {
         $this->tripayService = $tripayServices;
+        $this->converter = $converter;
     }
 
     public function index($id)
     {
         $package = Package::findOrFail($id);
         $channels = $this->tripayService->getPaymentChannel();
+        $convert = $this->converter->getConverter();
 
-        return view('dashboard.users.checkout', compact('package', 'channels'));
+        return view('dashboard.users.checkout', compact('package', 'channels', 'convert'));
     }
 
     public function show($reference)
