@@ -19,7 +19,7 @@
                         <span class="nav-text">Member</span>
                     </a>
                 </li>
-                @if (Auth::user()->package !== null || Auth::user()->role == '1')
+                @if (Auth::user()->package !== null)
                     <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
                         <i class="fas fa-poll"></i>
                         <span class="nav-text">Market View</span>

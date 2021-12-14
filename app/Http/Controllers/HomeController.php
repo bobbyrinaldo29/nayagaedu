@@ -30,7 +30,7 @@ class HomeController extends Controller
     {
         $categoryList = CategoryArticle::all();
 
-        if (Auth::user()->package !== null) {
+        if (Auth::user()->package !== null || Auth::user()->role == '1') {
             $articleList = Article::where('category', $category)->latest()->paginate(4);
 
             return view('blog', compact('articleList', 'categoryList', 'category'));

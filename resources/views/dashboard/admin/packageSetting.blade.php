@@ -53,7 +53,7 @@
                                         <tr>
                                             <td>{{ $no }}</td>
                                             <td>{{ $item->packageName }}</td>
-                                            <td>IDR {{ number_format($item->price) }}</td>
+                                            <td>USD {{ number_format($item->price) }}</td>
                                             <td><button type="button" class="btn btn-rounded btn-primary"
                                                     data-bs-toggle="modal" data-bs-target="#editPackage{{ $item->id }}"
                                                     data-id="{{ $item->id }}">Edit</button>
