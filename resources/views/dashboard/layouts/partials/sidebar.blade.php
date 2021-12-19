@@ -45,11 +45,12 @@
                 </li>
                 <li><a class="has-arrow " href="javascript:void()" aria-expanded="true">
                         <i class="fas fa-pen"></i>
-                        <span class="nav-text">Content</span>
+                        <span class="nav-text">Post</span>
                     </a>
                     <ul aria-expanded="true">
-                        <li><a href="{{ route('admin.categories') }}">Categories</a></li>
-                        <li><a href="{{ route('admin.articles') }}">Articles</a></li>
+                        <li><a href="{{ route('articles.index') }}">All Post</a></li>
+                        <li><a href="{{ route('articles.create') }}">Add New Post</a></li>
+                        <li><a href="{{ route('categories.index') }}">Categories</a></li>
                     </ul>
                 </li>
                 <li><a class="has-arrow " href="javascript:void()" aria-expanded="true">
@@ -57,7 +58,7 @@
                         <span class="nav-text">Settings</span>
                     </a>
                     <ul aria-expanded="true">
-                        <li><a href="{{ route('admin.bankName') }}">Bank Status</a></li>
+                        <li><a href="{{ route('bank-setting.index') }}">Bank Status</a></li>
                         <li><a href="{{ route('admin.package') }}">Package Status</a></li>
                     </ul>
                 </li>

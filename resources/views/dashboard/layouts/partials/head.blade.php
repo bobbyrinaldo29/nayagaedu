@@ -32,6 +32,8 @@
     <!-- Style css -->
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 
-    <link rel="stylesheet" href="{{ asset('/dist/ui/trumbowyg.css') }}">
+    <link rel="stylesheet" href="{{ asset('/dist/ui/trumbowyg.min.css') }}">
+
+    
 
 </head>

@@ -17,7 +17,7 @@ class BankNameController extends Controller
         return view('dashboard.admin.bankName', compact('bank'));
     }
 
-    public function create(BankNameRequest $request)
+    public function store(BankNameRequest $request)
     {
         $data = $request->validated();
         BankName::create([
@@ -26,7 +26,7 @@ class BankNameController extends Controller
             'status' => '0',
         ]);
 
-        return redirect()->route('admin.bankName')->withSuccess('Data has been created');
+        return redirect()->route('bank-setting.index')->withSuccess('Data has been created');
     }
 
     public function update(BankNameRequest $request, $id)
@@ -39,12 +39,12 @@ class BankNameController extends Controller
                 'status' => $data['status'],
             ]);
 
-        return redirect()->route('admin.bankName')->withSuccess('Data has been updated');
+        return redirect()->route('bank-setting.index')->withSuccess('Data has been updated');
     }
 
     public function destroy($id)
     {
         BankName::findOrFail($id)->delete();
-        return redirect()->route('admin.bankName')->withSuccess('Data has been deleted');
+        return redirect()->route('bank-setting.index')->withSuccess('Data has been deleted');
     }
 }

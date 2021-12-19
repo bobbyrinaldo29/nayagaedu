@@ -20,5 +20,6 @@ class Article extends Model
         'editor',
         'image',
         'content',
+        'publish',
     ];
 }

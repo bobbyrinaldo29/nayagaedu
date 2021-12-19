@@ -12,7 +12,7 @@
                     <div class="row py-5">
                         <div class="col text-center">
                             <h1 class="display-3 font-weight-800 text-white mt-4 mb-1">
-                                Forex
+                                {{ Str::ucfirst($category) }}
                             </h1>
                             <div class="lead text-white-75">
                                 Read Our Latest Articles, News & Updates
@@ -43,14 +43,14 @@
                                 @foreach ($articleList as $item)
                                     <div class="card card-blog-entry border-0 plain-card mb-4">
                                         <div class="card-blog-img hover-item hover-scale hover-uncaption">
-                                            <a href="#">
+                                            <a href="{{ route('blogID', ['category' => strtolower($item->category), 'id' => $item->id]) }}">
                                                 <div class="hover-transition">
                                                     <div class="hover-down">
                                                         <i class="fas fa-link fa-2x hover-icon"></i>
                                                     </div>
                                                 </div>
                                                 <figure>
-                                                    <img class="img-fluid" src="images/articles/{{ $item->image }}"
+                                                    <img class="img-fluid" src="{{ asset('images/articles/').'/'.$item->image }}"
                                                         alt="Blog">
                                                 </figure>
                                             </a>
@@ -77,7 +77,7 @@
                                         </div>
                                         <div class="card-footer border-0 bg-transparent">
                                             <div class="meta-item float-left mb-2">
-                                                <a href="#"><i class="far fa-list-alt text-black-50"></i>Read more</a>
+                                                <a href="{{ route('blogID', ['category' => strtolower($item->category), 'id' => $item->id]) }}"><i class="far fa-list-alt text-black-50"></i>Read more</a>
                                             </div>
                                         </div>
                                     </div>

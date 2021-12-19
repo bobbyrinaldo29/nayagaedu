@@ -31,14 +31,25 @@ class HomeController extends Controller
     {
         $categoryList = CategoryArticle::all();
 
-        if (Auth::user()->package !== null) {
-            $articleList = Article::where('category', $category)->latest()->paginate(4);
+        if (Auth::user()->package !== null || Auth::user()->role == '1') {
+            $articleList = Article::where('category', $category)->where('publish', '1')->latest()->paginate(4);
 
             return view('blog', compact('articleList', 'categoryList', 'category'));
         } else {
             return redirect()->route('dashboard', compact('categoryList'));
         }
+    }
 
-        
+    public function showById($category, $id)
+    {
+        $categoryList = CategoryArticle::all();
+
+        if (Auth::user()->package !== null || Auth::user()->role == '1') {
+            $articleList = Article::where('category', $category)->where('publish', '1')->latest()->paginate(4);
+            $articleItem = Article::where('id', $id)->get();
+            return view('blogItem', compact('articleItem', 'category', 'articleList', 'categoryList'));
+        } else {
+            return redirect()->route('dashboard', compact('categoryList'));
+        }
     }
 }

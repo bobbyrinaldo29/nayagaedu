@@ -20,6 +20,7 @@ class CreateArticlesTable extends Migration
             $table->string('editor', 50);
             $table->string('image', 200);
             $table->longText('content', 10000);
+            $table->boolean('publish')->default(0);
             $table->timestamps();
         });
     }

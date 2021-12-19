@@ -16,14 +16,14 @@ class CategoryArticleController extends Controller
         return view('dashboard.admin.categories', compact('categoriesList'));
     }
 
-    public function create(CategoryRequest $request)
+    public function store(CategoryRequest $request)
     {
         $data = $request->validated();
         CategoryArticle::create([
             'name' => Str::ucfirst($data['name']),
         ]);
 
-        return redirect()->route('admin.categories')->withSuccess('Data has been created');
+        return redirect()->route('categories.index')->withSuccess('Data has been created');
     }
 
     public function update(CategoryRequest $request, $id)
@@ -34,13 +34,13 @@ class CategoryArticleController extends Controller
                 'name' => Str::ucfirst($data['name']),
             ]);
 
-        return redirect()->route('admin.categories')->withSuccess('Data has been updated');
+        return redirect()->route('categories.index')->withSuccess('Data has been updated');
     }
 
     public function destroy($id)
     {
         CategoryArticle::findOrFail($id)->delete();
 
-        return redirect()->route('admin.categories')->withSuccess('Data has been deleted');
+        return redirect()->route('categories.index')->withSuccess('Data has been deleted');
     }
 }

@@ -7,7 +7,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal">
                 </button>
             </div>
-            <form action="bank-name/{{ $item->id }}/destroy" method="POST">
+            <form action="{{ route('bank-setting.destroy', $item->id) }}" method="POST">
                 @csrf
                 @method('delete')
                 <div class="modal-body">

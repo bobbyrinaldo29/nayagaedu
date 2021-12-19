@@ -7,7 +7,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal">
                 </button>
             </div>
-            <form action="bank-name/{{ $item->id }}" method="POST">
+            <form action="bank-setting/{{ $item->id }}" method="POST">
                 @method('put')
                 @csrf
                 <div class="modal-body">

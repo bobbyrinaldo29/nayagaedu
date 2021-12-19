@@ -7,7 +7,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal">
                 </button>
             </div>
-            <form action="{{ route('bankName.create') }}" method="POST">
+            <form action="{{ route('bank-setting.store') }}" method="POST">
                 @csrf
                 <div class="modal-body">
                     <div class="mb-3">

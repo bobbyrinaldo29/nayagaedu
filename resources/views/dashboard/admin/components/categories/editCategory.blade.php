@@ -7,8 +7,8 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal">
                 </button>
             </div>
-            <form action="categories/{{ $item->id }}" method="POST">
-                @method('put')
+            <form action="{{ route('categories.update', $item->id) }}" method="POST">
+                @method('patch')
                 @csrf
                 <div class="modal-body">
                     <div class="mb-3">

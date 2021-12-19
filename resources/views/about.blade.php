@@ -1,6 +1,7 @@
 @extends('layouts.app', ['title' => 'About Us'])
 
 @section('content')
+
     <!-- Page title -->
     <div class="w-100">
 
@@ -198,6 +199,7 @@
                             data-carousel-col-md="2" data-carousel-col-lg="3" data-carousel-col-xl="3">
                             <div class="carousel-component-inner owl-carousel owl-theme">
 
+                                
                                 <div class="col-md-12 offset-md-2 col-lg-12 offset-lg-0">
                                     <div class="card h-100 border-0 shadow rounded-xl text-center px-4 py-5 p-xl-5 my-4">
                                         <div class="card-body d-flex flex-column">

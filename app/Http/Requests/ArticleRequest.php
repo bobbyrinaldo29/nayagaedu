@@ -30,6 +30,7 @@ class ArticleRequest extends FormRequest
             'editor' => 'required|min:3',
             'image.*' => 'required|image|mimes:jpeg,bmp,png,jpg,svg|max:2048',
             'content' => 'required|min:3',
+            'publish' => 'required',
         ];
     }
 

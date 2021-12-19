@@ -7,10 +7,12 @@ use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\PackageController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Payment\TransactionController;
+use App\Http\Controllers\UploadController;
 use App\Http\Controllers\User\HistoryController;
 use App\Http\Controllers\User\MemberController;
 use App\Http\Controllers\User\ProfileController;
 use App\Http\Controllers\UserController;
+use App\Models\CategoryArticle;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -38,29 +40,25 @@ Auth::routes(['verify' => true]);
 Route::group(['middleware' => ['auth']], function () {
 
     Route::get('/{category}', [HomeController::class, 'show'])->name('blog');
+    Route::get('/{category}/article/{id}', [HomeController::class, 'showById'])->name('blogID');
 
     // Admin
     Route::group(['prefix' => 'admin', 'middleware' => ['isAdmin', 'preventBackHistory']], function () {
-        Route::get('dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
+        Route::post('ckeditor/upload', [UploadController::class, 'uploadImage'])->name('ckeditor.image-upload');
+        Route::get('admin-dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
 
         Route::get('package-setting', [PackageController::class, 'index'])->name('admin.package');
         Route::post('package-setting', [PackageController::class, 'create'])->name('package.create');
         Route::put('package-setting/{id}', [PackageController::class, 'update']);
         Route::delete('package-setting/{id}/destroy', [PackageController::class, 'destroy']);
 
-        Route::get('bank-setting', [BankNameController::class, 'index'])->name('admin.bankName');
-        Route::post('bank-setting', [BankNameController::class, 'create'])->name('bankName.create');
-        Route::put('bank-name/{id}', [BankNameController::class, 'update']);
-        Route::delete('bank-name/{id}/destroy', [BankNameController::class, 'destroy']);
+        Route::get('bank-setting', [BankNameController::class, 'index'])->name('bank-setting.index');
+        Route::post('bank-setting', [BankNameController::class, 'create'])->name('bank-setting.store');
+        Route::put('bank-setting/{id}', [BankNameController::class, 'update']);
+        Route::delete('bank-name/{id}/destroy', [BankNameController::class, 'destroy'])->name('bank-setting.destroy');
 
-        Route::get('content/categories', [CategoryArticleController::class, 'index'])->name('admin.categories');
-        Route::post('content/categories', [CategoryArticleController::class, 'create'])->name('categories.create');
-        Route::put('content/categories/{id}', [CategoryArticleController::class, 'update']);
-        Route::delete('content/categories/{id}/destroy', [CategoryArticleController::class, 'destroy']);
-
-        Route::get('content/articles', [ArticleController::class, 'index'])->name('admin.articles');
-        Route::get('content/articles/create', [ArticleController::class, 'create'])->name('articles.create');
-        Route::post('content/articles/store', [ArticleController::class, 'store'])->name('articles.store');
+        Route::resource('categories', CategoryArticleController::class);
+        Route::resource('articles', ArticleController::class);
     });
 
     // User

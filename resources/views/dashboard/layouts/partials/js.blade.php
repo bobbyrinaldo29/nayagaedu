@@ -33,30 +33,56 @@
 <script src="{{ asset('js/dlabnav-init.js') }}"></script>
 <script src="{{ asset('js/demo.js') }}"></script>
 
-<script src="{{ asset('/dist/trumbowyg.js') }}"></script>
+<script src="{{ asset('/dist/trumbowyg.min.js') }}"></script>
+<script src="{{ asset('/dist/plugins/upload/trumbowyg.upload.min.js') }}"></script>
+<script src="{{ asset('vendor/ckeditor/ckeditor.js') }}"></script>
+
+<script type="text/javascript">
+    CKEDITOR.replace( 'editor1', {
+        filebrowserUploadUrl: "{{route('ckeditor.image-upload', ['_token' => csrf_token() ])}}",
+        filebrowserUploadMethod: 'form'
+    });
+</script>
 
 <script>
     $('#trumbowyg').trumbowyg({
         lang: 'id',
+        autogrow: true,
+        changeActiveDropdownIcon: true,
+        imageWidthModalEdit: true,
+        urlProtocol: true,
+        defaultLinkTarget: '_blank',
+        btnsDef: {
+            // Create a new dropdown
+            image: {
+                dropdown: ['insertImage', 'upload'],
+                ico: 'insertImage'
+            }
+        },
+        // Redefine the button pane
         btns: [
             ['viewHTML'],
-            ['undo', 'redo'], // Only supported in Blink browsers
             ['formatting'],
             ['strong', 'em', 'del'],
             ['superscript', 'subscript'],
             ['link'],
-            ['insertImage'],
+            ['image'], // Our fresh created dropdown
             ['justifyLeft', 'justifyCenter', 'justifyRight', 'justifyFull'],
             ['unorderedList', 'orderedList'],
             ['horizontalRule'],
             ['removeformat'],
             ['fullscreen']
         ],
-        autogrow: true,
-        changeActiveDropdownIcon: true,
-        imageWidthModalEdit: true,
-        urlProtocol: true,
-        defaultLinkTarget: '_blank',
+        plugins: {
+            upload: {
+                serverPath: 'https://api.imgur.com/3/image',
+                fileFieldName: 'image',
+                headers: {
+                    'Authorization': 'Client-ID 9e57cb1c4791cea'
+                },
+                urlPropertyName: 'data.link'
+            }
+        }
     });
 
     function cardsCenter() {
