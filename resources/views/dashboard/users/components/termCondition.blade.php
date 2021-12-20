@@ -1,10 +1,8 @@
-<div class="modal fade" id="exampleModalLong">
+<div class="modal fade" id="modalInfoTerm">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title">Terms &amp; Conditions</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal">
-                </button>
             </div>
             <div class="modal-body">
                 <h1>General Terms</h1>
@@ -773,10 +771,6 @@
                     </li>
                 </ul>
                 <p>Updated at 2021-12-13</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-danger light" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
             </div>
         </div>
     </div>

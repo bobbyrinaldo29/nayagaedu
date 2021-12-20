@@ -55,7 +55,7 @@
                                             <td>{{ $item->title }}</td>
                                             <td>{{ $item->category }}</td>
                                             <td>{{ $item->editor }}</td>
-                                            <td>{!! $item->publish == '1' ? '<span class="badge light badge-success">Publish</span>' : '<span class="badge light badge-danger">Draft</span>' !!}</td>
+                                            <td>{!! $item->publish == '1' ? '<span class="badge light badge-primary">Publish</span>' : '<span class="badge light badge-danger">Draft</span>' !!}</td>
                                             <td><a class="btn btn-rounded btn-primary"
                                                     href="{{ route('articles.show', $item->id) }}">Edit</a>
                                                 <button type="button" class="btn btn-rounded btn-danger"

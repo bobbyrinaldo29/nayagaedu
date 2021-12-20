@@ -6,6 +6,7 @@ use App\Http\Controllers\Admin\CategoryArticleController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\PackageController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\MessageController;
 use App\Http\Controllers\Payment\TransactionController;
 use App\Http\Controllers\UploadController;
 use App\Http\Controllers\User\HistoryController;
@@ -30,6 +31,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('about', [HomeController::class, 'aboutBlog'])->name('about');
 Route::get('contact', [HomeController::class, 'contact'])->name('contact');
+Route::resource('send-message', MessageController::class);
 
 Route::group(['middleware' => 'preventBackHistory'], function () {
     Auth::routes();

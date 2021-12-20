@@ -131,32 +131,59 @@
                                     Get in Touch
                                     <div class="title-divider-round"></div>
                                 </h3>
-
-                                <form class="pt-4">
+                                @if (session('errors'))
+                                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                        @foreach ($errors->all() as $error)
+                                            <li>{{ $error }}</li>
+                                        @endforeach
+                                        <button type="button" class="close" data-dismiss="alert"
+                                            aria-label="Close">
+                                            <span aria-hidden="true">×</span>
+                                        </button>
+                                    </div>
+                                @endif
+                                @if (Session::has('error'))
+                                    <div class="alert alert-danger">
+                                        {{ Session::get('error') }}
+                                    </div>
+                                @endif
+                                @if (Session::has('success'))
+                                    <div class="alert alert-success alert-icon alert-dismissible fade show mb-5"
+                                        role="alert">
+                                        <i class="far fa-check-circle"></i>
+                                        <strong>{{ Session::get('success') }}
+                                            <button type="button" class="close" data-dismiss="alert"
+                                                aria-label="Close">
+                                                <span aria-hidden="true"></span>
+                                            </button>
+                                    </div>
+                                @endif
+                                <form class="pt-4" method="POST" action="{{ route('send-message.store') }}">
+                                    @csrf
                                     <div class="form-row">
 
                                         <div class="form-group col-md-6 pb-3 mb-3">
                                             <div class="pr-md-1">
                                                 <input type="text" class="form-control form-round form-control-lg"
-                                                    placeholder="Name *" required>
+                                                    name="name" placeholder="Name *" required>
                                             </div>
                                         </div>
 
                                         <div class="form-group col-md-6 pb-3 mb-3">
                                             <div class="pl-md-1">
                                                 <input type="email" class="form-control form-round form-control-lg"
-                                                    placeholder="Email *" required>
+                                                    name="email" placeholder="Email *" required>
                                             </div>
                                         </div>
 
                                         <div class="form-group col-12 pb-3 mb-3">
                                             <input type="text" class="form-control form-round form-control-lg"
-                                                placeholder="Subject *" required>
+                                                name="subject" placeholder="Subject *" required>
                                         </div>
 
                                         <div class="form-group col-12 mb-5">
                                             <textarea class="form-control form-round form-control-lg py-3" rows="7"
-                                                placeholder="Your message *" required></textarea>
+                                                name="message" placeholder="Your message *" required></textarea>
                                         </div>
 
                                         <div

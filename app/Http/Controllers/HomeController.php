@@ -10,20 +10,17 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $categoryList = CategoryArticle::all();
-        return view('welcome', compact('categoryList'));
+        return view('welcome');
     }
 
     public function aboutBlog()
     {
-        $categoryList = CategoryArticle::all();
-        return view('about', compact('categoryList'));
+        return view('about');
     }
 
     public function contact()
     {
-        $categoryList = CategoryArticle::all();
-        return view('contact', compact('categoryList'));
+        return view('contact');
     }
 
     public function show($category)
@@ -31,11 +28,7 @@ class HomeController extends Controller
         $categoryList = CategoryArticle::all();
 
         if (Auth::user()->package !== null || Auth::user()->role == '1') {
-<<<<<<< HEAD
-            $articleList = Article::where('category', $category)->where('publish', '1')->latest()->paginate(4);
-=======
             $articleList = Article::where('category', $category)->latest()->paginate(4);
->>>>>>> a583bca39bf47178dcd40b3e1017a0ff3191e1a6
 
             return view('blog', compact('articleList', 'categoryList', 'category'));
         } else {
@@ -48,9 +41,10 @@ class HomeController extends Controller
         $categoryList = CategoryArticle::all();
 
         if (Auth::user()->package !== null || Auth::user()->role == '1') {
+            $allArticle = Article::where('publish', '1')->latest()->get();
             $articleList = Article::where('category', $category)->where('publish', '1')->latest()->paginate(4);
             $articleItem = Article::where('id', $id)->get();
-            return view('blogItem', compact('articleItem', 'category', 'articleList', 'categoryList'));
+            return view('blogItem', compact('articleItem', 'category', 'articleList', 'categoryList', 'allArticle'));
         } else {
             return redirect()->route('dashboard', compact('categoryList'));
         }

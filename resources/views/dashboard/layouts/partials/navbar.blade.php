@@ -34,8 +34,45 @@
                             </div>
                         </li>
                     @else
-                        <span class="d-flex align-items-center" style="font-size: 15px"><strong>Admin
-                                Account!</strong></span>
+                        <li class="nav-item dropdown notification_dropdown me-5">
+                            <a class="nav-link" href="javascript:void(0);" role="button"
+                                data-bs-toggle="dropdown">
+                                <i class="fas fa-envelope"></i>
+                                <span
+                                    class="badge light text-white bg-danger rounded-circle">{{ $messageCount->count() }}</span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <div id="DZ_W_Notification1" class="widget-media dlab-scroll p-3" style="height:380px;">
+                                    <ul class="timeline">
+                                        @foreach ($message as $item)
+                                            <li>
+                                                <div class="timeline-panel">
+                                                    @if ($item->read == 0)
+                                                        <div class="media me-2 media-danger">
+                                                            <i class="fa fa-envelope"></i>
+                                                        </div>
+                                                    @else
+                                                        <div class="media me-2 media-primary">
+                                                            <i class="fas fa-envelope-open-text"></i>
+                                                        </div>
+                                                    @endif
+                                                    <div class="media-body">
+                                                        <h6 class="mb-1">{{ $item->name }} Send Message</h6>
+                                                        <small class="d-block">{{ $item->created_at }}</small>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                                <a class="all-notification" href="javascript:void(0);">See all message <i
+                                        class="ti-arrow-end"></i></a>
+                            </div>
+                        </li>
+                        <div class="d-flex">
+                            <span class="d-flex align-items-center" style="font-size: 15px"><strong>Admin
+                                    Account!</strong></span>
+                        </div>
                     @endif
 
                     <li class="nav-item dropdown header-profile">

@@ -3,8 +3,6 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title">Risk Disclosure</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal">
-                </button>
             </div>
             <div class="modal-body">
                 <p class="p8">
@@ -120,10 +118,6 @@
                         difficult to preserve emotional control needed for achieving success in
                         trading.<br /><br /></span>
                 </p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-danger light" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
             </div>
         </div>
     </div>

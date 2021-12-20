@@ -109,7 +109,7 @@
 
                                         <input type="checkbox" class="form-check-input" id="term" required>
                                         <label class="form-check-label" for="term">I Accept
-                                            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModalLong"
+                                            <a href="#" data-bs-toggle="modal" data-bs-target="#modalInfoTerm"
                                                 class="text-primary">Term & Conditions</a> of Nayaga Edu and
                                             <a href="#" data-bs-toggle="modal" data-bs-target="#riskDisclosure"
                                                 class="text-primary">Risk Disclosure</a></label>

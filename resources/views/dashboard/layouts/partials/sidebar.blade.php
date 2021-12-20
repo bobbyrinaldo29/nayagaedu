@@ -21,15 +21,15 @@
                 </li>
                 @if (Auth::user()->package !== null)
                     <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
-                        <i class="fas fa-poll"></i>
-                        <span class="nav-text">Market View</span>
-                    </a>
-                    <ul aria-expanded="true">
-                        <li><a href="/forex">Forex</a></li>
-                        <li><a href="/cryptocurrency">Cryptocurrency</a></li>
-                        <li><a href="/stock">Stock</a></li>
-                    </ul>
-                </li>
+                            <i class="fas fa-poll"></i>
+                            <span class="nav-text">Market View</span>
+                        </a>
+                        <ul aria-expanded="true">
+                            <li><a href="/forex">Forex</a></li>
+                            <li><a href="/cryptocurrency">Cryptocurrency</a></li>
+                            <li><a href="/stock">Stock</a></li>
+                        </ul>
+                    </li>
                 @endif
                 <li><a href="{{ route('history') }}" class="" aria-expanded="false">
                         <i class="fas fa-history"></i>
