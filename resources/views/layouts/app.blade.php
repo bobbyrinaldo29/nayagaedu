@@ -39,9 +39,8 @@
                     @if (Route::has('login'))
                         @auth
                             <li><a href="{{ route('dashboard') }}">Dashboard</a></li>
-                            <li><a href="{{ route('logout') }}"
-                                    onclick="event.preventDefault();
-                                                                         document.getElementById('logout-form').submit();">Logout</a>
+                            <li><a href="{{ route('logout') }}" onclick="event.preventDefault();
+                                        document.getElementById('logout-form').submit();">Logout</a>
                             </li>
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                 @csrf
@@ -189,15 +188,15 @@
                             class="text-white-50 text-hover-primary">Risk Disclosure</a>
                     </div>
 
-                    
+
                 </div>
             </div>
         </div>
-        
+
     </div>
     @include('dashboard.users.components.termCondition')
     @include('dashboard.users.components.riskDisclosure')
-    
+
     <!-- Go to top -->
     <div class="go-to-top">
         <a href="#" class="rounded-circle"><i class="fas fa-chevron-up"></i></a>

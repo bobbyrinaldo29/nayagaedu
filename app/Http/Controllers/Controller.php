@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Article;
 use App\Models\CategoryArticle;
 use App\Models\Message;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
@@ -17,11 +18,12 @@ class Controller extends BaseController
     public function __construct()
   {
     $categoryList = CategoryArticle::all();
+    $articleList = Article::latest()->get();
     $message = Message::latest()->get();
 
     $messageCount = Message::where('read', 0)->get();
 
     // Sharing is caring
-    View::share(compact('messageCount', 'categoryList', 'message'));
+    View::share(compact('messageCount', 'categoryList', 'message', 'articleList'));
   }
 }

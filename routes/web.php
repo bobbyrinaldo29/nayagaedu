@@ -59,6 +59,7 @@ Route::group(['middleware' => ['auth']], function () {
         Route::put('bank-setting/{id}', [BankNameController::class, 'update']);
         Route::delete('bank-name/{id}/destroy', [BankNameController::class, 'destroy'])->name('bank-setting.destroy');
 
+        Route::resource('message', MessageController::class);
         Route::resource('categories', CategoryArticleController::class);
         Route::resource('articles', ArticleController::class);
     });

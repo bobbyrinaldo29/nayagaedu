@@ -16,7 +16,9 @@ class MessageController extends Controller
      */
     public function index()
     {
-        //
+        $inbox = Message::orderBy('id', 'DESC')->latest()->paginate(10);
+
+        return view('dashboard.admin.message', compact('inbox'));
     }
 
     /**
@@ -54,9 +56,10 @@ class MessageController extends Controller
      * @param  \App\Models\Message  $message
      * @return \Illuminate\Http\Response
      */
-    public function show(Message $message)
+    public function show($id)
     {
-        //
+        $showById = Message::findOrFail($id);
+        return view('dashboard.admin.components.message.show', compact('showById'));
     }
 
     /**
@@ -65,9 +68,14 @@ class MessageController extends Controller
      * @param  \App\Models\Message  $message
      * @return \Illuminate\Http\Response
      */
-    public function edit(Message $message)
+    public function edit($id)
     {
-        //
+        $showById = Message::findOrFail($id);
+        Message::where('id', $id)->where('read', '0')->update([
+            'read' => 1,
+        ]);
+
+        return redirect()->route('message.create', compact('showById'));
     }
 
     /**
@@ -88,8 +96,10 @@ class MessageController extends Controller
      * @param  \App\Models\Message  $message
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Message $message)
+    public function destroy($id)
     {
-        //
+        Message::findOrFail($id)->delete();
+
+        return redirect()->route('message.index')->withSuccess('Message has been deleted');
     }
 }

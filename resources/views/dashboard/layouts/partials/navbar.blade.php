@@ -46,21 +46,25 @@
                                     <ul class="timeline">
                                         @foreach ($message as $item)
                                             <li>
-                                                <div class="timeline-panel">
-                                                    @if ($item->read == 0)
-                                                        <div class="media me-2 media-danger">
-                                                            <i class="fa fa-envelope"></i>
+                                                <a href="{{ route('message.show', $item->id) }}">
+                                                    <div class="timeline-panel">
+                                                        @if ($item->read == 0)
+                                                            <div class="media me-2 media-danger">
+                                                                <i class="fa fa-envelope"></i>
+                                                            </div>
+                                                        @else
+                                                            <div class="media me-2 media-primary">
+                                                                <i class="fas fa-envelope-open-text"></i>
+                                                            </div>
+                                                        @endif
+                                                        <div class="media-body">
+                                                            <h6 class="mb-1">{{ $item->name }} Send Message
+                                                            </h6>
+                                                            <small
+                                                                class="d-block">{{ $item->created_at }}</small>
                                                         </div>
-                                                    @else
-                                                        <div class="media me-2 media-primary">
-                                                            <i class="fas fa-envelope-open-text"></i>
-                                                        </div>
-                                                    @endif
-                                                    <div class="media-body">
-                                                        <h6 class="mb-1">{{ $item->name }} Send Message</h6>
-                                                        <small class="d-block">{{ $item->created_at }}</small>
                                                     </div>
-                                                </div>
+                                                </a>
                                             </li>
                                         @endforeach
                                     </ul>
