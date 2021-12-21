@@ -11,7 +11,7 @@
                                 <div class="mail-list rounded mt-4">
                                     <a href="email-inbox.html" class="list-group-item active"><i
                                             class="fa fa-inbox font-18 align-middle me-2"></i> Inbox <span
-                                            class="badge badge-danger badge-sm float-end">{{ $message->count() }}</span>
+                                            class="badge badge-danger badge-sm float-end">{{ $messageAll->count() }}</span>
                                     </a>
                                 </div>
                             </div>
@@ -32,13 +32,23 @@
                                                             class="border-0 bg-transparent align-middle p-0"
                                                             data-bs-toggle="modal"
                                                             data-bs-target="#deleteMessage{{ $item->id }}"
-                                                            data-id="{{ $item->id }}"><i class="fa fa-trash"
+                                                            data-id="{{ $item->id }}"><i class="fa fa-trash text-danger"
                                                                 aria-hidden="true"></i></button>
+                                                        @if ($item->read == '0')
+                                                            <a href="{{ route('message.update', $item->id) }}" class="border-0 bg-transparent align-middle p-0"><i
+                                                                    class="fa fa-envelope text-secondary"
+                                                                    aria-hidden="true"></i></a>
+                                                        @else
+                                                            <a class="border-0 bg-transparent align-middle p-0"><i
+                                                                    class="fa fa-envelope-open-text text-secondary"
+                                                                    aria-hidden="true"></i></a>
+                                                        @endif
                                                     </div>
-                                                    <a href="{{ route('message.show', $item->id) }}" class="col-mail col-mail-2">
-                                                        <div class="subject">{!! Str::limit($item->message, 100, $end = '...') !!}</div>
+                                                    <a href="{{ route('message.show', $item->id) }}"
+                                                        class="col-mail col-mail-2">
+                                                        <div class="subject mx-3">{!! Str::limit($item->message, 100, $end = '...') !!}</div>
                                                         <div class="date">
-                                                            {{ $item->created_at->format('H:i a') }}
+                                                            {{ $item->created_at->format('H:i A') }}
                                                         </div>
                                                     </a>
                                                 </div>
@@ -48,26 +58,6 @@
                                     @endforeach
                                 </div>
                                 {{ $inbox->links('layouts.partials.pagination') }}
-                                {{-- <div class="row mt-4">
-                                    <div class="col-12 ps-3">
-                                        <nav>
-                                            <ul class="pagination pagination-gutter pagination-primary pagination-sm no-bg">
-                                                <li class="page-item page-indicator"><a class="page-link"
-                                                        href="javascript:void()"><i class="la la-angle-left"></i></a></li>
-                                                <li class="page-item "><a class="page-link"
-                                                        href="javascript:void()">1</a></li>
-                                                <li class="page-item active"><a class="page-link"
-                                                        href="javascript:void()">2</a></li>
-                                                <li class="page-item"><a class="page-link"
-                                                        href="javascript:void()">3</a></li>
-                                                <li class="page-item"><a class="page-link"
-                                                        href="javascript:void()">4</a></li>
-                                                <li class="page-item page-indicator"><a class="page-link"
-                                                        href="javascript:void()"><i class="la la-angle-right"></i></a></li>
-                                            </ul>
-                                        </nav>
-                                    </div>
-                                </div> --}}
                             </div>
                         </div>
                     </div>

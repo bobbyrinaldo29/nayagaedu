@@ -1,5 +1,5 @@
 <div class="nav-header">
-    <a href="/" class="brand-logo">
+    <a href="/" target="_blank" class="brand-logo">
         <img src="{{ asset('images/svg/logo-image.svg') }}" alt="logo" width="70px">
         <div class="brand-title">
             <img src="{{ asset('images/svg/logo-text.svg') }}" alt="logo" width="70px">
@@ -44,7 +44,7 @@
                             <div class="dropdown-menu dropdown-menu-end">
                                 <div id="DZ_W_Notification1" class="widget-media dlab-scroll p-3" style="height:380px;">
                                     <ul class="timeline">
-                                        @foreach ($message as $item)
+                                        @foreach ($messageAll as $item)
                                             <li>
                                                 <a href="{{ route('message.show', $item->id) }}">
                                                     <div class="timeline-panel">
@@ -61,6 +61,8 @@
                                                             <h6 class="mb-1">{{ $item->name }} Send Message
                                                             </h6>
                                                             <small
+                                                                class="d-block">{{ $item->subject }}</small>
+                                                            <small
                                                                 class="d-block">{{ $item->created_at }}</small>
                                                         </div>
                                                     </div>
@@ -69,7 +71,7 @@
                                         @endforeach
                                     </ul>
                                 </div>
-                                <a class="all-notification" href="javascript:void(0);">See all message <i
+                                <a class="all-notification" href="{{ route('message.index') }}">See all message <i
                                         class="ti-arrow-end"></i></a>
                             </div>
                         </li>

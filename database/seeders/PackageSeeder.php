@@ -17,23 +17,23 @@ class PackageSeeder extends Seeder
         DB::table('packages')->insert([
             [
                 'packageName' => 'Starter',
-                'price' => '500000',
-                'description' => 'Starter Nagita Featured, Affiliate Program, License 1 Year',
+                'price' => '50',
+                'description' => 'Copy Trade, Profit Share 60:40, Depo $500-$900, Target Profit 20-30%, Trader Talent',
             ],
             [
                 'packageName' => 'Beginner',
-                'price' => '2000000',
-                'description' => 'Beginner Nagita Featured, Affiliate Program, License 1 Year',
+                'price' => '200',
+                'description' => 'Copy Trade, Profit Share 70:30, Depo $1000-$2500, Target Profit 10-30%, Trader Talent, Expert Advisor, Depo $3000-$5000, Profit Share 70:30, Profit 10-20%',
             ],
             [
                 'packageName' => 'Intermediate',
-                'price' => '3000000',
-                'description' => 'Intermediate Nagita Featured, Affiliate Program, License 1 Year',
+                'price' => '300',
+                'description' => 'Copy Trade, Profit Share 80:20, Depo $3000-$4500, Target Profit 10-30%, Trader Talent, Expert Advisor, Depo $6000-$9000, Profit Share 80:20, Profit 10-20%',
             ],
             [
                 'packageName' => 'Expert',
-                'price' => '5000000',
-                'description' => 'Expert Nagita Featured, Affiliate Program, License 1 Year',
+                'price' => '500',
+                'description' => 'Copy Trade, Profit Share 90:10, Minimum Depo $5000, Target Profit 10-30%, Trader Talent, Expert Advisor, Depo $10.000-UP, Profit Share 90:10, Profit 10-20%',
             ],
         ]);
     }

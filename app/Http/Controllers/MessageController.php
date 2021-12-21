@@ -59,6 +59,9 @@ class MessageController extends Controller
     public function show($id)
     {
         $showById = Message::findOrFail($id);
+        Message::where('id', $id)->where('read', '0')->update([
+            'read' => 1,
+        ]);
         return view('dashboard.admin.components.message.show', compact('showById'));
     }
 
@@ -70,12 +73,7 @@ class MessageController extends Controller
      */
     public function edit($id)
     {
-        $showById = Message::findOrFail($id);
-        Message::where('id', $id)->where('read', '0')->update([
-            'read' => 1,
-        ]);
-
-        return redirect()->route('message.create', compact('showById'));
+        //
     }
 
     /**
@@ -85,9 +83,15 @@ class MessageController extends Controller
      * @param  \App\Models\Message  $message
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Message $message)
+    public function update($id)
     {
-        //
+        $showById = Message::findOrFail($id);
+        $inbox = Message::orderBy('id', 'DESC')->latest()->paginate(10);
+        Message::where('id', $id)->where('read', '0')->update([
+            'read' => 1,
+        ]);
+
+        return view('dashboard.admin.message', compact('inbox'));
     }
 
     /**

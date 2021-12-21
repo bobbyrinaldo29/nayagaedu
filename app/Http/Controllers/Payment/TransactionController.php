@@ -21,9 +21,12 @@ class TransactionController extends Controller
     {
         $package = Package::findOrFail($id);
         $channels = $this->tripayService->getPaymentChannel();
-        $convert = $this->converter->getConverter();
+        $getCurrency = $this->converter->getConverter();
 
-        return view('dashboard.users.checkout', compact('package', 'channels', 'convert'));
+        $convert = $getCurrency->rates->IDR;
+        $total = $package->price * $convert;
+
+        return view('dashboard.users.checkout', compact('package', 'channels', 'convert', 'total'));
     }
 
     public function show($reference)

@@ -18,7 +18,7 @@
                                         </h4>
                                         <ul class="list-group mb-3">
                                             <li class="list-group-item d-flex justify-content-between lh-condensed">
-                                                <div>
+                                                <div class="w-50">
                                                     <h6 class="my-0">{{ $package->packageName }}</h6>
                                                     <ul class="mt-2">
                                                         <li>
@@ -28,8 +28,10 @@
                                                     <small class="text-muted"></small>
                                                 </div>
                                                 <input type="hidden" value="{{ $package->price }}" name="price">
-                                                <span class="text-muted">USD
-                                                    {{ number_format($package->price) }}</span>
+                                                <div>
+                                                    <span class="text-muted">USD
+                                                        {{ number_format($package->price) }}</span>
+                                                </div>
                                             </li>
                                         </ul>
                                         <ul class="list-group mb-3">
@@ -38,14 +40,20 @@
                                                     <h6 class="my-0">Current Rate</h6>
                                                     <ul class="mt-2">
                                                         <li>
-                                                            USD/IDR 
+                                                            USD/IDR
                                                         </li>
                                                     </ul>
                                                     <small class="text-muted"></small>
                                                 </div>
                                                 <input type="hidden" value="{{ $package->price }}" name="price">
                                                 <span class="text-muted">IDR
-                                                    {{ number_format($convert->IDR) }}</span>
+                                                    {{ number_format($convert) }}</span>
+                                            </li>
+                                            <li class="list-group-item d-flex justify-content-between active">
+                                                <div class="text-white">
+                                                    <h6 class="my-0 text-white">Total</h6>
+                                                </div>
+                                                <span class="text-white">IDR {{ number_format($total) }}</span>
                                             </li>
                                         </ul>
                                     </div>
@@ -53,7 +61,7 @@
                                         <h4 class="mb-3">Billing address</h4>
                                         <input type="hidden" name="package_name" value="{{ $package->packageName }}">
                                         <div class="mb-3">
-                                            <label for="fullName" class="form-label">Name</label>
+                                            <label for="fullName" class="form-label">Fullname</label>
                                             <input type="text" class="form-control" id="fullName" placeholder=""
                                                 value="{{ Auth::user()->name }}" name="fullname" required="">
                                         </div>

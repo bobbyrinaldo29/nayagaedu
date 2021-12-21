@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class MessageSeeder extends Seeder
 {
@@ -13,6 +14,14 @@ class MessageSeeder extends Seeder
      */
     public function run()
     {
-        //
+        DB::table('messages')->insert([
+            [
+                'name' => 'Nayaga Edu',
+                'email' => 'admin@nayagaedu.com',
+                'subject' => 'Test Message',
+                'message' => 'Hello World, this is test message',
+                'read' => 0,
+            ],
+        ]);
     }
 }

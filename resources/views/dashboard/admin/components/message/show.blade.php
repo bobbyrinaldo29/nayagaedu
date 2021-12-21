@@ -21,9 +21,11 @@
                                                     </div>
                                                 </div>
                                                 <div class="clearfix mb-3">
-                                                    <a href="{{ route('message.destroy', $showById->id) }}"
-                                                        class="btn btn-primary px-3 my-1 light me-2"><i
-                                                            class="fa fa-trash"></i></a>
+                                                    <button type="button" class="btn btn-primary px-3 my-1 light me-2"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#deleteMessage{{ $showById->id }}"
+                                                        data-id="{{ $showById->id }}"><i
+                                                            class="fa fa-trash"></i></button>
                                                 </div>
                                             </div>
                                             <hr>
@@ -44,4 +46,29 @@
             </div>
         </div>
     </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="deleteMessage{{ $showById->id }}">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Delete Message</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                    </button>
+                </div>
+                <form action="{{ route('message.destroy', $showById->id) }}" method="POST">
+                    @csrf
+                    @method('delete')
+                    <div class="modal-body">
+                        <h3 class="text-center">Do you want to delete this data?</h3>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary light" data-bs-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-danger">Yes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
 @endsection

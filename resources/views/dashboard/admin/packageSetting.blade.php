@@ -54,10 +54,10 @@
                                             <td>{{ $no }}</td>
                                             <td>{{ $item->packageName }}</td>
                                             <td>USD {{ number_format($item->price) }}</td>
-                                            <td><button type="button" class="btn btn-rounded btn-primary"
+                                            <td><button type="button" class="btn btn-sm btn-primary"
                                                     data-bs-toggle="modal" data-bs-target="#editPackage{{ $item->id }}"
                                                     data-id="{{ $item->id }}">Edit</button>
-                                                <button type="button" class="btn btn-rounded btn-danger"
+                                                <button type="button" class="btn btn-sm btn-danger"
                                                     data-bs-toggle="modal" data-bs-target="#deletePackage{{ $item->id }}"
                                                     data-id="{{ $item->id }}">Delete</button>
                                             </td>

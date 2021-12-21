@@ -56,9 +56,11 @@
                                             <td>{{ $item->category }}</td>
                                             <td>{{ $item->editor }}</td>
                                             <td>{!! $item->publish == '1' ? '<span class="badge light badge-primary">Publish</span>' : '<span class="badge light badge-danger">Draft</span>' !!}</td>
-                                            <td><a class="btn btn-rounded btn-primary"
+                                            <td><a class="btn btn-sm btn-secondary" target="_blank"
+                                                    href="{{ route('blogID', ['category' => strtolower($item->category), 'id' => $item->id]) }}">Preview</a>
+                                                <a class="btn btn-sm btn-primary"
                                                     href="{{ route('articles.show', $item->id) }}">Edit</a>
-                                                <button type="button" class="btn btn-rounded btn-danger"
+                                                <button type="button" class="btn btn-sm btn-danger"
                                                     data-bs-toggle="modal"
                                                     data-bs-target="#deleteArticle{{ $item->id }}"
                                                     data-id="{{ $item->id }}">Delete</button>

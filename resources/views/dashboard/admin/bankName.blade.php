@@ -62,16 +62,16 @@
                                                     <span class="badge light badge-danger">Disable</span>
                                                 @endif
                                             </td>
-                                            <td><button type="button" class="btn btn-rounded btn-primary"
+                                            <td><button type="button" class="btn btn-sm btn-primary"
                                                     data-bs-toggle="modal" data-bs-target="#editBank{{ $item->id }}"
                                                     data-id="{{ $item->id }}">Edit</button>
                                                 @if ($item->status == '1')
-                                                    <button type="button" class="btn btn-rounded btn-danger"
+                                                    <button type="button" class="btn btn-sm btn-danger"
                                                         data-bs-toggle="modal"
                                                         data-bs-target="#deleteBank{{ $item->id }}"
                                                         data-id="{{ $item->id }}" disabled>Delete</button>
                                                 @else
-                                                    <button type="button" class="btn btn-rounded btn-danger"
+                                                    <button type="button" class="btn btn-sm btn-danger"
                                                         data-bs-toggle="modal"
                                                         data-bs-target="#deleteBank{{ $item->id }}"
                                                         data-id="{{ $item->id }}">Delete</button>

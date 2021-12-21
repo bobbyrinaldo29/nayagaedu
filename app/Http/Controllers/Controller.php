@@ -19,11 +19,11 @@ class Controller extends BaseController
   {
     $categoryList = CategoryArticle::all();
     $articleList = Article::latest()->get();
-    $message = Message::latest()->get();
+    $messageAll = Message::all()->sortByDesc('created_at');
 
     $messageCount = Message::where('read', 0)->get();
 
     // Sharing is caring
-    View::share(compact('messageCount', 'categoryList', 'message', 'articleList'));
+    View::share(compact('messageCount', 'categoryList', 'messageAll', 'articleList'));
   }
 }
