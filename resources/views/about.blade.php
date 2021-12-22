@@ -43,18 +43,19 @@
                 <div class="row mb-5">
                     <div class="col-lg-8 offset-lg-2">
                         <div class="px-4 px-lg-0 pb-4">
-                            <p>Nayaga Edu is a trusted place to learn forex trading since 2019.
-                                Headquartered in Bandung, this company specializes in trading education in Currency
-                                (Forex), Gold, with very competitive fees.</p>
-                            <p>In this program, traders will get an interactive and fun trading
-                                learning experience with a professional mentor. With learning methods designed in such a
-                                way, participants will find their own trading style and system.</p>
-                            <p>At the end of the program the candidate is expected to be able to create a trading system
-                                that suits him. Guidance from Nayaga Edu has a number of advantages that greatly benefit the
-                                participants.</p>
-                            <p>Guidance from Nayaga Edu will be very suitable for beginners in the trading world. In this
-                                program, Nayaga Edu provides education with various levels of experience, knowledge and
-                                interest. Starting from basic to expert classes guided by professional master Nayaga edu.
+                            <p>Since 2019, Nayaga Edu has been a reliable location to study forex trading. The company,
+                                which is based in Bandung, specialized in currency trading education (Forex) and gold (Gold)
+                                at a very low cost.</p>
+                            <p>Traders will have an involved and enjoyable trading experience with professional mentors in
+                                this program. Participants will discover their own trading style and strategy using learning
+                                approaches created in this manner.</p>
+                            <p>The candidate should be able to design a trading system that suits him by the end of the
+                                program. Nayaga Edu's guidance includes a lot of perks that benefit participants
+                                considerably.</p>
+                            <p>Nayaga Edu's guidance will be ideal for newcomers to the trading sector. Nayaga Edu offers
+                                education at many levels of experience, expertise, and interests through this program.
+                                Beginning with basic classes and progressing to advanced classes under the direction of
+                                professional master Nayaga edu.
                             </p>
                         </div>
                     </div>
@@ -199,7 +200,7 @@
                             data-carousel-col-md="2" data-carousel-col-lg="3" data-carousel-col-xl="3">
                             <div class="carousel-component-inner owl-carousel owl-theme">
 
-                                
+
                                 <div class="col-md-12 offset-md-2 col-lg-12 offset-lg-0">
                                     <div class="card h-100 border-0 shadow rounded-xl text-center px-4 py-5 p-xl-5 my-4">
                                         <div class="card-body d-flex flex-column">

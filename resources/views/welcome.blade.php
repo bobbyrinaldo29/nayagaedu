@@ -22,7 +22,8 @@
                                         data-animated="fadeInLeft">Nayaga Edu is a trusted place to learn forex trading
                                         since 2019</div>
                                     <div class="add-animate slide-animate" data-animated="fadeIn">
-                                        <a href="#" class="btn btn-lg btn-round btn-primary btn-gray-shadow mx-2 ml-lg-0"><i
+                                        <a href="{{ route('about') }}"
+                                            class="btn btn-lg btn-round btn-primary btn-gray-shadow mx-2 ml-lg-0"><i
                                                 class="fas fa-info"></i>Learn More</a>
                                     </div>
                                 </div>
@@ -43,8 +44,8 @@
                                     <h1 class="display-4 font-weight-800 text-white mb-3 add-animate slide-animate"
                                         data-animated="fadeInRight">What is Forex Trading?</h1>
                                     <div class="lead-sm text-white-75 pb-3 mb-5 add-animate slide-animate"
-                                        data-animated="fadeInLeft">Exploring whether forex trading is worthy of being a
-                                        profitable business for you...</div>
+                                        data-animated="fadeInLeft">Exploring whether forex trading might be a profitable
+                                        business for you...</div>
                                     <div class="add-animate slide-animate" data-animated="fadeIn">
                                         <a href="#" class="btn btn-lg btn-round btn-primary btn-gray-shadow mx-2 ml-lg-0"><i
                                                 class="fas fa-info"></i>Learn More</a>
@@ -95,9 +96,10 @@
                                     <div data-height="20px"></div>
 
                                     <div class="lead">
-                                        Educational platform that helps increase knowledge on financial markets You can
-                                        learn strategies on how to profit in financial markets, manage risk better and
-                                        improve skills to be more confident. All control is in your hands!
+                                        An educational platform that helps in the development of financial market expertise.
+                                        You can learn how to profit in the financial markets, how to effectively manage
+                                        risk, and how to improve your abilities as you'll be more confident. All control is
+                                        in your hands!
                                     </div>
 
                                     <div data-height="40px"></div>
@@ -136,8 +138,8 @@
                                         class="img-fluid mb-5 add-animate" data-width="68px" data-height="68px"
                                         data-animated="zoomIn">
                                     <h5 class="font-weight-700 mb-3">Workshop</h5>
-                                    <p>Provides facilities for unlimited internal trader communication and discussions with
-                                        members of the Trader community.</p>
+                                    <p>Having a lot of liquidity means giving market traders a lot of chances to gain more
+                                        profit.</p>
                                 </div>
                             </div>
 
@@ -213,7 +215,8 @@
                                     class="icon-title d-flex justify-content-start justify-content-lg-end align-items-center mb-3">
                                     <img src="{{ asset('images/svg/app-highlight-icon-02.svg') }}" alt="icon"
                                         class="mr-3 mr-lg-0 ml-lg-3 order-lg-2" data-width="50px" data-height="50px">
-                                    <h5 class="mb-0 font-weight-700 text-white text-lg-right order-lg-1">Course Challenge
+                                    <h5 class="mb-0 font-weight-700 text-white text-lg-right order-lg-1">Communication &
+                                        Collaboration
                                     </h5>
                                 </div>
                             </div>
@@ -223,7 +226,7 @@
                                     class="icon-title d-flex justify-content-start justify-content-lg-end align-items-center mb-3">
                                     <img src="{{ asset('images/svg/icon-user-1.svg') }}" alt="icon"
                                         class="mr-3 mr-lg-0 ml-lg-3 order-lg-2" data-width="50px" data-height="50px">
-                                    <h5 class="mb-0 font-weight-700 text-white text-lg-right order-lg-1">Access The Course
+                                    <h5 class="mb-0 font-weight-700 text-white text-lg-right order-lg-1">Course & Webinar
                                     </h5>
                                 </div>
                             </div>
@@ -247,7 +250,8 @@
                                 <div class="icon-title d-flex justify-content-start align-items-center mb-3">
                                     <img src="{{ asset('images/svg/icon-wireless-10.svg') }}" alt="icon"
                                         class="mr-3" data-width="50px" data-height="50px">
-                                    <h5 class="mb-0 font-weight-700 text-white">Communication Platform For Financial Team
+                                    <h5 class="mb-0 font-weight-700 text-white">Subscribe To The Community (monetize
+                                        financial community)
                                     </h5>
                                 </div>
                             </div>
@@ -256,7 +260,7 @@
                                 <div class="icon-title d-flex justify-content-start align-items-center mb-3">
                                     <img src="{{ asset('images/svg/app-highlight-icon-04.svg') }}" alt="icon"
                                         class="mr-3" data-width="50px" data-height="50px">
-                                    <h5 class="mb-0 font-weight-700 text-white">Meet Other Trader</h5>
+                                    <h5 class="mb-0 font-weight-700 text-white">Making Profit With AutoTrade</h5>
                                 </div>
                             </div>
 
