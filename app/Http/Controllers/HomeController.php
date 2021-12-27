@@ -13,6 +13,11 @@ class HomeController extends Controller
         return view('welcome');
     }
 
+    public function traderTalent()
+    {
+        return view('trader-talent');
+    }
+
     public function aboutBlog()
     {
         return view('about');

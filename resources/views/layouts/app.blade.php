@@ -32,6 +32,8 @@
                             @endforeach
                         </ul>
                     </li>
+                    <li class="{{ request()->is('trader-talent') ? 'current-menu' : '' }}"><a
+                            href="{{ route('trader-talent') }}">Trader Talent</a></li>
                     <li class="{{ request()->is('about') ? 'current-menu' : '' }}"><a
                             href="{{ route('about') }}">About Us</a></li>
                     <li class="{{ request()->is('contact') ? 'current-menu' : '' }}"><a

@@ -29,6 +29,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('trader-talent', [HomeController::class, 'traderTalent'])->name('trader-talent');
 Route::get('about', [HomeController::class, 'aboutBlog'])->name('about');
 Route::get('contact', [HomeController::class, 'contact'])->name('contact');
 Route::resource('send-message', MessageController::class);
