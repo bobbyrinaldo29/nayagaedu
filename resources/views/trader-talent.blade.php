@@ -32,7 +32,7 @@
             <div class="container">
 
                 <div class="row my-5">
-                    <div class="col-lg-8 offset-lg-2">
+                    <div class="col-lg-12">
                         <div class="text-center mt-3">
 
                             <h2 class="h1 font-weight-800 line-height-sm mb-4">About Trader Talent</h2>
@@ -63,38 +63,24 @@
         </div>
 
         <div class="section">
-            <div class="container-fluid p-0">
+            <div class="container-fluid p-5">
                 <div class="row no-gutters">
 
-                    <div class="carousel-component col-lg-6" data-carousel-gutter="20" data-autoplay="true"
+                    <div class="carousel-component col-lg-6 p-2" data-carousel-gutter="20" data-autoplay="true"
                         data-dots="false" data-nav="true" data-carousel-col="1" data-carousel-col-sm="1"
                         data-carousel-col-md="1" data-carousel-col-lg="1" data-carousel-col-xl="1">
                         <div class="carousel-component-inner owl-carousel owl-theme">
 
                             <div class="carousel-component-item">
                                 <div>
-                                    <img src="../../../assets/images/upload/phone-screenshot-01.png" alt="image"
+                                    <img src="{{ asset('images/upload/certificate-1.jpg') }}" alt="image"
                                         class="img-fluid">
                                 </div>
                             </div>
 
                             <div class="carousel-component-item">
                                 <div>
-                                    <img src="../../../assets/images/upload/phone-screenshot-02.png" alt="image"
-                                        class="img-fluid">
-                                </div>
-                            </div>
-
-                            <div class="carousel-component-item">
-                                <div>
-                                    <img src="../../../assets/images/upload/phone-screenshot-03.png" alt="image"
-                                        class="img-fluid">
-                                </div>
-                            </div>
-
-                            <div class="carousel-component-item">
-                                <div>
-                                    <img src="../../../assets/images/upload/phone-screenshot-04.png" alt="image"
+                                    <img src="{{ asset('images/upload/certificate-2.jpg') }}" alt="image"
                                         class="img-fluid">
                                 </div>
                             </div>
@@ -102,30 +88,22 @@
                         </div>
                     </div>
 
-                    {{-- <div class="col-lg-6 bg-image" data-img-src="../../../assets/images/upload/startup-benefits-img-01.jpg">
-                        <div class="d-lg-none" data-height="70vw"></div>
-                    </div> --}}
-
-                    <div class="col-lg-6 bg-light">
+                    <div class="col-lg-6">
                         <div class="py-5">
                             <div class="row no-gutters">
                                 <div class="col-md-10 offset-md-1 px-4">
 
                                     <div data-height="7vw"></div>
 
-                                    <h5 class="font-weight-400 mb-3">We Prepare Startups For Accelerators</h5>
-
-                                    <h2 class="h1 font-weight-800 mb-4">Drive More Customers</h2>
+                                    <h2 class="h1 font-weight-800 mb-4">Certificate Of Achievement</h2>
 
                                     <div class="lead-sm mb-5">
-                                        Curabitur ipsum nulla pellentesque vitae in dolor condimentum sapien aptent taciti
-                                        ornare malesuada sociosqu himenaeos conubia litora torquent nostra consequa
+                                        Nayaga Education Center is designed to build a
+                                        comprehensive set of skills that help you assess the opportunities and risks
+                                        encountered in international business. Upon completion of our trainings, you will be
+                                        equipped with the knowledge and credentials needed to succeed in a globally
+                                        competitive marketplace.
                                     </div>
-
-                                    <div data-height="10px"></div>
-
-                                    <a href="#" class="btn btn-lg btn-round btn-primary mb-0"><i
-                                            class="fas fa-long-arrow-alt-right"></i>Get started now</a>
 
                                     <div data-height="7vw"></div>
 
