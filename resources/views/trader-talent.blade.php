@@ -132,7 +132,7 @@
                                 <div class="lead-sm mb-5">
                                 <h2 class="h1 font-weight-800 mb-4">Certificate Of Achievement</h2>
 
-                                    Nayaga Education Center is col-md-12 offset-md-1 mr-5-md-12 offset-md-1 mr-5gned to build a
+                                    Nayaga Education Center is designed to build a
                                     comprehensive set of skills that help you assess the opportunities and risks
                                     encountered in international business. Upon completion of our trainings, you will be
                                     equipped with the knowledge and credentials needed to succeed in a globally
