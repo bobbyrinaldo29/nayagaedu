@@ -58,7 +58,7 @@
                         <span class="nav-text">Settings</span>
                     </a>
                     <ul aria-expanded="true">
-                        <li><a href="{{ route('bank-setting.index') }}">Bank Status</a></li>
+                        {{-- <li><a href="{{ route('bank-setting.index') }}">Bank Status</a></li> --}}
                         <li><a href="{{ route('admin.package') }}">Package Status</a></li>
                     </ul>
                 </li>

@@ -68,7 +68,6 @@
                                     @endforeach
                                 </tbody>
                             </table>
-                            <p><strong>Note:</strong> Disable first if you want to delete</p>
                         </div>
                     </div>
                 </div>

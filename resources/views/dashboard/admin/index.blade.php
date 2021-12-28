@@ -57,8 +57,8 @@
                                                     <i class="fas fa-money-bill-wave"></i>
                                                 </span>
                                                 <div class="media-body">
-                                                    <p class="mb-1">Total Commissions</p>
-                                                    <h4 class="mb-0"></h4>
+                                                    <p class="mb-1">Total Package</p>
+                                                    <h4 class="mb-0">{{ $packageCount }}</h4>
                                                 </div>
                                             </div>
                                         </div>
