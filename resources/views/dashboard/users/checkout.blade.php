@@ -27,7 +27,7 @@
                                                     </ul>
                                                     <small class="text-muted"></small>
                                                 </div>
-                                                <input type="hidden" value="{{ $package->price }}" name="price">
+                                                <input type="hidden" value="{{ $package->price }}">
                                                 <div>
                                                     <span class="text-muted">USD
                                                         {{ number_format($package->price) }}</span>
@@ -45,7 +45,7 @@
                                                     </ul>
                                                     <small class="text-muted"></small>
                                                 </div>
-                                                <input type="hidden" value="{{ $package->price }}" name="price">
+                                                <input type="hidden" value="{{ $package->price }}">
                                                 <span class="text-muted">IDR
                                                     {{ number_format($convert) }}</span>
                                             </li>
@@ -53,7 +53,7 @@
                                                 <div class="text-white">
                                                     <h6 class="my-0 text-white">Total</h6>
                                                 </div>
-                                                <span class="text-white">IDR {{ number_format($total) }}</span>
+                                                <input class="text-white" type="hidden" name="price" value="{{ intval($total) }}">IDR {{ number_format($total) }}</input>
                                             </li>
                                         </ul>
                                     </div>

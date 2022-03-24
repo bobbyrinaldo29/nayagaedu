@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Auth;
 
 class TransactionCallbackController extends Controller
 {
-    protected $privateKey = 'fefWc-xoR8o-MbD4w-VzJyB-heJai';
+    protected $privateKey = 'qUmWG-JYqWi-O3SVy-2wavl-FnCf4';
 
     public function __construct(TripayServices $tripayServices)
     {

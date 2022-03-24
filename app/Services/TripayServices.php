@@ -31,10 +31,13 @@ class TripayServices
 
     public function requestTransaction($request)
     {
+        // dd($request->request);
         $apiKey       = config('services.tripay.api_key');
         $privateKey   = config('services.tripay.private_key');
         $merchantCode = config('services.tripay.merchant');
         $merchantRef  = 'INV-' . time();
+        $amount       = $request->price;
+        // dd($apiKey, $privateKey, $merchantCode, $merchantRef, $amount);
 
         $data = [
             'method'         => $request->method,
@@ -51,17 +54,17 @@ class TripayServices
                 ],
             ],
             'expired_time' => (time() + (24 * 60 * 60)), // 24 jam
-            'signature'    => hash_hmac('sha256', $merchantCode . $merchantRef . $request->price, $privateKey)
+            'signature'    => hash_hmac('sha256', $merchantCode.$merchantRef.$amount, $privateKey)
         ];
-
+        
         $curl = curl_init();
-
+        
         curl_setopt_array($curl, [
             CURLOPT_FRESH_CONNECT  => true,
             CURLOPT_URL            => 'https://tripay.co.id/api-sandbox/transaction/create',
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_HEADER         => false,
-            CURLOPT_HTTPHEADER     => ['Authorization: Bearer ' . $apiKey],
+            CURLOPT_HTTPHEADER     => ['Authorization: Bearer '.$apiKey],
             CURLOPT_FAILONERROR    => false,
             CURLOPT_POST           => true,
             CURLOPT_POSTFIELDS     => http_build_query($data)
@@ -71,7 +74,7 @@ class TripayServices
         $error = curl_error($curl);
 
         curl_close($curl);
-
+        
         $response = json_decode($response)->data;
 
         return $response ?: $error;
